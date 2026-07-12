@@ -15,85 +15,105 @@
   a { color: inherit; }
   header {
     text-align: center;
-    padding: 64px 20px 40px;
+    padding: 56px 20px 32px;
   }
   header img {
-    height: 56px;
+    height: 92px;
   }
   main {
     max-width: 1040px;
     margin: 0 auto;
-    padding: 0 20px 60px;
+    padding: 0 20px 56px;
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 52px;
   }
   .app-section {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    align-items: center;
+    gap: 22px;
   }
   .app-header {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
     background: #f3f2ee;
-    border-radius: 20px;
-    padding: 22px 28px;
+    border-radius: 18px;
+    padding: 16px 22px;
     text-decoration: none;
+    width: 100%;
+    max-width: 640px;
   }
   .app-header img.icon {
-    width: 56px;
-    height: 56px;
-    border-radius: 14px;
+    width: 44px;
+    height: 44px;
+    border-radius: 11px;
     flex-shrink: 0;
   }
+  .app-header img.icon.icon-capa {
+    background: #f7f1ea;
+    object-fit: contain;
+  }
   .app-header h2 {
-    margin: 0 0 4px;
-    font-size: 1.25rem;
+    margin: 0 0 2px;
+    font-size: 1.02rem;
     font-weight: 700;
     color: #1a1a1a;
   }
   .app-header p {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     color: #666;
   }
   .shots {
     display: flex;
     align-items: flex-end;
-    gap: 18px;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
     overflow-x: auto;
-    padding-bottom: 4px;
+    scroll-snap-type: x proximity;
+    scroll-padding: 0 20px;
+    -webkit-overflow-scrolling: touch;
+    padding: 4px 4px 10px;
+    scrollbar-width: none;
   }
+  .shots::-webkit-scrollbar { display: none; }
   .shots img {
     display: block;
-    height: 340px;
+    height: 300px;
     width: auto;
-    border-radius: 22px;
-    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    aspect-ratio: 540 / 1169;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
     flex-shrink: 0;
+    scroll-snap-align: center;
   }
   .shots img.hero {
-    height: 400px;
+    height: 340px;
   }
   .shots.buzztalk img {
-    height: 380px;
+    height: 320px;
   }
   footer {
     text-align: center;
-    padding: 32px 20px 48px;
-    font-size: 0.83rem;
+    padding: 28px 20px 44px;
+    font-size: 0.78rem;
     color: #888;
     border-top: 1px solid #ececec;
     line-height: 1.7;
   }
 
   @media (max-width: 640px) {
-    .shots img { height: 260px; }
-    .shots img.hero { height: 300px; }
-    .shots.buzztalk img { height: 280px; }
-    .app-header { flex-direction: row; padding: 18px 20px; }
+    header { padding: 40px 20px 24px; }
+    header img { height: 68px; }
+    main { gap: 40px; }
+    .app-header { padding: 14px 18px; max-width: 100%; }
+    .shots { justify-content: flex-start; scroll-snap-type: x mandatory; }
+    .shots img { height: 220px; }
+    .shots img.hero { height: 250px; }
+    .shots.buzztalk img { height: 240px; }
   }
 </style>
 </head>
@@ -132,6 +152,23 @@
         <img src="assets/buzztalk-1.png" alt="실시간 검색어 기반 랜덤 채팅">
         <img src="assets/buzztalk-2.png" alt="실검톡 실시간 검색어 리스트">
         <img src="assets/buzztalk-3.png" alt="종합부동산세 오픈 채팅">
+      </div>
+    </section>
+
+    <section class="app-section">
+      <div class="app-header">
+        <img class="icon icon-capa" src="assets/icon-capa.png" alt="Capa 아이콘">
+        <div>
+          <h2>Capa - 원두 카드 &amp; 핸드드립 타이머</h2>
+          <p>원두 정보 스캔, 기록, 레시피 관리</p>
+        </div>
+      </div>
+      <div class="shots">
+        <img src="assets/capa-1.png" alt="원두를 살 때마다, 마실 때마다 멋진 기록을 남겨보세요">
+        <img src="assets/capa-2.png" alt="원두 카드 사진 찍어서 정보를 자동으로 입력해요">
+        <img src="assets/capa-3.png" alt="위젯으로 원두 정보를 추가하거나, 핸드브루 타이머를 바로 시작해보세요">
+        <img src="assets/capa-4.png" alt="나의 레시피를 세상에 공개하고 의견을 주고받아보세요">
+        <img src="assets/capa-5.png" alt="바리스타 챔피언들의 레시피를 그대로 내려보세요">
       </div>
     </section>
   </main>
