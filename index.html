@@ -10,94 +10,128 @@
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
     color: #1a1a1a;
-    background: #fafafa;
-    line-height: 1.6;
+    background: #ffffff;
   }
+  a { color: inherit; }
   header {
     text-align: center;
-    padding: 56px 20px 24px;
+    padding: 64px 20px 40px;
   }
-  header h1 {
-    font-size: 1.9rem;
-    font-weight: 700;
-    margin: 0 0 8px;
-  }
-  header p {
-    margin: 0;
-    color: #666;
-    font-size: 1rem;
+  header img {
+    height: 56px;
   }
   main {
-    max-width: 760px;
+    max-width: 1040px;
     margin: 0 auto;
-    padding: 24px 20px 40px;
-    display: grid;
-    gap: 20px;
-  }
-  .card {
-    background: #fff;
-    border: 1px solid #ececec;
-    border-radius: 16px;
-    padding: 28px 24px;
-  }
-  .card h2 {
-    margin: 0 0 6px;
-    font-size: 1.3rem;
-  }
-  .card .desc {
-    margin: 0 0 18px;
-    color: #444;
-  }
-  .btns {
+    padding: 0 20px 60px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-direction: column;
+    gap: 64px;
   }
-  .btn {
-    display: inline-block;
-    padding: 10px 18px;
-    border-radius: 10px;
-    font-size: 0.92rem;
-    font-weight: 600;
+  .app-section {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .app-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #f3f2ee;
+    border-radius: 20px;
+    padding: 22px 28px;
     text-decoration: none;
-    background: #111;
-    color: #fff;
   }
-  .btn.line {
-    background: #fff;
-    color: #111;
-    border: 1px solid #d5d5d5;
+  .app-header img.icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    flex-shrink: 0;
+  }
+  .app-header h2 {
+    margin: 0 0 4px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+  .app-header p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #666;
+  }
+  .shots {
+    display: flex;
+    align-items: flex-end;
+    gap: 18px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+  .shots img {
+    display: block;
+    height: 340px;
+    width: auto;
+    border-radius: 22px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    flex-shrink: 0;
+  }
+  .shots img.hero {
+    height: 400px;
+  }
+  .shots.buzztalk img {
+    height: 380px;
   }
   footer {
     text-align: center;
-    padding: 28px 20px 44px;
+    padding: 32px 20px 48px;
     font-size: 0.83rem;
     color: #888;
     border-top: 1px solid #ececec;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 640px) {
+    .shots img { height: 260px; }
+    .shots img.hero { height: 300px; }
+    .shots.buzztalk img { height: 280px; }
+    .app-header { flex-direction: row; padding: 18px 20px; }
   }
 </style>
 </head>
 <body>
   <header>
-    <h1>포시키 Posiki</h1>
-    <p>아이데이(eyeday)와 실검톡(BuzzTalk)을 함께 운영하고 있습니다.</p>
+    <img src="assets/posiki-logo.png" alt="Posiki">
   </header>
 
   <main>
-    <section class="card">
-      <h2>아이데이 · eyeday</h2>
-      <p class="desc">안약 관리와 복용 알림, 안압 수치 기록까지. 눈 건강을 매일 챙기세요.</p>
-      <div class="btns">
-        <a class="btn" href="https://apps.apple.com/kr/app/eyeday-%EC%95%88%EC%95%BD-%EC%95%8C%EB%99%B4-%EC%A0%90%EC%95%88-%EA%B8%B0%EB%A1%9D/id6759497954">App Store</a>
-        <a class="btn line" href="https://play.google.com/store/apps/details?id=com.eyedrop.reminder&hl=ko">Google Play</a>
+    <section class="app-section">
+      <a class="app-header" href="https://apps.apple.com/kr/app/eyeday-%EC%95%88%EC%95%BD-%EC%95%8C%EB%99%B4-%EC%A0%90%EC%95%88-%EA%B8%B0%EB%A1%9D/id6759497954">
+        <img class="icon" src="assets/icon-eyeday.png" alt="아이데이 아이콘">
+        <div>
+          <h2>아이데이 - 안약 알람 &amp; 점안 기록</h2>
+          <p>라식, 녹내장 등 안약 점안 관리</p>
+        </div>
+      </a>
+      <div class="shots">
+        <img class="hero" src="assets/eyeday-1.png" alt="라식, 녹내장, 안구건조증 등 안약 리마인더">
+        <img src="assets/eyeday-2.png" alt="안약에 특화된 투약 관리">
+        <img src="assets/eyeday-3.png" alt="안압을 꾸준히 기록해 보세요">
+        <img src="assets/eyeday-4.png" alt="안약 간격을 안전하게 지켜줍니다">
+        <img src="assets/eyeday-5.png" alt="큰 글씨 설정이 가능해요">
       </div>
     </section>
 
-    <section class="card">
-      <h2>실검톡 · BuzzTalk</h2>
-      <p class="desc">실시간 검색어를 기반으로 같은 주제에 관심 있는 사람들이 익명으로 대화할 수 있어요.</p>
-      <div class="btns">
-        <a class="btn" href="https://yoonly93.github.io/buzztalk/">자세히 보기</a>
+    <section class="app-section">
+      <a class="app-header" href="https://yoonly93.github.io/buzztalk/">
+        <img class="icon" src="assets/icon-buzztalk.png" alt="실검톡 아이콘">
+        <div>
+          <h2>실검톡 - BuzzTalk</h2>
+          <p>뉴스보다 빠른 반응, 실시간 검색어로 모이는 오픈 채팅</p>
+        </div>
+      </a>
+      <div class="shots buzztalk">
+        <img src="assets/buzztalk-1.png" alt="실시간 검색어 기반 랜덤 채팅">
+        <img src="assets/buzztalk-2.png" alt="실검톡 실시간 검색어 리스트">
+        <img src="assets/buzztalk-3.png" alt="종합부동산세 오픈 채팅">
       </div>
     </section>
   </main>
