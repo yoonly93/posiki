@@ -66,6 +66,32 @@
     font-size: 0.8rem;
     color: #666;
   }
+  .store-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .store-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    background: #1a1a1a;
+    color: #fff;
+  }
+  .store-btn.detail {
+    background: #f3f2ee;
+    color: #1a1a1a;
+  }
+  .store-btn.disabled {
+    background: #f3f2ee;
+    color: #aaa;
+    pointer-events: none;
+  }
   .shots {
     display: flex;
     align-items: flex-end;
@@ -124,13 +150,18 @@
 
   <main>
     <section class="app-section">
-      <a class="app-header" href="https://apps.apple.com/kr/app/eyeday-%EC%95%88%EC%95%BD-%EC%95%8C%EB%99%B4-%EC%A0%90%EC%95%88-%EA%B8%B0%EB%A1%9D/id6759497954">
+      <div class="app-header">
         <img class="icon" src="assets/icon-eyeday.png" alt="아이데이 아이콘">
         <div>
           <h2>아이데이 - 안약 알람 &amp; 점안 기록</h2>
           <p>라식, 녹내장 등 안약 점안 관리</p>
         </div>
-      </a>
+      </div>
+      <div class="store-row">
+        <a class="store-btn detail" href="https://eyeday.posiki.com">상세페이지</a>
+        <a class="store-btn" href="https://apps.apple.com/kr/app/eyeday-%EC%95%88%EC%95%BD-%EC%95%8C%EB%99%B4-%EC%A0%90%EC%95%88-%EA%B8%B0%EB%A1%9D/id6759497954">App Store</a>
+        <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.eyedrop.reminder&amp;hl=ko">Google Play</a>
+      </div>
       <div class="shots">
         <img class="hero" src="assets/eyeday-1.png" alt="라식, 녹내장, 안구건조증 등 안약 리마인더">
         <img src="assets/eyeday-2.png" alt="안약에 특화된 투약 관리">
@@ -141,13 +172,18 @@
     </section>
 
     <section class="app-section">
-      <a class="app-header" href="https://yoonly93.github.io/buzztalk/">
+      <div class="app-header">
         <img class="icon" src="assets/icon-buzztalk.png" alt="실검톡 아이콘">
         <div>
           <h2>실검톡 - BuzzTalk</h2>
           <p>뉴스보다 빠른 반응, 실시간 검색어로 모이는 오픈 채팅</p>
         </div>
-      </a>
+      </div>
+      <div class="store-row">
+        <a class="store-btn detail" href="https://buzztalk.posiki.com">상세페이지</a>
+        <a class="store-btn" href="https://apps.apple.com/kr/app/%EC%8B%A4%EA%B2%80%ED%86%A1-%EC%8B%A4%EC%8B%9C%EA%B0%84-%EA%B2%80%EC%83%89%EC%96%B4%EB%A1%9C-%EB%AA%A8%EC%9D%B4%EB%8A%94-%EC%98%A4%ED%94%88-%EC%B1%84%ED%8C%85/id6788993831">App Store</a>
+        <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.buzztalkrn">Google Play</a>
+      </div>
       <div class="shots buzztalk">
         <img src="assets/buzztalk-1.png" alt="실시간 검색어 기반 랜덤 채팅">
         <img src="assets/buzztalk-2.png" alt="실검톡 실시간 검색어 리스트">
@@ -156,13 +192,18 @@
     </section>
 
     <section class="app-section">
-      <a class="app-header" href="https://apps.apple.com/kr/app/capa-%EC%9B%90%EB%91%90-%EC%B9%B4%EB%93%9C-%ED%95%B8%EB%93%9C%EB%93%9C%EB%A6%BD-%ED%83%80%EC%9D%B4%EB%A8%B8/id6762551669">
+      <div class="app-header">
         <img class="icon icon-capa" src="assets/icon-capa.png" alt="Capa 아이콘">
         <div>
           <h2>Capa - 원두 카드 &amp; 핸드드립 타이머</h2>
           <p>원두 정보 스캔, 기록, 레시피 관리</p>
         </div>
-      </a>
+      </div>
+      <div class="store-row">
+        <a class="store-btn detail" href="https://capa.posiki.com">상세페이지</a>
+        <a class="store-btn" href="https://apps.apple.com/kr/app/capa-%EC%9B%90%EB%91%90-%EC%B9%B4%EB%93%9C-%ED%95%B8%EB%93%9C%EB%93%9C%EB%A6%BD-%ED%83%80%EC%9D%B4%EB%A8%B8/id6762551669">App Store</a>
+        <span class="store-btn disabled">Google Play (준비중)</span>
+      </div>
       <div class="shots">
         <img src="assets/capa-1.png" alt="원두를 살 때마다, 마실 때마다 멋진 기록을 남겨보세요">
         <img src="assets/capa-2.png" alt="원두 카드 사진 찍어서 정보를 자동으로 입력해요">
