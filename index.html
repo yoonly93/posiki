@@ -15,10 +15,40 @@
   a { color: inherit; }
   header {
     text-align: center;
-    padding: 56px 20px 32px;
+    padding: 28px 20px 32px;
+  }
+  .topbar {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 18px 20px 0;
+  }
+  .lang-select {
+    min-width: 128px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    background: #fff;
+    color: #1a1a1a;
+    font: inherit;
+    font-size: 0.86rem;
+    padding: 8px 10px;
   }
   header img {
     height: 92px;
+  }
+  .translation-note {
+    display: none;
+    max-width: 640px;
+    margin: -8px auto 8px;
+    padding: 0 20px;
+    color: #777;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .translation-note.visible {
+    display: block;
   }
   main {
     max-width: 1040px;
@@ -130,9 +160,24 @@
     border-top: 1px solid #ececec;
     line-height: 1.7;
   }
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 16px;
+    margin-bottom: 12px;
+  }
+  .footer-nav a {
+    color: #555;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .footer-nav a:hover {
+    text-decoration: underline;
+  }
 
   @media (max-width: 640px) {
-    header { padding: 40px 20px 24px; }
+    header { padding: 28px 20px 24px; }
     header img { height: 68px; }
     main { gap: 40px; }
     .app-header { padding: 14px 18px; max-width: 100%; }
@@ -144,21 +189,31 @@
 </style>
 </head>
 <body>
+  <div class="topbar">
+    <select class="lang-select" id="languageSelect" aria-label="Language">
+      <option value="ko">한국어</option>
+      <option value="en">English</option>
+      <option value="ja">日本語</option>
+    </select>
+  </div>
+
   <header>
     <img src="assets/posiki-logo.png" alt="Posiki">
   </header>
+
+  <p class="translation-note" id="translationNote"></p>
 
   <main>
     <section class="app-section">
       <div class="app-header">
         <img class="icon" src="assets/icon-eyeday.png" alt="아이데이 아이콘">
         <div>
-          <h2>아이데이 - 안약 알람 &amp; 점안 기록</h2>
-          <p>라식, 녹내장 등 안약 점안 관리</p>
+          <h2 data-i18n="eyedayTitle">아이데이 - 안약 알람 &amp; 점안 기록</h2>
+          <p data-i18n="eyedayDesc">라식, 녹내장 등 안약 점안 관리</p>
         </div>
       </div>
       <div class="store-row">
-        <a class="store-btn detail" href="https://eyeday.posiki.com">상세페이지</a>
+        <a class="store-btn detail" href="https://eyeday.posiki.com" data-i18n="detail">상세페이지</a>
         <a class="store-btn" href="https://apps.apple.com/kr/app/eyeday-%EC%95%88%EC%95%BD-%EC%95%8C%EB%99%B4-%EC%A0%90%EC%95%88-%EA%B8%B0%EB%A1%9D/id6759497954">App Store</a>
         <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.eyedrop.reminder&amp;hl=ko">Google Play</a>
       </div>
@@ -176,11 +231,11 @@
         <img class="icon" src="assets/icon-buzztalk.png" alt="실검톡 아이콘">
         <div>
           <h2>실검톡 - BuzzTalk</h2>
-          <p>뉴스보다 빠른 반응, 실시간 검색어로 모이는 오픈 채팅</p>
+          <p data-i18n="buzztalkDesc">뉴스보다 빠른 반응, 실시간 검색어로 모이는 오픈 채팅</p>
         </div>
       </div>
       <div class="store-row">
-        <a class="store-btn detail" href="https://buzztalk.posiki.com">상세페이지</a>
+        <a class="store-btn detail" href="https://buzztalk.posiki.com" data-i18n="detail">상세페이지</a>
         <a class="store-btn" href="https://apps.apple.com/kr/app/%EC%8B%A4%EA%B2%80%ED%86%A1-%EC%8B%A4%EC%8B%9C%EA%B0%84-%EA%B2%80%EC%83%89%EC%96%B4%EB%A1%9C-%EB%AA%A8%EC%9D%B4%EB%8A%94-%EC%98%A4%ED%94%88-%EC%B1%84%ED%8C%85/id6788993831">App Store</a>
         <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.buzztalkrn">Google Play</a>
       </div>
@@ -195,14 +250,14 @@
       <div class="app-header">
         <img class="icon icon-capa" src="assets/icon-capa.png" alt="Capa 아이콘">
         <div>
-          <h2>Capa - 원두 카드 &amp; 핸드드립 타이머</h2>
-          <p>원두 정보 스캔, 기록, 레시피 관리</p>
+          <h2 data-i18n="capaTitle">Capa - 원두 카드 &amp; 핸드드립 타이머</h2>
+          <p data-i18n="capaDesc">원두 정보 스캔, 기록, 레시피 관리</p>
         </div>
       </div>
       <div class="store-row">
-        <a class="store-btn detail" href="https://capa.posiki.com">상세페이지</a>
+        <a class="store-btn detail" href="https://capa.posiki.com" data-i18n="detail">상세페이지</a>
         <a class="store-btn" href="https://apps.apple.com/kr/app/capa-%EC%9B%90%EB%91%90-%EC%B9%B4%EB%93%9C-%ED%95%B8%EB%93%9C%EB%93%9C%EB%A6%BD-%ED%83%80%EC%9D%B4%EB%A8%B8/id6762551669">App Store</a>
-        <span class="store-btn disabled">Google Play (준비중)</span>
+        <span class="store-btn disabled" data-i18n="googlePlayPending">Google Play (준비중)</span>
       </div>
       <div class="shots">
         <img src="assets/capa-1.png" alt="원두를 살 때마다, 마실 때마다 멋진 기록을 남겨보세요">
@@ -215,10 +270,88 @@
   </main>
 
   <footer>
-    포시키<br>
-    마포구 포은로8길 29, 2091호(망원동)<br>
-    마포구 - 04011 · 대한민국(KR)<br>
+    <nav class="footer-nav">
+      <a href="privacy.html" data-i18n="privacy">개인정보처리방침</a>
+      <a href="terms.html" data-i18n="terms">이용약관</a>
+      <a href="contact.html" data-i18n="contact">문의하기</a>
+    </nav>
+    <span data-i18n="brand">포시키</span><br>
+    <span data-i18n="address1">마포구 포은로8길 29, 2091호(망원동)</span><br>
+    <span data-i18n="address2">마포구 - 04011 · 대한민국(KR)</span><br>
     © 2026 Posiki
   </footer>
+  <script>
+    const translations = {
+      ko: {
+        detail: "상세페이지",
+        eyedayTitle: "아이데이 - 안약 알람 & 점안 기록",
+        eyedayDesc: "라식, 녹내장 등 안약 점안 관리",
+        buzztalkDesc: "뉴스보다 빠른 반응, 실시간 검색어로 모이는 오픈 채팅",
+        capaTitle: "Capa - 원두 카드 & 핸드드립 타이머",
+        capaDesc: "원두 정보 스캔, 기록, 레시피 관리",
+        googlePlayPending: "Google Play (준비중)",
+        privacy: "개인정보처리방침",
+        terms: "이용약관",
+        contact: "문의하기",
+        brand: "포시키",
+        address1: "마포구 포은로8길 29, 2091호(망원동)",
+        address2: "마포구 - 04011 · 대한민국(KR)",
+        note: ""
+      },
+      en: {
+        detail: "Details",
+        eyedayTitle: "EyeDay - Eye Drop Alarm & Log",
+        eyedayDesc: "Eye drop management for LASIK, glaucoma, dry eyes, and more",
+        buzztalkDesc: "Open chats gathered around real-time search trends",
+        capaTitle: "Capa - Coffee Bean Cards & Hand Drip Timer",
+        capaDesc: "Scan, record, and manage coffee bean information and recipes",
+        googlePlayPending: "Google Play (Coming soon)",
+        privacy: "Privacy Policy",
+        terms: "Terms of Use",
+        contact: "Contact",
+        brand: "Posiki",
+        address1: "Room 2091, 29 Poeun-ro 8-gil, Mapo-gu",
+        address2: "Mapo-gu - 04011 · Republic of Korea (KR)",
+        note: "This page was automatically translated from Korean. If there is any difference in meaning, the Korean version takes precedence."
+      },
+      ja: {
+        detail: "詳細ページ",
+        eyedayTitle: "EyeDay - 点眼アラーム・点眼記録",
+        eyedayDesc: "レーシック、緑内障、ドライアイなどの点眼管理",
+        buzztalkDesc: "リアルタイム検索トレンドで集まるオープンチャット",
+        capaTitle: "Capa - コーヒー豆カード・ハンドドリップタイマー",
+        capaDesc: "コーヒー豆情報のスキャン、記録、レシピ管理",
+        googlePlayPending: "Google Play (準備中)",
+        privacy: "プライバシーポリシー",
+        terms: "利用規約",
+        contact: "お問い合わせ",
+        brand: "Posiki",
+        address1: "麻浦区 ポウン路8ギル 29, 2091号(望遠洞)",
+        address2: "麻浦区 - 04011 · 大韓民国(KR)",
+        note: "このページは韓国語から自動翻訳されています。意味に差異がある場合は、韓国語版を優先します。"
+      }
+    };
+
+    const languageSelect = document.getElementById("languageSelect");
+    const translationNote = document.getElementById("translationNote");
+
+    function setLanguage(language) {
+      const dict = translations[language] || translations.ko;
+      document.documentElement.lang = language;
+      document.querySelectorAll("[data-i18n]").forEach((node) => {
+        const value = dict[node.dataset.i18n];
+        if (value) node.textContent = value;
+      });
+      translationNote.textContent = dict.note;
+      translationNote.classList.toggle("visible", Boolean(dict.note));
+      languageSelect.value = language;
+      localStorage.setItem("posikiLang", language);
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const initialLang = params.get("lang") || localStorage.getItem("posikiLang") || "ko";
+    setLanguage(initialLang);
+    languageSelect.addEventListener("change", (event) => setLanguage(event.target.value));
+  </script>
 </body>
 </html>
