@@ -1,5 +1,9 @@
 name = "posiki"
 compatibility_date = "2025-01-01"
 
+[[routes]]
+pattern = "eyeday.posiki.com"
+custom_domain = true
+
 [assets]
 directory = "."
