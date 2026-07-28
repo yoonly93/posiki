@@ -1,286 +1,1883 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>아이데이 Eyeday - 안약 알람 &amp; 점안 기록</title>
-<meta name="description" content="백내장, 라식·라섹·ICL 수술 후 점안부터 녹내장과 안구건조증까지. 복잡한 안약 스케줄을 자동으로 계산하고 점안 기록과 안압을 관리하는 안약 알람 앱입니다.">
-<link rel="canonical" href="https://eyeday.posiki.com/">
-<link rel="icon" href="/assets/icon-eyeday.png">
-<meta property="og:type" content="website">
-<meta property="og:title" content="아이데이 Eyeday - 안약 알람 &amp; 점안 기록">
-<meta property="og:description" content="백내장, 라식·라섹·ICL 수술 후 점안부터 녹내장과 안구건조증까지. 복잡한 안약 스케줄을 자동으로 관리합니다.">
-<meta property="og:url" content="https://eyeday.posiki.com/">
-<meta property="og:image" content="https://eyeday.posiki.com/assets/eyeday-1.png">
-<style>
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-    color: #1a1a1a;
-    background: #ffffff;
-  }
-  a { color: inherit; }
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-    text-align: center;
-    padding: 56px 20px 8px;
-  }
-  header img.icon {
-    width: 92px;
-    height: 92px;
-    border-radius: 22px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  }
-  header h1 {
-    margin: 0;
-    font-size: 1.7rem;
-    font-weight: 700;
-    line-height: 1.35;
-    overflow-wrap: anywhere;
-  }
-  header p.tagline {
-    margin: 0;
-    max-width: 520px;
-    font-size: 0.96rem;
-    line-height: 1.7;
-    color: #666;
-  }
-  main {
-    max-width: 1040px;
-    margin: 0 auto;
-    padding: 36px 20px 56px;
-    display: flex;
-    flex-direction: column;
-    gap: 52px;
-  }
-  .store-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-  }
-  .store-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    padding: 10px 20px;
-    border-radius: 999px;
-    font-size: 0.86rem;
-    font-weight: 600;
-    text-decoration: none;
-    background: #f3f2ee;
-    color: #1a1a1a;
-    line-height: 1;
-    transition: background 0.16s ease;
-  }
-  .store-btn:hover { background: #ecebe7; }
-  .store-badge-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    text-decoration: none;
-  }
-  .store-badge {
-    display: block;
-    height: 40px;
-    width: auto;
-  }
-  .store-badge.google-play {
-    height: 54px;
-    margin: -7px 0;
-  }
-  .shots {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 16px;
-    width: 100%;
-    overflow-x: auto;
-    scroll-snap-type: x proximity;
-    scroll-padding: 0 20px;
-    -webkit-overflow-scrolling: touch;
-    padding: 4px 4px 10px;
-    scrollbar-width: none;
-  }
-  .shots::-webkit-scrollbar { display: none; }
-  .shots img {
-    display: block;
-    height: 300px;
-    width: auto;
-    aspect-ratio: 540 / 1169;
-    border-radius: 20px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-    flex-shrink: 0;
-    scroll-snap-align: center;
-  }
-  .shots img.hero { height: 340px; }
-  section h2 {
-    margin: 0 0 22px;
-    text-align: center;
-    font-size: 1.22rem;
-    font-weight: 700;
-  }
-  .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 16px;
-  }
-  .feature {
-    background: #f7f6f2;
-    border-radius: 18px;
-    padding: 22px 24px;
-  }
-  .feature h3 {
-    margin: 0 0 8px;
-    font-size: 0.98rem;
-    font-weight: 700;
-  }
-  .feature p {
-    margin: 0;
-    font-size: 0.88rem;
-    line-height: 1.75;
-    color: #5a5a5a;
-  }
-  .audience {
-    max-width: 640px;
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .audience li {
-    background: #f3f2ee;
-    border-radius: 14px;
-    padding: 14px 20px;
-    font-size: 0.9rem;
-    line-height: 1.6;
-  }
-  footer {
-    text-align: center;
-    padding: 28px 20px 44px;
-    font-size: 0.78rem;
-    color: #888;
-    border-top: 1px solid #ececec;
-    line-height: 1.9;
-  }
-  footer nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px 18px;
-    margin-bottom: 16px;
-    font-size: 0.84rem;
-  }
-  footer nav a { color: #555; text-decoration: none; }
-  footer nav a:hover { text-decoration: underline; }
-  @media (max-width: 640px) {
-    header { padding: 40px 20px 4px; }
-    header img.icon { width: 76px; height: 76px; border-radius: 18px; }
-    header h1 { font-size: 1.4rem; }
-    main { gap: 40px; padding-top: 28px; }
-    .shots { justify-content: flex-start; scroll-snap-type: x mandatory; }
-    .shots img { height: 220px; }
-    .shots img.hero { height: 250px; }
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1RH70WMQY5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1RH70WMQY5');
+  </script>
+  <title>eyeday</title>
+  <meta name="description" id="metaDesc" content="An eye drop reminder app for post-op care (glaucoma, cataract, LASIK, LASEK, ICL) and ophthalmic conditions. Custom schedules, dosing log, and IOP trends in one app.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="eyeday">
+  <meta property="og:title" id="ogTitle" content="eyeday">
+  <meta property="og:description" id="ogDesc" content="An eye drop reminder app for post-op care and ophthalmic conditions.">
+  <meta property="og:image" content="https://eyeday.posiki.com/icon.png">
+  <meta property="og:url" content="https://eyeday.posiki.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" id="twTitle" content="eyeday">
+  <meta name="twitter:description" id="twDesc" content="An eye drop reminder app for post-op care and ophthalmic conditions.">
+  <meta name="twitter:image" content="https://eyeday.posiki.com/icon.png">
+  <link rel="alternate" hreflang="ko" href="https://eyeday.posiki.com/?lang=ko">
+  <link rel="alternate" hreflang="en" href="https://eyeday.posiki.com/?lang=en">
+  <link rel="alternate" hreflang="ja" href="https://eyeday.posiki.com/?lang=ja">
+  <link rel="alternate" hreflang="fr" href="https://eyeday.posiki.com/?lang=fr">
+  <link rel="alternate" hreflang="es" href="https://eyeday.posiki.com/?lang=es">
+  <link rel="alternate" hreflang="ru" href="https://eyeday.posiki.com/?lang=ru">
+  <link rel="alternate" hreflang="de" href="https://eyeday.posiki.com/?lang=de">
+  <link rel="alternate" hreflang="it" href="https://eyeday.posiki.com/?lang=it">
+  <link rel="alternate" hreflang="pt" href="https://eyeday.posiki.com/?lang=pt">
+  <link rel="alternate" hreflang="x-default" href="https://eyeday.posiki.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'LINESeedJP';
+      src: url('fonts/LINESeedJP-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Noto Sans', 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      letter-spacing: -0.01em;
+      background: linear-gradient(180deg, #EFF6FF 0%, #F8FAFC 30%, #FFFFFF 100%);
+      min-height: 100vh;
+      color: #1E293B;
+      line-height: 1.55;
+    }
+    /* Floating language dropdown (top-right) */
+    .lang-switch {
+      position: fixed;
+      top: 20px;
+      right: 24px;
+      z-index: 50;
+      font-family: inherit;
+      font-size: 14px;
+      color: #1E293B;
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 10px;
+      padding: 8px 36px 8px 14px;
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      box-shadow: 0 2px 8px rgba(15,23,42,0.06);
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%2371717A' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+    }
+    .lang-switch:focus { outline: none; border-color: #3B82F6; }
+    .site-nav {
+      position: fixed;
+      top: 20px;
+      left: 24px;
+      right: 170px;
+      z-index: 50;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      pointer-events: none;
+    }
+    .site-nav .nav-brand {
+      color: #3B82F6;
+      font-size: 22px;
+      font-weight: 800;
+      text-decoration: none;
+      letter-spacing: 0;
+      pointer-events: auto;
+    }
+    .site-nav .nav-links {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      background: rgba(255,255,255,0.92);
+      border: 1px solid #E2E8F0;
+      border-radius: 10px;
+      padding: 6px;
+      box-shadow: 0 2px 8px rgba(15,23,42,0.06);
+      backdrop-filter: blur(12px);
+      pointer-events: auto;
+    }
+    .site-nav a {
+      color: #475569;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1;
+      padding: 8px 10px;
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+    .site-nav a:hover { color: #2563EB; background: #EFF6FF; }
+
+    /* === Lucide icons (inline SVG) === */
+    .ic {
+      width: 16px; height: 16px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .ic-xs { width: 12px; height: 12px; stroke-width: 2.2; }
+    .ic-sm { width: 14px; height: 14px; }
+    .ic-md { width: 18px; height: 18px; }
+    .ic-lg { width: 22px; height: 22px; }
+    .ic-xl { width: 26px; height: 26px; }
+
+    /* Hero */
+    .hero {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    .hero .app-icon {
+      width: 104px; height: 104px;
+      border-radius: 24px;
+      margin: 0 auto 24px;
+      box-shadow: 0 12px 32px rgba(59,130,246,0.28);
+      overflow: hidden;
+    }
+    .hero .app-icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .hero h1 {
+      font-family: 'LINESeedJP', 'Noto Sans', 'Noto Sans KR', sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: #3B82F6;
+      letter-spacing: 0.2px;
+      margin-bottom: 12px;
+    }
+    .hero .subtitle {
+      font-size: 18px;
+      color: #475569;
+      margin-bottom: 32px;
+      max-width: 480px;
+      margin-left: auto; margin-right: auto;
+    }
+    .store-badges {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .badge { display: inline-flex; align-items: center; text-decoration: none; }
+    .badge img { height: 52px; display: block; }
+    .play-badge {
+      min-height: 52px;
+      min-width: 176px;
+      max-width: 320px;
+      gap: 10px;
+      padding: 6px 15px 6px 13px;
+      color: #FFFFFF;
+      background: #0F172A;
+      border: 1px solid #111827;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(15,23,42,0.10);
+    }
+    .play-badge svg { width: 25px; height: 28px; flex-shrink: 0; }
+    .play-badge-text { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.15; min-width: 0; }
+    .play-badge-kicker { font-size: 9px; font-weight: 600; letter-spacing: 0; white-space: normal; }
+    .play-badge-label { font-size: 18px; font-weight: 700; letter-spacing: 0; white-space: nowrap; }
+
+    /* Section layout */
+    .section {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 56px 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+    .section .text .eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: #2563EB;
+      background: #DBEAFE;
+      padding: 4px 10px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+    .section .text h2 {
+      font-size: 30px;
+      font-weight: 700;
+      color: #0F172A;
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+    .section .text p {
+      font-size: 16px;
+      color: #475569;
+      line-height: 1.65;
+    }
+    .section.reverse .text { order: 2; }
+    .section.reverse .phone-col { order: 1; }
+    .phone-col { display: flex; justify-content: center; }
+
+    /* === Phone frame === */
+    .phone {
+      width: 300px;
+      flex-shrink: 0;
+      background: #0F172A;
+      border-radius: 44px;
+      padding: 8px;
+      box-shadow: 0 28px 60px rgba(15,23,42,0.22), 0 10px 20px rgba(15,23,42,0.10);
+    }
+    .phone-screen {
+      background: #FAFAFA;
+      border-radius: 36px;
+      overflow: hidden;
+      position: relative;
+      aspect-ratio: 9 / 19.5;
+      display: flex;
+      flex-direction: column;
+    }
+    .notch {
+      position: absolute;
+      top: 6px; left: 50%;
+      transform: translateX(-50%);
+      width: 92px; height: 24px;
+      background: #0F172A;
+      border-radius: 14px;
+      z-index: 5;
+    }
+    .status-bar {
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 22px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #1E293B;
+    }
+    .status-bar .right {
+      display: flex; gap: 6px; align-items: center;
+      color: #1E293B;
+    }
+    .sb-dots { display: flex; gap: 2px; align-items: center; }
+    .sb-dots span { width: 3px; height: 3px; border-radius: 50%; background: #1E293B; }
+    .phone-body {
+      flex: 1;
+      overflow: hidden;
+      position: relative;
+      background: #FAFAFA;
+    }
+
+    /* === Top app bar (back / title / right action) === */
+    .topbar {
+      display: grid;
+      grid-template-columns: 36px 1fr 44px;
+      align-items: center;
+      padding: 4px 14px 12px;
+    }
+    .topbar .back, .topbar .right {
+      color: #27272A;
+      display: flex;
+      align-items: center;
+    }
+    .topbar .back { justify-self: start; }
+    .topbar .title {
+      text-align: center;
+      font-size: 15px;
+      font-weight: 600;
+      color: #27272A;
+    }
+    .topbar .right {
+      justify-self: end;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .topbar .right.primary { color: #3B82F6; }
+    .topbar .right.muted { color: #71717A; font-weight: 400; }
+
+    /* === Home / Timeline mockup === */
+    .home-header {
+      display: grid;
+      grid-template-columns: 24px 1fr 24px;
+      align-items: center;
+      padding: 4px 16px 10px;
+    }
+    .home-header .brand {
+      text-align: center;
+      font-family: 'LINESeedJP', 'Noto Sans', 'Noto Sans KR', sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: #3B82F6;
+      letter-spacing: 0.3px;
+    }
+    .home-header .right-icons { justify-self: end; color: #52525B; }
+
+    .weekly {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 2px;
+      padding: 0 8px 4px;
+    }
+    .weekly .cell {
+      text-align: center;
+      padding: 6px 0;
+      font-size: 10px;
+      color: #A1A1AA;
+    }
+    .weekly .cell .num {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: #27272A;
+      margin-top: 4px;
+      width: 26px; height: 26px;
+      line-height: 26px;
+      margin-left: auto; margin-right: auto;
+      border-radius: 50%;
+      position: relative;
+    }
+    .weekly .cell.has-dot .num::after {
+      content: '';
+      position: absolute;
+      bottom: -3px; left: 50%;
+      transform: translateX(-50%);
+      width: 3px; height: 3px;
+      border-radius: 50%;
+      background: #3B82F6;
+    }
+    .weekly .cell.today .num { background: #3B82F6; color: #FFFFFF; }
+    .weekly .cell.today.has-dot .num::after { background: #FFFFFF; }
+    .expand-row {
+      text-align: center;
+      font-size: 11px;
+      color: #71717A;
+      padding: 4px 0 12px;
+      display: flex; align-items: center; justify-content: center; gap: 3px;
+    }
+
+    /* Section labels inside phone */
+    .section-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: #27272A;
+      padding: 10px 16px 8px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .section-label .help { color: #A1A1AA; }
+
+    /* Medicine card (horizontal scroll) */
+    .med-scroll {
+      display: flex;
+      gap: 8px;
+      padding: 0 16px 10px;
+      overflow: hidden;
+    }
+    .med-card {
+      flex: 1;
+      background: #FFFFFF;
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      border: 1px solid #F1F5F9;
+    }
+    .med-top {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 4px;
+    }
+    .med-name {
+      font-size: 12px;
+      font-weight: 700;
+      color: #27272A;
+      display: flex; align-items: center; gap: 5px;
+    }
+    .med-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+    .med-actions { display: flex; gap: 6px; }
+    .med-actions .ic-trash { color: #EF4444; }
+    .med-actions .ic-pen { color: #71717A; }
+    .med-meta { font-size: 10px; color: #71717A; line-height: 1.5; }
+    .med-checks { display: flex; gap: 4px; margin-top: 8px; }
+    .mc {
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      border: 1.5px solid #E4E4E7;
+      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      color: #FFFFFF;
+    }
+    .mc.done.blue { background: #3B82F6; border-color: #3B82F6; }
+    .mc .ic { width: 9px; height: 9px; stroke-width: 3; }
+
+    /* Timeline — each row is its own card with gap between */
+    .timeline-list {
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .tl-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 11px 12px;
+      background: #FFFFFF;
+      border-radius: 12px;
+      border: 1px solid #F1F5F9;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .tl-time { font-size: 11px; font-weight: 700; color: #27272A; width: 52px; flex-shrink: 0; }
+    .tl-mid { flex: 1; display: flex; align-items: center; gap: 6px; min-width: 0; }
+    .tl-name { font-size: 12px; font-weight: 600; color: #27272A; }
+    .tl-sub { font-size: 10px; color: #71717A; margin-top: 1px; }
+    .tl-check {
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      border: 1.6px solid #E4E4E7;
+      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      color: #FFFFFF;
+    }
+    .tl-check.done.blue { background: #3B82F6; border-color: #3B82F6; }
+    .tl-check.green { border-color: #22C55E; }
+    .tl-check .ic { width: 11px; height: 11px; stroke-width: 3; }
+
+    .pill-row {
+      display: flex;
+      gap: 8px;
+      padding: 10px 16px 14px;
+    }
+    .pill-row .pill {
+      background: #F4F4F5;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 11px;
+      color: #52525B;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .pill-row .pill .ic { width: 11px; height: 11px; }
+
+    .fab {
+      position: absolute;
+      right: 16px; bottom: 18px;
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: #3B82F6;
+      color: #FFFFFF;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 8px 18px rgba(59,130,246,0.42);
+      z-index: 2;
+    }
+    .fab .ic { width: 22px; height: 22px; stroke-width: 2.4; }
+
+    /* === Form (Edit medicine) === */
+    .form-scroll { padding: 0 16px 12px; overflow-y: auto; }
+    .field { margin-bottom: 14px; }
+    .field-label {
+      font-size: 12px; font-weight: 600;
+      color: #27272A;
+      margin-bottom: 6px;
+      display: flex; align-items: center; gap: 4px;
+    }
+    .field-label .help { color: #A1A1AA; }
+    .input-row { display: flex; gap: 6px; }
+    .text-input {
+      flex: 1;
+      background: #FFFFFF;
+      border: 1px solid #E4E4E7;
+      border-radius: 10px;
+      padding: 9px 12px;
+      font-size: 12px;
+      color: #27272A;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+    }
+    .select-input {
+      background: #FFFFFF;
+      border: 1px solid #E4E4E7;
+      border-radius: 10px;
+      padding: 9px 10px;
+      font-size: 11px;
+      color: #71717A;
+      display: flex; align-items: center; gap: 4px;
+      min-width: 56px; justify-content: center;
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .chip {
+      background: #FFFFFF;
+      border: 1px solid #E4E4E7;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 11px;
+      color: #52525B;
+      font-weight: 500;
+    }
+    .chip.active {
+      background: #3B82F6;
+      border-color: #3B82F6;
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+    .chip-row-2 { margin-top: 6px; }
+    .time-wheel {
+      background: #FFFFFF;
+      border: 1px solid #E4E4E7;
+      border-radius: 10px;
+      height: 154px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      padding: 0 18px;
+    }
+    .wheel-bar {
+      position: absolute;
+      left: 8px; right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 28px;
+      background: #F4F4F5;
+      border-radius: 6px;
+      z-index: 0;
+    }
+    .wheel-col {
+      display: flex; flex-direction: column;
+      align-items: center;
+      line-height: 22px;
+      z-index: 1;
+      position: relative;
+    }
+    .wheel-col span {
+      font-size: 12px;
+      color: #C7C7CC;
+      height: 22px;
+      display: block;
+    }
+    .wheel-col span.mid {
+      color: #27272A;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .wheel-col.ampm { min-width: 26px; }
+    .wheel-col.num  { min-width: 22px; }
+    .primary-btn {
+      margin: 8px 16px 14px;
+      background: #3B82F6;
+      color: #FFFFFF;
+      border-radius: 12px;
+      padding: 12px 0;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    /* === Conflict bottom sheet === */
+    .home-dim {
+      position: absolute; inset: 0;
+      background: rgba(15,23,42,0.45);
+      z-index: 3;
+    }
+    .conflict-sheet {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      background: #FFFFFF;
+      border-top-left-radius: 22px;
+      border-top-right-radius: 22px;
+      padding: 14px 20px 22px;
+      z-index: 4;
+      text-align: center;
+    }
+    .conflict-sheet .grabber {
+      width: 36px; height: 4px;
+      background: #E4E4E7;
+      border-radius: 2px;
+      margin: 0 auto 12px;
+    }
+    .conflict-sheet h3 { font-size: 14px; font-weight: 700; color: #27272A; margin-bottom: 10px; }
+    .timer-row {
+      display: flex; align-items: center; justify-content: center;
+      gap: 6px;
+      margin-bottom: 8px;
+      color: #3B82F6;
+    }
+    .timer-row .ic { color: #3B82F6; }
+    .timer-text {
+      font-size: 22px;
+      font-weight: 700;
+      color: #3B82F6;
+      letter-spacing: 0.4px;
+    }
+    .conflict-sheet p {
+      font-size: 11px;
+      color: #52525B;
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+    .sheet-btns { display: flex; gap: 8px; }
+    .sheet-btn {
+      flex: 1;
+      padding: 10px 0;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center;
+    }
+    .sheet-btn.ghost { background: #E4E4E7; color: #27272A; }
+    .sheet-btn.primary { background: #3B82F6; color: #FFFFFF; }
+
+    /* === IOP records === */
+    .iop-chart-card {
+      margin: 0 16px 14px;
+      background: #FFFFFF;
+      border-radius: 14px;
+      padding: 12px 10px 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      border: 1px solid #F1F5F9;
+    }
+    .iop-legend {
+      display: flex;
+      gap: 12px;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: #27272A;
+      padding: 0 6px 4px;
+    }
+    .iop-legend .l-items { display: flex; gap: 12px; }
+    .iop-legend .l-items span { display: inline-flex; align-items: center; gap: 4px; }
+    .iop-legend .sw { display: inline-block; width: 8px; height: 8px; border-radius: 50%; }
+    .iop-legend .unit { font-size: 10px; color: #71717A; }
+    .iop-chart-svg { width: 100%; height: 150px; display: block; }
+    .iop-recent-title {
+      padding: 4px 16px 6px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #27272A;
+    }
+    .iop-recent-list {
+      padding: 0 16px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .iop-row {
+      background: #FFFFFF;
+      border-radius: 10px;
+      padding: 9px 12px;
+      border: 1px solid #F1F5F9;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 11.5px;
+    }
+    .iop-row .date { font-weight: 700; color: #27272A; min-width: 58px; }
+    .iop-row .vals { color: #27272A; display: flex; gap: 10px; }
+    .iop-row .vals .lab { color: #71717A; margin-right: 2px; font-weight: 500; }
+
+    /* === Font size === */
+    .slider-block { padding: 28px 24px 16px; }
+    .slider-track {
+      height: 4px;
+      background: #DBEAFE;
+      border-radius: 2px;
+      position: relative;
+    }
+    .slider-fill {
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      background: #3B82F6;
+      border-radius: 2px;
+    }
+    .slider-dot {
+      position: absolute;
+      top: 50%;
+      width: 8px; height: 8px;
+      background: #3B82F6;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .slider-thumb {
+      position: absolute;
+      top: 50%;
+      width: 22px; height: 22px;
+      background: #FFFFFF;
+      border: 2px solid #3B82F6;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+    .slider-labels {
+      display: flex; justify-content: space-between;
+      margin-top: 16px;
+      font-size: 12px;
+      color: #71717A;
+    }
+    .slider-labels span.active { color: #3B82F6; font-weight: 700; }
+    .preview-box {
+      margin: 24px 24px 0;
+      background: #FFFFFF;
+      border: 1px solid #E4E4E7;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      font-size: 14px;
+      color: #27272A;
+      font-weight: 500;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .font-save {
+      position: absolute;
+      left: 16px; right: 16px; bottom: 22px;
+      background: #3B82F6;
+      color: #FFFFFF;
+      border-radius: 12px;
+      padding: 12px 0;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      max-width: 980px;
+      margin: 32px auto 0;
+      padding: 36px 24px 56px;
+      text-align: center;
+      border-top: 1px solid rgba(148,163,184,0.18);
+    }
+    footer .links {
+      display: flex; justify-content: center; flex-wrap: wrap;
+      gap: 8px 16px;
+      margin-bottom: 12px;
+    }
+    footer .links a { color: #475569; text-decoration: none; font-size: 14px; }
+    footer .links a:hover { color: #2563EB; text-decoration: underline; }
+    footer .sep { color: #CBD5E1; }
+    footer .copyright { color: #94A3B8; font-size: 12px; }
+
+    @media (max-width: 880px) {
+      .section {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 40px 24px;
+      }
+      .section.reverse .text { order: 2; }
+      .section.reverse .phone-col { order: 1; }
+      .section .text { order: 2; text-align: center; }
+      .section .phone-col { order: 1; }
+      .section .text h2 { font-size: 26px; }
+    }
+    @media (max-width: 480px) {
+      .hero { padding-top: 64px; }
+      .site-nav { left: 16px; right: 154px; top: 16px; }
+      .site-nav .nav-brand { display: none; }
+      .site-nav a { font-size: 13px; padding: 7px 8px; }
+      .lang-switch { top: 16px; right: 16px; max-width: 132px; }
+      .hero h1 { font-size: 40px; }
+      .hero .subtitle { font-size: 16px; }
+      .phone { width: 268px; }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <img class="icon" src="/assets/icon-eyeday.png" alt="아이데이 아이콘">
-    <h1>아이데이 Eyeday<br>안약 알람 &amp; 점안 기록</h1>
-    <p class="tagline">백내장, 라식·라섹·ICL 수술 후 점안부터 녹내장과 안구건조증까지. 복잡한 안약 스케줄을 자동으로 계산해 점안을 놓치거나 중복하는 일을 줄여드립니다.</p>
-  </header>
+  <!-- ===== Reusable lucide icons (symbol library) ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-chev-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+      <symbol id="i-chev-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-pen" viewBox="0 0 24 24"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497Z"/><path d="m15 5 4 4"/></symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></symbol>
+      <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+      <symbol id="i-settings" viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></symbol>
+      <symbol id="i-battery" viewBox="0 0 24 24"><rect x="2" y="7" width="18" height="10" rx="2" ry="2"/><line x1="22" y1="11" x2="22" y2="13"/><rect x="4" y="9" width="13" height="6" rx="1" fill="currentColor" stroke="none"/></symbol>
+    </defs>
+  </svg>
 
-  <main>
-    <div class="store-row">
-      <a class="store-badge-link" href="https://apps.apple.com/kr/app/eyeday-%EC%95%88%EC%95%BD-%EC%95%8C%EB%99%B4-%EC%A0%90%EC%95%88-%EA%B8%B0%EB%A1%9D/id6759497954">
-        <img class="store-badge app-store" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ko-kr?size=250x83" alt="App Store에서 다운로드">
-      </a>
-      <a class="store-badge-link" href="https://play.google.com/store/apps/details?id=com.eyedrop.reminder&amp;hl=ko">
-        <img class="store-badge google-play" src="https://play.google.com/intl/ko_kr/badges/static/images/badges/ko_badge_web_generic.png" alt="Google Play에서 다운로드">
-      </a>
-      <a class="store-btn" href="/blog/">블로그</a>
+  <select class="lang-switch" id="languageSelect" aria-label="Language">
+    <option value="ko">한국어</option>
+    <option value="en">English</option>
+    <option value="ja">日本語</option>
+    <option value="fr">Français</option>
+    <option value="es">Español</option>
+    <option value="ru">Русский</option>
+    <option value="de">Deutsch</option>
+    <option value="it">Italiano</option>
+    <option value="pt">Português</option>
+  </select>
+
+  <nav class="site-nav" aria-label="Primary">
+    <a class="nav-brand" href="./">eyeday</a>
+    <div class="nav-links">
+      <a href="./" data-i="home"></a>
+      <a href="blog/" data-i="blog"></a>
     </div>
+  </nav>
 
-    <div class="shots">
-      <img class="hero" src="/assets/eyeday-1.png" alt="라식, 녹내장, 안구건조증 등 안약 리마인더">
-      <img src="/assets/eyeday-2.png" alt="안약에 특화된 투약 관리">
-      <img src="/assets/eyeday-3.png" alt="안압을 꾸준히 기록해 보세요">
-      <img src="/assets/eyeday-4.png" alt="안약 간격을 안전하게 지켜줍니다">
-      <img src="/assets/eyeday-5.png" alt="큰 글씨 설정이 가능해요">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="app-icon"><img src="icon.png" alt="Eyeday App Icon"></div>
+    <h1>eyeday</h1>
+    <p class="subtitle" data-i="subtitle"></p>
+    <div class="store-badges">
+      <a class="badge" id="appBadge" href="https://apps.apple.com/kr/app/eyeday-%EC%95%88%EC%95%BD-%EC%95%8C%EB%9E%8C-%EC%A0%90%EC%95%88-%EA%B8%B0%EB%A1%9D/id6759497954">
+        <img id="badgeImg" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ko-kr?size=250x83" alt="Download on the App Store">
+      </a>
+      <a class="badge play-badge" id="playBadge" href="https://play.google.com/store/apps/details?id=com.eyedrop.reminder&hl=ko" aria-label="Google Play에서 다운로드">
+        <svg viewBox="0 0 32 36" aria-hidden="true" focusable="false">
+          <path fill="#34A853" d="M2.1 1.1c-.5.5-.8 1.3-.8 2.3v29.2c0 1 .3 1.8.9 2.3l.1.1 16.3-16.8v-.4L2.2 1h-.1Z"/>
+          <path fill="#FBBC04" d="m24 23.8-5.5-5.7v-.4L24 12l.1.1 6.5 3.7c1.9 1.1 1.9 2.8 0 3.9l-6.6 4.1Z"/>
+          <path fill="#4285F4" d="m24.1 23.7-5.6-5.8L2.1 34.9c.8.8 2 .9 3.4.1l18.6-11.3Z"/>
+          <path fill="#EA4335" d="M24.1 12.1 5.5.9C4.1.1 2.9.2 2.1 1l16.4 16.9 5.6-5.8Z"/>
+        </svg>
+        <span class="play-badge-text">
+          <span class="play-badge-kicker" id="playBadgeKicker">Google Play에서 다운로드</span>
+          <span class="play-badge-label">Google Play</span>
+        </span>
+      </a>
     </div>
+  </section>
 
-    <section>
-      <h2>주요 기능</h2>
-      <div class="features">
-        <div class="feature">
-          <h3>복잡한 점안 스케줄 자동 계산</h3>
-          <p>3~4시간마다, 1시간마다, 아침·점심·저녁 프리셋을 고르면 하루 점안 시간표를 알아서 만들어 드립니다.</p>
-        </div>
-        <div class="feature">
-          <h3>안약 사이 자동 5분 간격</h3>
-          <p>서로 다른 안약은 최소 5분을 띄워야 효과가 유지됩니다. 시간이 겹치면 자동으로 간격을 벌려 줍니다.</p>
-        </div>
-        <div class="feature">
-          <h3>놓치지 않는 중요 알림</h3>
-          <p>무음이나 방해 금지 모드에서도 울리는 알림으로 점안 시간을 알려 드립니다.</p>
-        </div>
-        <div class="feature">
-          <h3>라이브 액티비티 카운트다운</h3>
-          <p>잠금 화면에서 다음 점안까지 남은 시간을 바로 확인할 수 있습니다.</p>
-        </div>
-        <div class="feature">
-          <h3>주간·월간 점안 기록</h3>
-          <p>어떤 안약을 언제 넣었는지 한눈에 돌아보고, 진료 때 그대로 보여 드릴 수 있습니다.</p>
-        </div>
-        <div class="feature">
-          <h3>안압 기록과 그래프</h3>
-          <p>측정한 안압을 기록해 두면 변화 추이를 그래프로 확인할 수 있습니다.</p>
-        </div>
-        <div class="feature">
-          <h3>부작용·증상 메모</h3>
-          <p>눈이 불편했던 날의 증상을 메모로 남겨 두고 나중에 함께 확인하세요.</p>
-        </div>
-        <div class="feature">
-          <h3>좌안·우안·양안 선택과 큰 글씨</h3>
-          <p>안약마다 점안할 눈을 지정할 수 있고, 큰 글씨 모드도 지원합니다.</p>
+  <!-- ===== Section 1: Edit medicine ===== -->
+  <section class="section">
+    <div class="text">
+      <span class="eyebrow" data-i="s1Eyebrow"></span>
+      <h2 data-i="s1Title"></h2>
+      <p data-i="s1Desc"></p>
+    </div>
+    <div class="phone-col">
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="notch"></div>
+          <div class="status-bar">
+            <span>11:07</span>
+            <span class="right">
+              <span class="sb-dots"><span></span><span></span><span></span><span></span></span>
+              <svg class="ic ic-sm"><use href="#i-wifi"/></svg>
+              <svg class="ic ic-sm"><use href="#i-battery"/></svg>
+            </span>
+          </div>
+          <div class="phone-body">
+            <div class="topbar">
+              <span class="back"><svg class="ic ic-md"><use href="#i-chev-left"/></svg></span>
+              <span class="title" data-mock="editTitle">안약 수정</span>
+              <span class="right muted" data-mock="deleteLabel">삭제</span>
+            </div>
+            <div class="form-scroll">
+              <div class="field">
+                <div class="field-label" data-mock="medName">안약 이름</div>
+                <div class="input-row">
+                  <div class="text-input" data-mock="med1">코솝</div>
+                  <div class="select-input"><span data-mock="leftEye">좌안</span> <svg class="ic ic-xs"><use href="#i-chev-down"/></svg></div>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field-label"><span data-mock="scheduleType">투약 시간</span> <svg class="ic ic-xs help"><use href="#i-help"/></svg></div>
+                <div class="chips">
+                  <span class="chip" data-mock="morning">아침</span>
+                  <span class="chip" data-mock="noon">점심</span>
+                  <span class="chip" data-mock="evening">저녁</span>
+                  <span class="chip" data-mock="bedtime">자기 전</span>
+                </div>
+                <div class="chips chip-row-2">
+                  <span class="chip active" data-mock="custom">직접 지정할게요</span>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field-label" data-mock="timesPerDay">하루 횟수</div>
+                <div class="chips">
+                  <span class="chip" data-mock="t1">1회</span>
+                  <span class="chip active" data-mock="t2">2회</span>
+                  <span class="chip" data-mock="t3">3회</span>
+                  <span class="chip" data-mock="t4">4회</span>
+                  <span class="chip" data-mock="t5">5회</span>
+                  <span class="chip" data-mock="t6">6회</span>
+                  <span class="chip" data-mock="t7">7회</span>
+                  <span class="chip" data-mock="t8">8회</span>
+                  <span class="chip" data-mock="t9">9회</span>
+                  <span class="chip" data-mock="t10">10회</span>
+                  <span class="chip" data-mock="t11">11회</span>
+                  <span class="chip" data-mock="t12">12회</span>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field-label" data-mock="intervalLabel">투약 간격</div>
+                <div class="chips">
+                  <span class="chip" data-mock="h1">1시간</span>
+                  <span class="chip" data-mock="h2">2시간</span>
+                  <span class="chip" data-mock="h3">3시간</span>
+                  <span class="chip" data-mock="h4">4시간</span>
+                  <span class="chip" data-mock="h6">6시간</span>
+                  <span class="chip" data-mock="h8">8시간</span>
+                  <span class="chip" data-mock="h10">10시간</span>
+                  <span class="chip active" data-mock="h12">12시간</span>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field-label" data-mock="startTime">투약 시작 시간</div>
+                <div class="time-wheel">
+                  <div class="wheel-bar"></div>
+                  <div class="wheel-col ampm">
+                    <span></span><span></span><span></span>
+                    <span class="mid" data-mock="am">오전</span>
+                    <span data-mock="pm">오후</span>
+                    <span></span><span></span>
+                  </div>
+                  <div class="wheel-col num">
+                    <span>5</span><span>6</span><span>7</span>
+                    <span class="mid">8</span>
+                    <span>9</span><span>10</span><span>11</span>
+                  </div>
+                  <div class="wheel-col num">
+                    <span>27</span><span>28</span><span>29</span>
+                    <span class="mid">30</span>
+                    <span>31</span><span>32</span><span>33</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="primary-btn" data-mock="saveLabel">저장하기</div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>이런 분께 권해 드려요</h2>
-      <ul class="audience">
-        <li>백내장 수술 후 점안이 필요한 분</li>
-        <li>라식·라섹·ICL 수술 후 회복 중인 분</li>
-        <li>녹내장 안약을 꾸준히 관리해야 하는 분</li>
-        <li>안구건조증으로 인공눈물을 자주 사용하는 분</li>
-      </ul>
-    </section>
-  </main>
+  <!-- ===== Section 2: Home timeline ===== -->
+  <section class="section reverse">
+    <div class="text">
+      <span class="eyebrow" data-i="s2Eyebrow"></span>
+      <h2 data-i="s2Title"></h2>
+      <p data-i="s2Desc"></p>
+    </div>
+    <div class="phone-col">
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="notch"></div>
+          <div class="status-bar">
+            <span>11:07</span>
+            <span class="right">
+              <span class="sb-dots"><span></span><span></span><span></span><span></span></span>
+              <svg class="ic ic-sm"><use href="#i-wifi"/></svg>
+              <svg class="ic ic-sm"><use href="#i-battery"/></svg>
+            </span>
+          </div>
+          <div class="phone-body">
+            <div class="home-header">
+              <span></span>
+              <span class="brand">eyeday</span>
+              <span class="right-icons"><svg class="ic ic-md"><use href="#i-settings"/></svg></span>
+            </div>
+            <div class="weekly">
+              <div class="cell"><div data-mock="wd0">일</div><div class="num">8</div></div>
+              <div class="cell has-dot"><div data-mock="wd1">월</div><div class="num">9</div></div>
+              <div class="cell has-dot"><div data-mock="wd2">화</div><div class="num">10</div></div>
+              <div class="cell today has-dot"><div data-mock="wd3">수</div><div class="num">11</div></div>
+              <div class="cell"><div data-mock="wd4">목</div><div class="num">12</div></div>
+              <div class="cell"><div data-mock="wd5">금</div><div class="num">13</div></div>
+              <div class="cell"><div data-mock="wd6">토</div><div class="num">14</div></div>
+            </div>
+            <div class="expand-row"><span data-mock="expand">펼치기</span> <svg class="ic ic-xs"><use href="#i-chev-down"/></svg></div>
 
+            <div class="section-label" data-mock="activeMeds">점안중인 안약</div>
+            <div class="med-scroll">
+              <div class="med-card">
+                <div class="med-top">
+                  <span class="med-name"><span class="med-dot" style="background:#3B82F6"></span><span data-mock="med1">코솝</span></span>
+                  <span class="med-actions">
+                    <svg class="ic ic-xs ic-pen"><use href="#i-pen"/></svg>
+                    <svg class="ic ic-xs ic-trash"><use href="#i-trash"/></svg>
+                  </span>
+                </div>
+                <div class="med-meta"><span data-mock="metaFrom">08:30부터 | 2회 | 12시간</span><br><span data-mock="metaIndef">무기한</span></div>
+                <div class="med-checks">
+                  <div class="mc done blue"><svg class="ic"><use href="#i-check"/></svg></div>
+                  <div class="mc"></div>
+                </div>
+              </div>
+              <div class="med-card">
+                <div class="med-top">
+                  <span class="med-name"><span class="med-dot" style="background:#22C55E"></span><span data-mock="med2">잘라탄</span></span>
+                  <span class="med-actions">
+                    <svg class="ic ic-xs ic-pen"><use href="#i-pen"/></svg>
+                    <svg class="ic ic-xs ic-trash"><use href="#i-trash"/></svg>
+                  </span>
+                </div>
+                <div class="med-meta"><span data-mock="metaBedtime">자기 전</span><br><span data-mock="metaIndef">무기한</span></div>
+                <div class="med-checks">
+                  <div class="mc"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-label"><span data-mock="todaySchedule">오늘의 점안 기록</span> <svg class="ic ic-xs help"><use href="#i-help"/></svg></div>
+            <div class="timeline-list">
+              <div class="tl-row">
+                <div class="tl-time" data-mock="time830am">오전 8:30</div>
+                <div class="tl-mid">
+                  <span class="med-dot" style="background:#3B82F6"></span>
+                  <div>
+                    <div class="tl-name" data-mock="med1">코솝</div>
+                    <div class="tl-sub" data-mock="sub1Done">오전 8:31 1회차 완료</div>
+                  </div>
+                </div>
+                <div class="tl-check done blue"><svg class="ic"><use href="#i-check"/></svg></div>
+              </div>
+              <div class="tl-row">
+                <div class="tl-time" data-mock="time830pm">오후 8:30</div>
+                <div class="tl-mid">
+                  <span class="med-dot" style="background:#3B82F6"></span>
+                  <div><div class="tl-name" data-mock="med1">코솝</div></div>
+                </div>
+                <div class="tl-check"></div>
+              </div>
+              <div class="tl-row">
+                <div class="tl-time" data-mock="time1000pm">오후 10:00</div>
+                <div class="tl-mid">
+                  <span class="med-dot" style="background:#22C55E"></span>
+                  <div><div class="tl-name" data-mock="med2">잘라탄</div></div>
+                </div>
+                <div class="tl-check"></div>
+              </div>
+            </div>
+
+            <div class="pill-row">
+              <span class="pill"><svg class="ic"><use href="#i-plus"/></svg><span data-mock="noteAdd">메모</span></span>
+              <span class="pill"><svg class="ic"><use href="#i-plus"/></svg><span data-mock="extraDropAdd">추가 점안</span></span>
+              <span class="pill"><svg class="ic"><use href="#i-plus"/></svg><span data-mock="iopAdd">안압 기록</span></span>
+            </div>
+
+            <div class="fab"><svg class="ic"><use href="#i-plus"/></svg></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Section 3: Conflict warning ===== -->
+  <section class="section">
+    <div class="text">
+      <span class="eyebrow" data-i="s3Eyebrow"></span>
+      <h2 data-i="s3Title"></h2>
+      <p data-i="s3Desc"></p>
+    </div>
+    <div class="phone-col">
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="notch"></div>
+          <div class="status-bar">
+            <span>11:07</span>
+            <span class="right">
+              <span class="sb-dots"><span></span><span></span><span></span><span></span></span>
+              <svg class="ic ic-sm"><use href="#i-wifi"/></svg>
+              <svg class="ic ic-sm"><use href="#i-battery"/></svg>
+            </span>
+          </div>
+          <div class="phone-body">
+            <div class="home-header">
+              <span></span>
+              <span class="brand">eyeday</span>
+              <span class="right-icons"><svg class="ic ic-md"><use href="#i-settings"/></svg></span>
+            </div>
+            <div class="weekly">
+              <div class="cell"><div data-mock="wd0">일</div><div class="num">8</div></div>
+              <div class="cell has-dot"><div data-mock="wd1">월</div><div class="num">9</div></div>
+              <div class="cell has-dot"><div data-mock="wd2">화</div><div class="num">10</div></div>
+              <div class="cell today has-dot"><div data-mock="wd3">수</div><div class="num">11</div></div>
+              <div class="cell"><div data-mock="wd4">목</div><div class="num">12</div></div>
+              <div class="cell"><div data-mock="wd5">금</div><div class="num">13</div></div>
+              <div class="cell"><div data-mock="wd6">토</div><div class="num">14</div></div>
+            </div>
+            <div class="expand-row"><span data-mock="expand">펼치기</span> <svg class="ic ic-xs"><use href="#i-chev-down"/></svg></div>
+            <div class="section-label" data-mock="activeMeds">점안중인 안약</div>
+            <div class="med-scroll">
+              <div class="med-card">
+                <div class="med-top">
+                  <span class="med-name"><span class="med-dot" style="background:#3B82F6"></span><span data-mock="med1">코솝</span></span>
+                  <span class="med-actions">
+                    <svg class="ic ic-xs ic-pen"><use href="#i-pen"/></svg>
+                    <svg class="ic ic-xs ic-trash"><use href="#i-trash"/></svg>
+                  </span>
+                </div>
+                <div class="med-meta"><span data-mock="metaFrom">08:30부터 | 2회 | 12시간</span><br><span data-mock="metaIndef">무기한</span></div>
+                <div class="med-checks">
+                  <div class="mc done blue"><svg class="ic"><use href="#i-check"/></svg></div>
+                  <div class="mc done blue"><svg class="ic"><use href="#i-check"/></svg></div>
+                </div>
+              </div>
+              <div class="med-card">
+                <div class="med-top">
+                  <span class="med-name"><span class="med-dot" style="background:#22C55E"></span><span data-mock="med2">잘라탄</span></span>
+                  <span class="med-actions">
+                    <svg class="ic ic-xs ic-pen"><use href="#i-pen"/></svg>
+                    <svg class="ic ic-xs ic-trash"><use href="#i-trash"/></svg>
+                  </span>
+                </div>
+                <div class="med-meta"><span data-mock="metaBedtime">자기 전</span><br><span data-mock="metaIndef">무기한</span></div>
+                <div class="med-checks">
+                  <div class="mc"></div>
+                </div>
+              </div>
+            </div>
+            <div class="section-label" data-mock="todaySchedule">오늘의 점안 기록</div>
+            <div class="timeline-list">
+              <div class="tl-row">
+                <div class="tl-time" data-mock="time830am">오전 8:30</div>
+                <div class="tl-mid">
+                  <span class="med-dot" style="background:#3B82F6"></span>
+                  <div>
+                    <div class="tl-name" data-mock="med1">코솝</div>
+                    <div class="tl-sub" data-mock="sub1Done">오전 8:31 1회차 완료</div>
+                  </div>
+                </div>
+                <div class="tl-check done blue"><svg class="ic"><use href="#i-check"/></svg></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Overlay covers status bar + notch area too -->
+          <div class="home-dim"></div>
+          <div class="conflict-sheet">
+            <div class="grabber"></div>
+            <h3 data-mock="conflictTitle">안약 간격 주의</h3>
+            <div class="timer-row">
+              <svg class="ic ic-md"><use href="#i-clock"/></svg>
+              <span class="timer-text">4:56</span>
+            </div>
+            <p data-mock-tpl="{med1}을(를) 넣은 지 얼마 되지 않았습니다&#10;여러 안약을 넣을 경우 5분 간격을 두세요"></p>
+            <div class="sheet-btns">
+              <div class="sheet-btn ghost" data-mock="conflictSnooze">알겠어요</div>
+              <div class="sheet-btn primary" data-mock="conflictDoNow">지금 점안하기</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Section 4: IOP records ===== -->
+  <section class="section reverse">
+    <div class="text">
+      <span class="eyebrow" data-i="s4Eyebrow"></span>
+      <h2 data-i="s4Title"></h2>
+      <p data-i="s4Desc"></p>
+    </div>
+    <div class="phone-col">
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="notch"></div>
+          <div class="status-bar">
+            <span>12:42</span>
+            <span class="right">
+              <span class="sb-dots"><span></span><span></span><span></span><span></span></span>
+              <svg class="ic ic-sm"><use href="#i-wifi"/></svg>
+              <svg class="ic ic-sm"><use href="#i-battery"/></svg>
+            </span>
+          </div>
+          <div class="phone-body">
+            <div class="topbar">
+              <span class="back"><svg class="ic ic-md"><use href="#i-chev-left"/></svg></span>
+              <span class="title" data-mock="iopTitle">안압 기록</span>
+              <span class="right primary" data-mock="addLabel">추가</span>
+            </div>
+
+            <!-- Chart card -->
+            <div class="iop-chart-card">
+              <div class="iop-legend">
+                <span class="l-items">
+                  <span><span class="sw" style="background:#F59E0B"></span>L</span>
+                  <span><span class="sw" style="background:#8B5CF6"></span>R</span>
+                </span>
+                <span class="unit">mmHg</span>
+              </div>
+              <svg class="iop-chart-svg" viewBox="0 0 280 150" preserveAspectRatio="xMidYMid meet">
+                <!-- Grid lines (10, 15, 20, 25, 30) -->
+                <g stroke="#F1F5F9" stroke-width="1">
+                  <line x1="30" y1="20"  x2="270" y2="20" />
+                  <line x1="30" y1="50"  x2="270" y2="50" />
+                  <line x1="30" y1="80"  x2="270" y2="80" />
+                  <line x1="30" y1="110" x2="270" y2="110" />
+                  <line x1="30" y1="140" x2="270" y2="140" />
+                </g>
+                <!-- Y labels -->
+                <g fill="#A1A1AA" font-size="9" font-family="sans-serif">
+                  <text x="20" y="23"  text-anchor="end">30</text>
+                  <text x="20" y="53"  text-anchor="end">25</text>
+                  <text x="20" y="83"  text-anchor="end">20</text>
+                  <text x="20" y="113" text-anchor="end">15</text>
+                  <text x="20" y="143" text-anchor="end">10</text>
+                </g>
+                <!-- L line (orange #F59E0B): 25,24,23,21,19,18 -->
+                <polyline points="40,50 80,56 120,62 160,74 200,86 240,92"
+                          fill="none" stroke="#F59E0B" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- R line (purple #8B5CF6): 26,24,22,21,20,18 -->
+                <polyline points="40,44 80,56 120,68 160,74 200,80 240,92"
+                          fill="none" stroke="#8B5CF6" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- L dots -->
+                <g fill="#F59E0B">
+                  <circle cx="40"  cy="50" r="3"/>
+                  <circle cx="80"  cy="56" r="3"/>
+                  <circle cx="120" cy="62" r="3"/>
+                  <circle cx="160" cy="74" r="3"/>
+                  <circle cx="200" cy="86" r="3"/>
+                  <circle cx="240" cy="92" r="3"/>
+                </g>
+                <!-- R dots -->
+                <g fill="#8B5CF6">
+                  <circle cx="40"  cy="44" r="3"/>
+                  <circle cx="80"  cy="56" r="3"/>
+                  <circle cx="120" cy="68" r="3"/>
+                  <circle cx="160" cy="74" r="3"/>
+                  <circle cx="200" cy="80" r="3"/>
+                  <circle cx="240" cy="92" r="3"/>
+                </g>
+                <!-- X axis labels -->
+                <g fill="#71717A" font-size="9" font-family="sans-serif">
+                  <text x="40"  y="148" text-anchor="middle">06/02</text>
+                  <text x="80"  y="148" text-anchor="middle">06/30</text>
+                  <text x="120" y="148" text-anchor="middle">07/28</text>
+                  <text x="160" y="148" text-anchor="middle">08/25</text>
+                  <text x="200" y="148" text-anchor="middle">09/22</text>
+                  <text x="240" y="148" text-anchor="middle">10/20</text>
+                </g>
+              </svg>
+            </div>
+
+            <div class="iop-recent-title" data-mock="iopRecentTitle">최근 기록</div>
+            <div class="iop-recent-list">
+              <div class="iop-row"><span class="date" data-iop-date="0">26.12.15</span><span class="vals"><span><span class="lab" data-mock="leftAbbr">좌</span>16</span><span><span class="lab" data-mock="rightAbbr">우</span>17</span></span></div>
+              <div class="iop-row"><span class="date" data-iop-date="1">26.11.17</span><span class="vals"><span><span class="lab" data-mock="leftAbbr">좌</span>17</span><span><span class="lab" data-mock="rightAbbr">우</span>17</span></span></div>
+              <div class="iop-row"><span class="date" data-iop-date="2">26.10.20</span><span class="vals"><span><span class="lab" data-mock="leftAbbr">좌</span>18</span><span><span class="lab" data-mock="rightAbbr">우</span>18</span></span></div>
+              <div class="iop-row"><span class="date" data-iop-date="3">26.09.22</span><span class="vals"><span><span class="lab" data-mock="leftAbbr">좌</span>19</span><span><span class="lab" data-mock="rightAbbr">우</span>20</span></span></div>
+              <div class="iop-row"><span class="date" data-iop-date="4">26.08.25</span><span class="vals"><span><span class="lab" data-mock="leftAbbr">좌</span>21</span><span><span class="lab" data-mock="rightAbbr">우</span>21</span></span></div>
+              <div class="iop-row"><span class="date" data-iop-date="5">26.07.28</span><span class="vals"><span><span class="lab" data-mock="leftAbbr">좌</span>23</span><span><span class="lab" data-mock="rightAbbr">우</span>22</span></span></div>
+              <div class="iop-row"><span class="date" data-iop-date="6">26.06.30</span><span class="vals"><span><span class="lab" data-mock="leftAbbr">좌</span>24</span><span><span class="lab" data-mock="rightAbbr">우</span>24</span></span></div>
+              <div class="iop-row"><span class="date" data-iop-date="7">26.06.02</span><span class="vals"><span><span class="lab" data-mock="leftAbbr">좌</span>25</span><span><span class="lab" data-mock="rightAbbr">우</span>26</span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Section 5: Font size ===== -->
+  <section class="section">
+    <div class="text">
+      <span class="eyebrow" data-i="s5Eyebrow"></span>
+      <h2 data-i="s5Title"></h2>
+      <p data-i="s5Desc"></p>
+    </div>
+    <div class="phone-col">
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="notch"></div>
+          <div class="status-bar">
+            <span>11:07</span>
+            <span class="right">
+              <span class="sb-dots"><span></span><span></span><span></span><span></span></span>
+              <svg class="ic ic-sm"><use href="#i-wifi"/></svg>
+              <svg class="ic ic-sm"><use href="#i-battery"/></svg>
+            </span>
+          </div>
+          <div class="phone-body">
+            <div class="topbar">
+              <span class="back"><svg class="ic ic-md"><use href="#i-chev-left"/></svg></span>
+              <span class="title" data-mock="fontTitle">글씨 크기</span>
+              <span></span>
+            </div>
+            <div class="slider-block">
+              <div class="slider-track">
+                <div class="slider-fill" style="width:100%"></div>
+                <div class="slider-dot" style="left:0%"></div>
+                <div class="slider-dot" style="left:50%"></div>
+                <div class="slider-thumb" style="left:100%"></div>
+              </div>
+              <div class="slider-labels">
+                <span data-mock="fontNormal">보통</span>
+                <span data-mock="fontLarge">크게</span>
+                <span class="active" data-mock="fontLargest">제일 크게</span>
+              </div>
+            </div>
+            <div class="preview-box" data-mock="fontPreview">이 문장은 선택한 크기로 표시됩니다</div>
+            <div class="font-save" data-mock="saveLabel">저장하기</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <nav>
-      <a href="/blog/">블로그</a>
-      <a href="/contact/">문의하기</a>
-      <a href="/privacy/">개인정보처리방침</a>
-      <a href="/terms/">이용약관</a>
-      <a href="/data-deletion/">데이터 삭제 요청</a>
-      <a href="https://posiki.com">포시키</a>
-    </nav>
-    <span>포시키</span><br>
-    <span>마포구 포은로8길 29, 2091호(망원동)</span><br>
-    <span>마포구 - 04011 · 대한민국(KR)</span><br>
-    © 2026 Posiki
+    <div class="links">
+      <a href="privacy/" data-i="privacy"></a>
+      <span class="sep">·</span>
+      <a href="terms/" data-i="terms"></a>
+      <span class="sep">·</span>
+      <a href="blog/" data-i="blog"></a>
+      <span class="sep">·</span>
+      <a href="contact/"><span data-i="contact"></span></a>
+    </div>
+    <div class="copyright">© 2026 posiki</div>
   </footer>
+
+<script>
+const UI = {
+  ko: {
+    title: "eyeday - 안약 알람 & 점안 기록",
+    subtitle: "녹내장, 백내장, 라식·라섹, 렌즈삽입술(ICL) 등\n안과 수술 후 관리와 안과 질환에 맞춘 안약 앱\n\n맞춤 안약 스케줄, 점안 기록, 안압 추이까지\n한 앱에서 관리하세요",
+    s1Eyebrow: "안약 등록",
+    s1Title: "내 처방대로\n안약 스케줄을 설정",
+    s1Desc: "약 이름, 횟수, 투약 간격, 시작 시간만 입력하세요\n\n하루 3회·4시간 간격,\n하루 4회·3시간 간격 등\n복잡한 점안 스케줄도 자동 계산됩니다\n\n안구건조증, 알레르기, 포도막염, 각막궤양 등\n다양한 안과 질환 관리에 활용할 수 있습니다",
+    s2Eyebrow: "점안 기록",
+    s2Title: "오늘 점안 한눈에",
+    s2Desc: "점안 예정 시간과 완료 여부를\n타임라인으로 확인하세요\n\n메모 기능을 통해 찜질·세안·안연고 등\n함께 받은 처치 내용도 기록해보세요",
+    s3Eyebrow: "충돌 감지",
+    s3Title: "안약 간 최소 간격\n자동 경고",
+    s3Desc: "여러 안약 점안 시\n5분 간격을 자동 계산해 안내합니다\n\n권장 점안 간격을 쉽게 지킬 수 있습니다",
+    s4Eyebrow: "안압 기록",
+    s4Title: "안압 추이를\n선 그래프로",
+    s4Desc: "좌안(L)과 우안(R) 안압을\n측정한 그대로 기록하세요\n\n추세 그래프와 최근 기록이\n한 화면에 함께 표시됩니다",
+    s5Eyebrow: "접근성",
+    s5Title: "글씨 크기 조절",
+    s5Desc: "보통·크게·제일 크게 3단계로\n글자 크기를 조절할 수 있어요\n\n점안 직후 시야가 흐려진 상태에서도\n편하게 사용할 수 있습니다",
+    contact: "문의",
+    home: "홈",
+    blog: "블로그",
+    privacy: "개인정보 처리방침",
+    terms: "서비스 이용약관"
+  },
+  en: {
+    title: "eyeday - Eye drop reminder & log",
+    subtitle: "An eye drop app for post-op care\n(glaucoma, cataract, LASIK, LASEK, ICL)\nand ophthalmic conditions\n\nCustom schedules, dosing log, and IOP trends\nall in one app",
+    s1Eyebrow: "ADD MEDICATION",
+    s1Title: "Set a schedule\nthat fits your prescription",
+    s1Desc: "Just enter name, count per day,\ninterval, and start time\n\nCustom mode auto-calculates schedules\nlike 3×/day every 4 h or 4×/day every 3 h\n\nUse it for dry eye, allergies,\nuveitis, corneal ulcers and more",
+    s2Eyebrow: "DOSING LOG",
+    s2Title: "Today's drops at a glance",
+    s2Desc: "Check scheduled times and completion\non one clear timeline\n\nUse notes to log compresses, eye wash,\nointments and other prescribed care",
+    s3Eyebrow: "CONFLICT ALERT",
+    s3Title: "Automatic warning between\nback-to-back drops",
+    s3Desc: "When you apply multiple drops,\na 5-minute gap is auto-calculated\n\nIt's easy to keep the recommended interval",
+    s4Eyebrow: "IOP LOG",
+    s4Title: "IOP trend as a line chart",
+    s4Desc: "Record left (L) and right (R) IOP\nfrom every clinic visit\n\nTrend chart and recent entries\nshare a single screen",
+    s5Eyebrow: "ACCESSIBILITY",
+    s5Title: "Adjustable font size",
+    s5Desc: "Three steps — Normal, Large, Largest —\nto resize text comfortably\n\nReadable even when vision is blurred\nright after a drop",
+    contact: "Contact",
+    home: "Home",
+    blog: "Blog",
+    privacy: "Privacy Policy",
+    terms: "Terms of Service"
+  },
+  ja: {
+    title: "eyeday - 目薬リマインダー & 点眼記録",
+    subtitle: "緑内障・白内障・LASIK・LASEK・ICLなど\n眼科手術後のケアや眼科疾患に合わせた目薬アプリ\n\n点眼スケジュール、点眼記録、眼圧推移まで\nひとつのアプリで管理",
+    s1Eyebrow: "目薬の登録",
+    s1Title: "処方どおりの\nスケジュール設定",
+    s1Desc: "薬の名前、回数、間隔、開始時刻を入力するだけ\n\n1日3回・4時間ごと、\n1日4回・3時間ごとなど\n複雑なスケジュールも自動計算します\n\nドライアイ、アレルギー、ぶどう膜炎、角膜潰瘍など\nさまざまな眼科疾患の管理にお使いいただけます",
+    s2Eyebrow: "点眼記録",
+    s2Title: "今日の点眼をひと目で",
+    s2Desc: "予定時刻と完了状態を\nタイムラインで確認できます\n\nメモ機能で温罨法・洗眼・眼軟膏など\n併用処置の記録も残せます",
+    s3Eyebrow: "競合検知",
+    s3Title: "目薬の最短間隔を\n自動で警告",
+    s3Desc: "複数の目薬をさす際に\n5分間隔を自動計算してお知らせ\n\n推奨間隔を無理なく守れます",
+    s4Eyebrow: "眼圧記録",
+    s4Title: "眼圧推移を折れ線グラフで",
+    s4Desc: "左眼(L)・右眼(R)の眼圧を\n測定値そのまま記録しましょう\n\n推移グラフと最近の記録が\nひとつの画面に並びます",
+    s5Eyebrow: "アクセシビリティ",
+    s5Title: "文字サイズ調整",
+    s5Desc: "標準・大きい・最大の3段階で\n文字サイズを調整できます\n\n点眼直後で視界がぼやけた状態でも\n快適にお使いいただけます",
+    contact: "お問い合わせ",
+    home: "ホーム",
+    blog: "ブログ",
+    privacy: "プライバシーポリシー",
+    terms: "利用規約"
+  },
+  fr: {
+    title: "eyeday - Rappel de collyre & journal",
+    subtitle: "Une app de collyre adaptée au post-opératoire\n(glaucome, cataracte, LASIK, LASEK, ICL)\net aux pathologies ophtalmiques\n\nProgrammes sur mesure, journal des doses\net tendance de la TIO dans une seule app",
+    s1Eyebrow: "AJOUTER UN COLLYRE",
+    s1Title: "Programmez selon\nvotre ordonnance",
+    s1Desc: "Saisissez le nom, le nombre,\nl'intervalle et l'heure de départ — c'est tout\n\nLe mode personnalisé calcule automatiquement\ndes rythmes comme 3×/jour toutes les 4 h\nou 4×/jour toutes les 3 h\n\nUtile pour la sécheresse oculaire, les allergies,\nl'uvéite, les ulcères cornéens et plus encore",
+    s2Eyebrow: "JOURNAL",
+    s2Title: "L'instillation du jour en un coup d'œil",
+    s2Desc: "Suivez les horaires prévus et la complétion\nsur une seule frise chronologique\n\nLes notes permettent d'enregistrer compresses,\nlavages oculaires, pommades et autres soins prescrits",
+    s3Eyebrow: "ALERTE CONFLIT",
+    s3Title: "Avertissement automatique\nentre deux collyres",
+    s3Desc: "Quand vous appliquez plusieurs collyres,\nun intervalle de 5 minutes est calculé automatiquement\n\nFacile à respecter l'intervalle recommandé",
+    s4Eyebrow: "JOURNAL TIO",
+    s4Title: "Tendance TIO en courbe",
+    s4Desc: "Notez la TIO œil gauche (L) et droit (R)\ntelle que mesurée à chaque visite\n\nLe graphique d'évolution et les entrées récentes\npartagent un seul écran",
+    s5Eyebrow: "ACCESSIBILITÉ",
+    s5Title: "Taille de police réglable",
+    s5Desc: "Trois niveaux — Normale, Grande, Très grande —\npour ajuster confortablement la taille du texte\n\nLisible même quand la vision est floue\njuste après une instillation",
+    contact: "Contact",
+    home: "Accueil",
+    blog: "Blog",
+    privacy: "Politique de confidentialité",
+    terms: "Conditions d'utilisation"
+  },
+  es: {
+    title: "eyeday - Recordatorio de colirios y registro",
+    subtitle: "App de colirio pensada para el postoperatorio\n(glaucoma, catarata, LASIK, LASEK, ICL)\ny enfermedades oftalmológicas\n\nProgramación a medida, registro de dosis\ny tendencia de PIO en una sola app",
+    s1Eyebrow: "AÑADIR COLIRIO",
+    s1Title: "Programa según\ntu receta",
+    s1Desc: "Introduce nombre, número de veces,\nintervalo y hora de inicio — eso es todo\n\nEn modo personalizado se calculan\nautomáticamente pautas como\n3 veces al día cada 4 h o 4 veces al día cada 3 h\n\nÚtil para ojo seco, alergias,\nuveítis, úlceras corneales y más",
+    s2Eyebrow: "REGISTRO",
+    s2Title: "Las gotas de hoy de un vistazo",
+    s2Desc: "Consulta horas previstas y estado de cumplimiento\nen una sola línea de tiempo\n\nUsa las notas para registrar compresas,\nlavados, pomadas y otros tratamientos pautados",
+    s3Eyebrow: "ALERTA DE CONFLICTO",
+    s3Title: "Aviso automático entre\ncolirios consecutivos",
+    s3Desc: "Al aplicar varios colirios\nse calcula automáticamente un intervalo de 5 minutos\n\nMantienes con facilidad el intervalo recomendado",
+    s4Eyebrow: "REGISTRO DE PIO",
+    s4Title: "Tendencia de PIO en línea",
+    s4Desc: "Registra la PIO del ojo izquierdo (L)\ny derecho (R) tal cual la mediste\n\nEl gráfico de tendencia y las entradas recientes\ncomparten una sola pantalla",
+    s5Eyebrow: "ACCESIBILIDAD",
+    s5Title: "Tamaño de texto ajustable",
+    s5Desc: "Tres niveles — Normal, Grande, Muy grande —\npara ajustar el texto con comodidad\n\nLegible incluso con visión borrosa\njusto tras aplicar una gota",
+    contact: "Contacto",
+    home: "Inicio",
+    blog: "Blog",
+    privacy: "Política de privacidad",
+    terms: "Términos de servicio"
+  },
+  ru: {
+    title: "eyeday — напоминания о каплях и журнал",
+    subtitle: "Приложение для капель под послеоперационный уход\n(глаукома, катаракта, LASIK, LASEK, ICL)\nи офтальмологические заболевания\n\nГибкое расписание, журнал доз\nи динамика ВГД в одном приложении",
+    s1Eyebrow: "ДОБАВЛЕНИЕ КАПЕЛЬ",
+    s1Title: "Расписание под\nваше назначение",
+    s1Desc: "Имя, число раз, интервал\nи время старта — этого достаточно\n\nВ режиме «Своё расписание» схемы вроде\n3 раз/день каждые 4 ч или 4 раз/день каждые 3 ч\nрассчитываются автоматически\n\nПодходит для сухого глаза, аллергии,\nувеита, язвы роговицы и других состояний",
+    s2Eyebrow: "ЖУРНАЛ",
+    s2Title: "Капли на сегодня — сразу",
+    s2Desc: "Запланированные времена и отметки выполнения —\nна одном понятном таймлайне\n\nВ заметках можно вести записи о компрессах,\nпромывании, мазях и других предписанных процедурах",
+    s3Eyebrow: "КОНФЛИКТ",
+    s3Title: "Автопредупреждение\nмежду каплями",
+    s3Desc: "При закапывании нескольких капель\n5-минутный интервал считается автоматически\n\nЛегко придерживаться рекомендованного интервала",
+    s4Eyebrow: "ЖУРНАЛ ВГД",
+    s4Title: "Динамика ВГД на графике",
+    s4Desc: "Записывайте ВГД левого (L) и правого (R) глаза\nточно как замерили\n\nГрафик динамики и последние записи\nотображаются на одном экране",
+    s5Eyebrow: "ДОСТУПНОСТЬ",
+    s5Title: "Регулировка размера шрифта",
+    s5Desc: "Три уровня — Обычный, Крупный, Самый крупный —\nдля удобного увеличения текста\n\nЧитается даже при размытом зрении\nсразу после закапывания",
+    contact: "Контакты",
+    home: "Главная",
+    blog: "Блог",
+    privacy: "Политика конфиденциальности",
+    terms: "Условия использования"
+  },
+  de: {
+    title: "eyeday - Augentropfen-Erinnerung & Protokoll",
+    subtitle: "Augentropfen-App für die Nachsorge nach Augen-OPs\n(Glaukom, Katarakt, LASIK, LASEK, ICL)\nund bei Augenerkrankungen\n\nIndividueller Plan, Dosisprotokoll und\nIOD-Verlauf in einer App",
+    s1Eyebrow: "TROPFEN ANLEGEN",
+    s1Title: "Plan nach Ihrem\nRezept",
+    s1Desc: "Name, Anzahl, Intervall und Startzeit\neingeben — fertig\n\nIm individuellen Modus werden Rhythmen wie\n3×/Tag alle 4 h oder 4×/Tag alle 3 h\nautomatisch berechnet\n\nGeeignet bei trockenem Auge, Allergien,\nUveitis, Hornhautulkus und vielem mehr",
+    s2Eyebrow: "PROTOKOLL",
+    s2Title: "Heutige Tropfen auf einen Blick",
+    s2Desc: "Geplante Zeiten und Status\nauf einer klaren Zeitachse\n\nMit Notizen halten Sie Kompressen, Augenspülung,\nSalben und weitere verordnete Behandlungen fest",
+    s3Eyebrow: "KONFLIKTWARNUNG",
+    s3Title: "Automatischer Hinweis\nzwischen Tropfen",
+    s3Desc: "Bei mehreren Tropfen wird ein\n5-Minuten-Abstand automatisch berechnet\n\nDen empfohlenen Abstand mühelos einhalten",
+    s4Eyebrow: "IOD-PROTOKOLL",
+    s4Title: "IOD-Verlauf als Liniendiagramm",
+    s4Desc: "Erfassen Sie IOD links (L) und rechts (R)\ngenau wie gemessen\n\nVerlaufsgrafik und neueste Einträge\nteilen sich einen Bildschirm",
+    s5Eyebrow: "ZUGÄNGLICHKEIT",
+    s5Title: "Schriftgröße einstellbar",
+    s5Desc: "Drei Stufen — Normal, Groß, Sehr groß —\nfür eine bequem lesbare Schrift\n\nLesbar auch bei verschwommener Sicht\ndirekt nach dem Tropfen",
+    contact: "Kontakt",
+    home: "Start",
+    blog: "Blog",
+    privacy: "Datenschutzerklärung",
+    terms: "Nutzungsbedingungen"
+  },
+  it: {
+    title: "eyeday - Promemoria collirio e registro",
+    subtitle: "App di colliri pensata per il post-operatorio\n(glaucoma, cataratta, LASIK, LASEK, ICL)\ne le patologie oculari\n\nPianificazione personalizzata, registro delle dosi\ne andamento della PIO in un'unica app",
+    s1Eyebrow: "AGGIUNGI COLLIRIO",
+    s1Title: "Pianifica secondo\nla tua ricetta",
+    s1Desc: "Inserisci nome, numero, intervallo\ne ora di inizio — è tutto\n\nIn modalità personalizzata vengono calcolati\nautomaticamente ritmi come 3 volte/giorno ogni 4 h\no 4 volte/giorno ogni 3 h\n\nUtile per secchezza oculare, allergie,\nuveite, ulcere corneali e altro ancora",
+    s2Eyebrow: "REGISTRO",
+    s2Title: "Le dosi di oggi a colpo d'occhio",
+    s2Desc: "Controlla orari previsti e stato di completamento\nsu una timeline chiara\n\nUsa le note per registrare impacchi,\nlavaggi oculari, pomate e altri trattamenti prescritti",
+    s3Eyebrow: "AVVISO CONFLITTI",
+    s3Title: "Avviso automatico tra\ndue colliri ravvicinati",
+    s3Desc: "Applicando più colliri,\nun intervallo di 5 minuti è calcolato automaticamente\n\nFacile rispettare l'intervallo consigliato",
+    s4Eyebrow: "REGISTRO PIO",
+    s4Title: "Andamento PIO in linea",
+    s4Desc: "Registra la PIO sinistra (L) e destra (R)\nesattamente come misurata\n\nGrafico di andamento e voci recenti\ncondividono un'unica schermata",
+    s5Eyebrow: "ACCESSIBILITÀ",
+    s5Title: "Dimensione del testo regolabile",
+    s5Desc: "Tre livelli — Normale, Grande, Molto grande —\nper adattare il testo con comodità\n\nLeggibile anche con vista offuscata\nsubito dopo l'instillazione",
+    contact: "Contatti",
+    home: "Home",
+    blog: "Blog",
+    privacy: "Informativa sulla privacy",
+    terms: "Termini di servizio"
+  },
+  pt: {
+    title: "eyeday - Lembrete de colírio e registro",
+    subtitle: "App de colírio pensado para o pós-operatório\n(glaucoma, catarata, LASIK, LASEK, ICL)\ne doenças oftalmológicas\n\nAgendamento personalizado, registro de doses\ne tendência de PIO em um só app",
+    s1Eyebrow: "ADICIONAR COLÍRIO",
+    s1Title: "Programe conforme\nsua prescrição",
+    s1Desc: "Digite o nome, número de vezes,\nintervalo e horário de início — pronto\n\nNo modo personalizado, ritmos como\n3×/dia a cada 4 h ou 4×/dia a cada 3 h\nsão calculados automaticamente\n\nÚtil para olho seco, alergias,\nuveíte, úlceras de córnea e mais",
+    s2Eyebrow: "REGISTRO",
+    s2Title: "As doses de hoje em um relance",
+    s2Desc: "Acompanhe horários previstos e status\nem uma única linha do tempo\n\nUse anotações para registrar compressas,\nlavagens, pomadas e outros cuidados prescritos",
+    s3Eyebrow: "ALERTA DE CONFLITO",
+    s3Title: "Aviso automático entre\ncolírios consecutivos",
+    s3Desc: "Ao aplicar vários colírios,\num intervalo de 5 minutos é calculado automaticamente\n\nFácil manter o intervalo recomendado",
+    s4Eyebrow: "REGISTRO PIO",
+    s4Title: "Tendência de PIO em linha",
+    s4Desc: "Registre a PIO esquerda (L) e direita (R)\ntal como foi medida\n\nGráfico de tendência e registros recentes\nficam juntos em uma tela",
+    s5Eyebrow: "ACESSIBILIDADE",
+    s5Title: "Tamanho do texto ajustável",
+    s5Desc: "Três níveis — Normal, Grande, Muito grande —\npara ajustar o texto com conforto\n\nLegível mesmo com visão embaçada\nlogo após a aplicação",
+    contact: "Contato",
+    home: "Início",
+    blog: "Blog",
+    privacy: "Política de Privacidade",
+    terms: "Termos de Serviço"
+  }
+};
+
+const BADGES = {"ko":"ko-kr","en":"en-us","ja":"ja-jp","fr":"fr-fr","es":"es-es","ru":"ru-ru","de":"de-de","it":"it-it","pt":"pt-br"};
+const PLAY_HL = {"ko":"ko","en":"en","ja":"ja","fr":"fr","es":"es","ru":"ru","de":"de","it":"it","pt":"pt-BR"};
+const PLAY_TEXT = {
+  ko: { kicker: "삼성, 구글픽셀, 샤오미 등을 사용한다면", label: "Google Play에서" },
+  en: { kicker: "Get it on", label: "Google Play" },
+  ja: { kicker: "シャープ、Google Pixel、Xperia、Galaxyなら", label: "Google Playで" },
+  fr: { kicker: "Disponible sur", label: "Google Play" },
+  es: { kicker: "Disponible en", label: "Google Play" },
+  ru: { kicker: "Доступно в", label: "Google Play" },
+  de: { kicker: "Jetzt bei", label: "Google Play" },
+  it: { kicker: "Disponibile su", label: "Google Play" },
+  pt: { kicker: "Disponivel no", label: "Google Play" }
+};
+const LANGS = ["ko","en","ja","fr","es","ru","de","it","pt"];
+
+function pickInitialLang() {
+  const params = new URLSearchParams(location.search);
+  const param = params.get('lang');
+  if (param && LANGS.includes(param)) return param;
+  const saved = localStorage.getItem('eyeday_lang');
+  if (saved && LANGS.includes(saved)) return saved;
+  const nav = (navigator.language || 'ko').toLowerCase();
+  for (const l of LANGS) { if (nav.startsWith(l)) return l; }
+  return 'ko';
+}
+
+function flatten(s) {
+  return s ? s.replace(/\n+/g, ' ').replace(/\s+/g, ' ').trim() : '';
+}
+
+const LANG_LABEL = {
+  ko: "언어", en: "Language", ja: "言語", fr: "Langue", es: "Idioma",
+  ru: "Язык", de: "Sprache", it: "Lingua", pt: "Idioma"
+};
+
+const MOCK = {
+  ko: {
+    med1:'코솝',med2:'잘라탄',leftEye:'좌안',
+    editTitle:'안약 수정',deleteLabel:'삭제',saveLabel:'저장하기',addLabel:'추가',
+    medName:'안약 이름',scheduleType:'투약 시간',timesPerDay:'하루 횟수',intervalLabel:'투약 간격',startTime:'투약 시작 시간',
+    morning:'아침',noon:'점심',evening:'저녁',bedtime:'자기 전',custom:'직접 지정할게요',indefinite:'무기한',
+    am:'오전',pm:'오후',
+    t1:'1회',t2:'2회',t3:'3회',t4:'4회',t5:'5회',t6:'6회',t7:'7회',t8:'8회',t9:'9회',t10:'10회',t11:'11회',t12:'12회',
+    h1:'1시간',h2:'2시간',h3:'3시간',h4:'4시간',h6:'6시간',h8:'8시간',h10:'10시간',h12:'12시간',
+    activeMeds:'점안중인 안약',todaySchedule:'오늘의 점안 기록',
+    noteAdd:'메모',extraDropAdd:'추가 점안',iopAdd:'안압 기록',expand:'펼치기',
+    wd0:'일',wd1:'월',wd2:'화',wd3:'수',wd4:'목',wd5:'금',wd6:'토',
+    metaFrom:'08:30부터 | 2회 | 12시간',metaBedtime:'자기 전',metaIndef:'무기한',
+    time830am:'오전 8:30',time830pm:'오후 8:30',time1000pm:'오후 10:00',
+    sub1Done:'오전 8:31 1회차 완료',
+    conflictTitle:'안약 간격 주의',conflictSnooze:'알겠어요',conflictDoNow:'지금 점안하기',
+    iopTitle:'안압 기록',iopRecentTitle:'최근 기록',leftAbbr:'좌',rightAbbr:'우',
+    fontTitle:'글씨 크기',fontNormal:'보통',fontLarge:'크게',fontLargest:'제일 크게',
+    fontPreview:'이 문장은 선택한 크기로 표시됩니다',
+    iopDates:['26.12.15','26.11.17','26.10.20','26.09.22','26.08.25','26.07.28','26.06.30','26.06.02']
+  },
+  en: {
+    med1:'Cosopt',med2:'Xalatan',leftEye:'Left',
+    editTitle:'Edit Eye Drop',deleteLabel:'Delete',saveLabel:'Save',addLabel:'Add',
+    medName:'Eye Drop Name',scheduleType:'Dose times',timesPerDay:'Times Per Day',intervalLabel:'Interval',startTime:'Start Time',
+    morning:'Morning',noon:'Noon',evening:'Evening',bedtime:'Bedtime',custom:'Set my own',indefinite:'Indefinite',
+    am:'AM',pm:'PM',
+    t1:'1x',t2:'2x',t3:'3x',t4:'4x',t5:'5x',t6:'6x',t7:'7x',t8:'8x',t9:'9x',t10:'10x',t11:'11x',t12:'12x',
+    h1:'1h',h2:'2h',h3:'3h',h4:'4h',h6:'6h',h8:'8h',h10:'10h',h12:'12h',
+    activeMeds:'Active Eye Drops',todaySchedule:'Today\'s Drop Records',
+    noteAdd:'Note',extraDropAdd:'Extra dose',iopAdd:'IOP',expand:'Expand',
+    wd0:'Sun',wd1:'Mon',wd2:'Tue',wd3:'Wed',wd4:'Thu',wd5:'Fri',wd6:'Sat',
+    metaFrom:'From 08:30 | 2x | 12h',metaBedtime:'Bedtime',metaIndef:'Indefinite',
+    time830am:'8:30 AM',time830pm:'8:30 PM',time1000pm:'10:00 PM',
+    sub1Done:'8:31 AM Dose 1 done',
+    conflictTitle:'Eye Drop Interval Warning',conflictSnooze:'Got It',conflictDoNow:'Apply Now',
+    iopTitle:'IOP History',iopRecentTitle:'Recent records',leftAbbr:'L',rightAbbr:'R',
+    fontTitle:'Font Size',fontNormal:'Normal',fontLarge:'Large',fontLargest:'Largest',
+    fontPreview:'This sentence is shown at the selected size',
+    iopDates:['12/15/26','11/17/26','10/20/26','09/22/26','08/25/26','07/28/26','06/30/26','06/02/26']
+  },
+  ja: {
+    med1:'コソプト',med2:'キサラタン',leftEye:'左眼',
+    editTitle:'目薬を編集',deleteLabel:'削除',saveLabel:'保存する',addLabel:'追加',
+    medName:'目薬の名前',scheduleType:'投薬時間',timesPerDay:'1日の回数',intervalLabel:'投薬間隔',startTime:'投薬開始時間',
+    morning:'朝',noon:'昼',evening:'夜',bedtime:'就寝前',custom:'自分で設定する',indefinite:'無期限',
+    am:'午前',pm:'午後',
+    t1:'1回',t2:'2回',t3:'3回',t4:'4回',t5:'5回',t6:'6回',t7:'7回',t8:'8回',t9:'9回',t10:'10回',t11:'11回',t12:'12回',
+    h1:'1時間',h2:'2時間',h3:'3時間',h4:'4時間',h6:'6時間',h8:'8時間',h10:'10時間',h12:'12時間',
+    activeMeds:'点眼中の目薬',todaySchedule:'今日の点眼記録',
+    noteAdd:'メモ',extraDropAdd:'追加点眼',iopAdd:'眼圧記録',expand:'開く',
+    wd0:'日',wd1:'月',wd2:'火',wd3:'水',wd4:'木',wd5:'金',wd6:'土',
+    metaFrom:'08:30から | 2回 | 12時間',metaBedtime:'就寝前',metaIndef:'無期限',
+    time830am:'午前 8:30',time830pm:'午後 8:30',time1000pm:'午後 10:00',
+    sub1Done:'午前 8:31 1回目 完了',
+    conflictTitle:'点眼間隔の注意',conflictSnooze:'わかりました',conflictDoNow:'今すぐ点眼する',
+    iopTitle:'眼圧の記録',iopRecentTitle:'最近の記録',leftAbbr:'左',rightAbbr:'右',
+    fontTitle:'文字サイズ',fontNormal:'標準',fontLarge:'大きめ',fontLargest:'最大',
+    fontPreview:'この文章は選択したサイズで表示されます',
+    iopDates:['26.12.15','26.11.17','26.10.20','26.09.22','26.08.25','26.07.28','26.06.30','26.06.02']
+  },
+  fr: {
+    med1:'Cosopt',med2:'Xalatan',leftEye:'Gauche',
+    editTitle:'Modifier le collyre',deleteLabel:'Supprimer',saveLabel:'Enregistrer',addLabel:'Ajouter',
+    medName:'Nom du collyre',scheduleType:'Heures de prise',timesPerDay:'Fois par jour',intervalLabel:'Intervalle',startTime:'Heure de début',
+    morning:'Matin',noon:'Midi',evening:'Soir',bedtime:'Au coucher',custom:'Personnaliser',indefinite:'Indéfini',
+    am:'AM',pm:'PM',
+    t1:'1x',t2:'2x',t3:'3x',t4:'4x',t5:'5x',t6:'6x',t7:'7x',t8:'8x',t9:'9x',t10:'10x',t11:'11x',t12:'12x',
+    h1:'1h',h2:'2h',h3:'3h',h4:'4h',h6:'6h',h8:'8h',h10:'10h',h12:'12h',
+    activeMeds:'Collyres en cours',todaySchedule:'Gouttes d\'aujourd\'hui',
+    noteAdd:'Note',extraDropAdd:'Dose en plus',iopAdd:'TIO',expand:'Développer',
+    wd0:'Dim',wd1:'Lun',wd2:'Mar',wd3:'Mer',wd4:'Jeu',wd5:'Ven',wd6:'Sam',
+    metaFrom:'À partir de 08:30 | 2x | 12h',metaBedtime:'Au coucher',metaIndef:'Indéfini',
+    time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
+    sub1Done:'8:31 Dose 1 prise',
+    conflictTitle:'Intervalle de gouttes',conflictSnooze:'D\'accord',conflictDoNow:'Appliquer maintenant',
+    iopTitle:'Historique TIO',iopRecentTitle:'Enregistrements récents',leftAbbr:'G',rightAbbr:'D',
+    fontTitle:'Taille du texte',fontNormal:'Normale',fontLarge:'Grande',fontLargest:'Très grande',
+    fontPreview:'Cette phrase s\'affiche dans la taille sélectionnée',
+    iopDates:['15.12.26','17.11.26','20.10.26','22.09.26','25.08.26','28.07.26','30.06.26','02.06.26']
+  },
+  es: {
+    med1:'Cosopt',med2:'Xalatan',leftEye:'Izq.',
+    editTitle:'Editar gota',deleteLabel:'Eliminar',saveLabel:'Guardar',addLabel:'Añadir',
+    medName:'Nombre de la gota',scheduleType:'Horarios de toma',timesPerDay:'Veces al día',intervalLabel:'Intervalo',startTime:'Hora de inicio',
+    morning:'Mañana',noon:'Mediodía',evening:'Tarde',bedtime:'Antes de dormir',custom:'Personalizar',indefinite:'Indefinido',
+    am:'AM',pm:'PM',
+    t1:'1x',t2:'2x',t3:'3x',t4:'4x',t5:'5x',t6:'6x',t7:'7x',t8:'8x',t9:'9x',t10:'10x',t11:'11x',t12:'12x',
+    h1:'1h',h2:'2h',h3:'3h',h4:'4h',h6:'6h',h8:'8h',h10:'10h',h12:'12h',
+    activeMeds:'Gotas activas',todaySchedule:'Gotas de hoy',
+    noteAdd:'Nota',extraDropAdd:'Dosis extra',iopAdd:'PIO',expand:'Expandir',
+    wd0:'Dom',wd1:'Lun',wd2:'Mar',wd3:'Mié',wd4:'Jue',wd5:'Vie',wd6:'Sáb',
+    metaFrom:'Desde 08:30 | 2x | 12h',metaBedtime:'Antes de dormir',metaIndef:'Indefinido',
+    time830am:'8:30 AM',time830pm:'8:30 PM',time1000pm:'10:00 PM',
+    sub1Done:'8:31 AM Dosis 1 aplicada',
+    conflictTitle:'Intervalo de gotas',conflictSnooze:'Entendido',conflictDoNow:'Aplicar ahora',
+    iopTitle:'Historial de PIO',iopRecentTitle:'Registros recientes',leftAbbr:'I',rightAbbr:'D',
+    fontTitle:'Tamaño del texto',fontNormal:'Normal',fontLarge:'Grande',fontLargest:'Muy grande',
+    fontPreview:'Esta frase se muestra en el tamaño seleccionado',
+    iopDates:['15.12.26','17.11.26','20.10.26','22.09.26','25.08.26','28.07.26','30.06.26','02.06.26']
+  },
+  ru: {
+    med1:'Косопт',med2:'Ксалатан',leftEye:'Лев.',
+    editTitle:'Редактировать капли',deleteLabel:'Удалить',saveLabel:'Сохранить',addLabel:'Добавить',
+    medName:'Название капель',scheduleType:'Время приёма',timesPerDay:'Раз в день',intervalLabel:'Интервал',startTime:'Время начала',
+    morning:'Утро',noon:'Полдень',evening:'Вечер',bedtime:'Перед сном',custom:'Настроить вручную',indefinite:'Бессрочно',
+    am:'AM',pm:'PM',
+    t1:'1x',t2:'2x',t3:'3x',t4:'4x',t5:'5x',t6:'6x',t7:'7x',t8:'8x',t9:'9x',t10:'10x',t11:'11x',t12:'12x',
+    h1:'1ч',h2:'2ч',h3:'3ч',h4:'4ч',h6:'6ч',h8:'8ч',h10:'10ч',h12:'12ч',
+    activeMeds:'Активные капли',todaySchedule:'Записи на сегодня',
+    noteAdd:'Заметка',extraDropAdd:'Доп. закапывание',iopAdd:'ВГД',expand:'Развернуть',
+    wd0:'Вс',wd1:'Пн',wd2:'Вт',wd3:'Ср',wd4:'Чт',wd5:'Пт',wd6:'Сб',
+    metaFrom:'С 08:30 | 2x | 12ч',metaBedtime:'Перед сном',metaIndef:'Бессрочно',
+    time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
+    sub1Done:'8:31 Доза 1 принята',
+    conflictTitle:'Интервал между каплями',conflictSnooze:'Понятно',conflictDoNow:'Закапать сейчас',
+    iopTitle:'История ВГД',iopRecentTitle:'Последние записи',leftAbbr:'Л',rightAbbr:'П',
+    fontTitle:'Размер шрифта',fontNormal:'Обычный',fontLarge:'Крупный',fontLargest:'Самый крупный',
+    fontPreview:'Это предложение отображается выбранным размером',
+    iopDates:['26.12.15','26.11.17','26.10.20','26.09.22','26.08.25','26.07.28','26.06.30','26.06.02']
+  },
+  de: {
+    med1:'Cosopt',med2:'Xalatan',leftEye:'Links',
+    editTitle:'Augentropfen bearbeiten',deleteLabel:'Löschen',saveLabel:'Speichern',addLabel:'Hinzufügen',
+    medName:'Name der Augentropfen',scheduleType:'Dosierzeiten',timesPerDay:'Mal pro Tag',intervalLabel:'Intervall',startTime:'Startzeit',
+    morning:'Morgens',noon:'Mittags',evening:'Abends',bedtime:'Vor dem Schlafen',custom:'Selbst festlegen',indefinite:'Unbefristet',
+    am:'Vorm.',pm:'Nachm.',
+    t1:'1×',t2:'2×',t3:'3×',t4:'4×',t5:'5×',t6:'6×',t7:'7×',t8:'8×',t9:'9×',t10:'10×',t11:'11×',t12:'12×',
+    h1:'1 Std.',h2:'2 Std.',h3:'3 Std.',h4:'4 Std.',h6:'6 Std.',h8:'8 Std.',h10:'10 Std.',h12:'12 Std.',
+    activeMeds:'Aktive Augentropfen',todaySchedule:'Heutiger Tropfen-Verlauf',
+    noteAdd:'Notiz',extraDropAdd:'Zusatzdosis',iopAdd:'IOD',expand:'Erweitern',
+    wd0:'So',wd1:'Mo',wd2:'Di',wd3:'Mi',wd4:'Do',wd5:'Fr',wd6:'Sa',
+    metaFrom:'Ab 08:30 | 2× | 12 Std.',metaBedtime:'Vor dem Schlafen',metaIndef:'Unbefristet',
+    time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
+    sub1Done:'8:31 Dosis 1 erledigt',
+    conflictTitle:'Hinweis zum Tropfen-Abstand',conflictSnooze:'Verstanden',conflictDoNow:'Jetzt anwenden',
+    iopTitle:'IOD-Verlauf',iopRecentTitle:'Letzte Einträge',leftAbbr:'L',rightAbbr:'R',
+    fontTitle:'Schriftgröße',fontNormal:'Normal',fontLarge:'Groß',fontLargest:'Sehr groß',
+    fontPreview:'Dieser Satz wird in der gewählten Größe angezeigt',
+    iopDates:['15.12.26','17.11.26','20.10.26','22.09.26','25.08.26','28.07.26','30.06.26','02.06.26']
+  },
+  it: {
+    med1:'Cosopt',med2:'Xalatan',leftEye:'Sin.',
+    editTitle:'Modifica collirio',deleteLabel:'Elimina',saveLabel:'Salva',addLabel:'Aggiungi',
+    medName:'Nome del collirio',scheduleType:'Orari delle dosi',timesPerDay:'Volte al giorno',intervalLabel:'Intervallo',startTime:'Ora di inizio',
+    morning:'Mattina',noon:'Mezzogiorno',evening:'Sera',bedtime:'Prima di dormire',custom:'Personalizza',indefinite:'Indefinita',
+    am:'AM',pm:'PM',
+    t1:'1×',t2:'2×',t3:'3×',t4:'4×',t5:'5×',t6:'6×',t7:'7×',t8:'8×',t9:'9×',t10:'10×',t11:'11×',t12:'12×',
+    h1:'1h',h2:'2h',h3:'3h',h4:'4h',h6:'6h',h8:'8h',h10:'10h',h12:'12h',
+    activeMeds:'Colliri attivi',todaySchedule:'Registro gocce di oggi',
+    noteAdd:'Nota',extraDropAdd:'Dose extra',iopAdd:'PIO',expand:'Espandi',
+    wd0:'Dom',wd1:'Lun',wd2:'Mar',wd3:'Mer',wd4:'Gio',wd5:'Ven',wd6:'Sab',
+    metaFrom:'Da 08:30 | 2× | 12h',metaBedtime:'Prima di dormire',metaIndef:'Indefinita',
+    time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
+    sub1Done:'8:31 Dose 1 eseguita',
+    conflictTitle:'Avviso intervallo gocce',conflictSnooze:'Capito',conflictDoNow:'Applica ora',
+    iopTitle:'Cronologia PIO',iopRecentTitle:'Registri recenti',leftAbbr:'S',rightAbbr:'D',
+    fontTitle:'Dimensione testo',fontNormal:'Normale',fontLarge:'Grande',fontLargest:'Molto grande',
+    fontPreview:'Questa frase è mostrata nella dimensione selezionata',
+    iopDates:['15.12.26','17.11.26','20.10.26','22.09.26','25.08.26','28.07.26','30.06.26','02.06.26']
+  },
+  pt: {
+    med1:'Cosopt',med2:'Xalatan',leftEye:'Esq.',
+    editTitle:'Editar colírio',deleteLabel:'Excluir',saveLabel:'Salvar',addLabel:'Adicionar',
+    medName:'Nome do colírio',scheduleType:'Horários da dose',timesPerDay:'Vezes por dia',intervalLabel:'Intervalo',startTime:'Hora de início',
+    morning:'Manhã',noon:'Meio-dia',evening:'Tarde',bedtime:'Antes de dormir',custom:'Personalizar',indefinite:'Indefinida',
+    am:'AM',pm:'PM',
+    t1:'1×',t2:'2×',t3:'3×',t4:'4×',t5:'5×',t6:'6×',t7:'7×',t8:'8×',t9:'9×',t10:'10×',t11:'11×',t12:'12×',
+    h1:'1h',h2:'2h',h3:'3h',h4:'4h',h6:'6h',h8:'8h',h10:'10h',h12:'12h',
+    activeMeds:'Colírios ativos',todaySchedule:'Registros de hoje',
+    noteAdd:'Nota',extraDropAdd:'Dose extra',iopAdd:'PIO',expand:'Expandir',
+    wd0:'Dom',wd1:'Seg',wd2:'Ter',wd3:'Qua',wd4:'Qui',wd5:'Sex',wd6:'Sáb',
+    metaFrom:'A partir de 08:30 | 2× | 12h',metaBedtime:'Antes de dormir',metaIndef:'Indefinida',
+    time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
+    sub1Done:'8:31 Dose 1 aplicada',
+    conflictTitle:'Aviso de intervalo entre colírios',conflictSnooze:'Entendi',conflictDoNow:'Aplicar agora',
+    iopTitle:'Histórico de PIO',iopRecentTitle:'Registros recentes',leftAbbr:'E',rightAbbr:'D',
+    fontTitle:'Tamanho do texto',fontNormal:'Normal',fontLarge:'Grande',fontLargest:'Muito grande',
+    fontPreview:'Esta frase é exibida no tamanho selecionado',
+    iopDates:['15.12.26','17.11.26','20.10.26','22.09.26','25.08.26','28.07.26','30.06.26','02.06.26']
+  }
+};
+
+function applyLang(lang) {
+  const dict = UI[lang] || UI.ko;
+  const mock = MOCK[lang] || MOCK.ko;
+  document.documentElement.lang = lang;
+  document.title = dict.title;
+  document.querySelectorAll('[data-i]').forEach((el) => {
+    const k = el.getAttribute('data-i');
+    if (dict[k] != null) {
+      if (dict[k].includes('\n')) {
+        el.innerHTML = '';
+        dict[k].split('\n').forEach((line, i) => {
+          if (i > 0) el.appendChild(document.createElement('br'));
+          el.appendChild(document.createTextNode(line));
+        });
+      } else {
+        el.textContent = dict[k];
+      }
+    }
+  });
+  document.querySelectorAll('[data-mock]').forEach((el) => {
+    const k = el.getAttribute('data-mock');
+    if (mock[k] != null) el.textContent = mock[k];
+  });
+  // Conflict body referencing med1
+  document.querySelectorAll('[data-mock-tpl]').forEach((el) => {
+    const tpl = el.getAttribute('data-mock-tpl');
+    el.innerHTML = '';
+    tpl.replace(/\{med1\}/g, mock.med1).split('\n').forEach((line, i) => {
+      if (i > 0) el.appendChild(document.createElement('br'));
+      el.appendChild(document.createTextNode(line));
+    });
+  });
+  // IOP date list
+  const dateEls = document.querySelectorAll('[data-iop-date]');
+  if (mock.iopDates) {
+    dateEls.forEach((el) => {
+      const idx = parseInt(el.getAttribute('data-iop-date'), 10);
+      if (mock.iopDates[idx] != null) el.textContent = mock.iopDates[idx];
+    });
+  }
+  // SEO meta sync
+  const descText = flatten(dict.subtitle);
+  ['metaDesc','ogDesc','twDesc'].forEach((id) => {
+    const m = document.getElementById(id);
+    if (m) m.setAttribute('content', descText);
+  });
+  ['ogTitle','twTitle'].forEach((id) => {
+    const m = document.getElementById(id);
+    if (m) m.setAttribute('content', dict.title);
+  });
+  const bl = BADGES[lang] || 'ko-kr';
+  const img = document.getElementById('badgeImg');
+  if (img) img.src = `https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/${bl}?size=250x83`;
+  const playHl = PLAY_HL[lang] || 'ko';
+  const playText = PLAY_TEXT[lang] || PLAY_TEXT.ko;
+  const playAlt = `${playText.kicker} ${playText.label}`.trim();
+  const playLink = document.getElementById('playBadge');
+  const playKicker = document.getElementById('playBadgeKicker');
+  const playLabel = document.querySelector('.play-badge-label');
+  if (playLink) {
+    playLink.href = `https://play.google.com/store/apps/details?id=com.eyedrop.reminder&hl=${playHl}`;
+    playLink.setAttribute('aria-label', playAlt);
+  }
+  if (playKicker) playKicker.textContent = playText.kicker;
+  if (playLabel) playLabel.textContent = playText.label;
+  localStorage.setItem('eyeday_lang', lang);
+  const sel = document.getElementById('languageSelect');
+  if (sel) sel.value = lang;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const initLang = pickInitialLang();
+  applyLang(initLang);
+  gtag('event', 'page_view_lang', { language: initLang });
+
+  document.getElementById('languageSelect').addEventListener('change', (e) => {
+    applyLang(e.target.value);
+    gtag('event', 'language_switched', { language: e.target.value });
+  });
+
+  document.getElementById('appBadge').addEventListener('click', () => {
+    gtag('event', 'app_store_click', { language: document.documentElement.lang });
+  });
+  document.getElementById('playBadge').addEventListener('click', () => {
+    gtag('event', 'google_play_click', { language: document.documentElement.lang });
+  });
+  document.querySelectorAll('.site-nav a').forEach((a) => {
+    a.addEventListener('click', () => {
+      gtag('event', 'landing_nav_click', {
+        label: a.textContent.trim() || 'eyeday',
+        href: a.getAttribute('href'),
+        language: document.documentElement.lang
+      });
+    });
+  });
+});
+</script>
 </body>
 </html>
