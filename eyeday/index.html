@@ -31,6 +31,16 @@
   <link rel="alternate" hreflang="de" href="https://eyeday.posiki.com/?lang=de">
   <link rel="alternate" hreflang="it" href="https://eyeday.posiki.com/?lang=it">
   <link rel="alternate" hreflang="pt" href="https://eyeday.posiki.com/?lang=pt">
+  <link rel="alternate" hreflang="ar" href="https://eyeday.posiki.com/?lang=ar">
+  <link rel="alternate" hreflang="cs" href="https://eyeday.posiki.com/?lang=cs">
+  <link rel="alternate" hreflang="da" href="https://eyeday.posiki.com/?lang=da">
+  <link rel="alternate" hreflang="fi" href="https://eyeday.posiki.com/?lang=fi">
+  <link rel="alternate" hreflang="nl" href="https://eyeday.posiki.com/?lang=nl">
+  <link rel="alternate" hreflang="no" href="https://eyeday.posiki.com/?lang=no">
+  <link rel="alternate" hreflang="pl" href="https://eyeday.posiki.com/?lang=pl">
+  <link rel="alternate" hreflang="sv" href="https://eyeday.posiki.com/?lang=sv">
+  <link rel="alternate" hreflang="tr" href="https://eyeday.posiki.com/?lang=tr">
+  <link rel="alternate" hreflang="zh-Hant" href="https://eyeday.posiki.com/?lang=zh-Hant">
   <link rel="alternate" hreflang="x-default" href="https://eyeday.posiki.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -796,6 +806,14 @@
       .hero .subtitle { font-size: 16px; }
       .phone { width: 268px; }
     }
+
+    /* 아랍어(RTL): 고정 배치는 물리 속성이라 dir 만으로는 뒤집히지 않으므로 직접 미러링한다 */
+    [dir="rtl"] .lang-switch { right: auto; left: 24px; }
+    [dir="rtl"] .site-nav { left: 170px; right: 24px; }
+    @media (max-width: 640px) {
+      [dir="rtl"] .lang-switch { left: 16px; right: auto; }
+      [dir="rtl"] .site-nav { left: 154px; right: 16px; }
+    }
   </style>
 </head>
 <body>
@@ -826,6 +844,16 @@
     <option value="de">Deutsch</option>
     <option value="it">Italiano</option>
     <option value="pt">Português</option>
+    <option value="ar">العربية</option>
+    <option value="cs">Čeština</option>
+    <option value="da">Dansk</option>
+    <option value="fi">Suomi</option>
+    <option value="nl">Nederlands</option>
+    <option value="no">Norsk</option>
+    <option value="pl">Polski</option>
+    <option value="sv">Svenska</option>
+    <option value="tr">Türkçe</option>
+    <option value="zh-Hant">繁體中文</option>
   </select>
 
   <nav class="site-nav" aria-label="Primary">
@@ -1166,7 +1194,7 @@
               <svg class="ic ic-md"><use href="#i-clock"/></svg>
               <span class="timer-text">4:56</span>
             </div>
-            <p data-mock-tpl="{med1}을(를) 넣은 지 얼마 되지 않았습니다&#10;여러 안약을 넣을 경우 5분 간격을 두세요"></p>
+            <p data-mock-tpl="conflictBody"></p>
             <div class="sheet-btns">
               <div class="sheet-btn ghost" data-mock="conflictSnooze">알겠어요</div>
               <div class="sheet-btn primary" data-mock="conflictDoNow">지금 점안하기</div>
@@ -1561,6 +1589,246 @@ const UI = {
     blog: "Blog",
     privacy: "Política de Privacidade",
     terms: "Termos de Serviço"
+  },
+  ar: {
+    title: "eyeday - تذكير قطرات العين وسجلها",
+    subtitle: "تطبيق قطرات عين للمتابعة بعد الجراحة\n(الجلوكوما، الساد، الليزك، الليزيك، ICL)\nوأمراض العيون\n\nمواعيد مخصصة وسجل للجرعات ومتابعة ضغط العين\nكل ذلك في تطبيق واحد",
+    s1Eyebrow: "إضافة دواء",
+    s1Title: "اضبط المواعيد\nكما وصفها طبيبك",
+    s1Desc: "أدخل الاسم وعدد المرات\nوالفاصل الزمني ووقت البدء فقط\n\nيحسب التخصيص المواعيد تلقائيًا\nمثل 3 مرات يوميًا كل 4 ساعات أو 4 مرات كل 3 ساعات\n\nيصلح لجفاف العين والحساسية\nوالتهاب العنبية وقرحة القرنية وغيرها",
+    s2Eyebrow: "سجل الجرعات",
+    s2Title: "قطرات اليوم في لمحة",
+    s2Desc: "تابع المواعيد المقررة وما أتممته\nعلى خط زمني واحد واضح\n\nاستخدم الملاحظات لتدوين الكمادات وغسل العين\nوالمراهم وغيرها من العلاجات الموصوفة",
+    s3Eyebrow: "تنبيه التعارض",
+    s3Title: "تحذير تلقائي بين\nالقطرات المتتالية",
+    s3Desc: "عند استخدام أكثر من قطرة\nيُحسب فاصل 5 دقائق تلقائيًا\n\nفيسهل الالتزام بالفاصل الموصى به",
+    s4Eyebrow: "سجل ضغط العين",
+    s4Title: "تغيّر ضغط العين في رسم بياني",
+    s4Desc: "سجّل ضغط العين اليسرى واليمنى\nمن كل زيارة للعيادة\n\nالرسم البياني وأحدث القياسات\nعلى شاشة واحدة",
+    s5Eyebrow: "سهولة الوصول",
+    s5Title: "حجم خط قابل للتعديل",
+    s5Desc: "ثلاث درجات — عادي وكبير والأكبر —\nلتكبير النص براحة\n\nواضح للقراءة حتى وقت تشوّش الرؤية\nبعد التقطير مباشرة",
+    contact: "تواصل معنا",
+    home: "الرئيسية",
+    blog: "المدوّنة",
+    privacy: "سياسة الخصوصية",
+    terms: "شروط الخدمة"
+  },
+  cs: {
+    title: "eyeday - připomínka a záznamy očních kapek",
+    subtitle: "Aplikace na oční kapky pro péči po operaci\n(glaukom, šedý zákal, LASIK, LASEK, ICL)\ni pro oční onemocnění\n\nVlastní plán, záznamy dávek a vývoj nitroočniho tlaku\nvšechno v jedné aplikaci",
+    s1Eyebrow: "PŘIDAT LÉK",
+    s1Title: "Nastavte plán\npodle svého předpisu",
+    s1Desc: "Zadejte jen název, počet dávek za den,\nodstup a čas zahájení\n\nVlastní režim spočítá plán sám,\nnapříklad 3× denně po 4 h nebo 4× denně po 3 h\n\nHodí se i na suché oko, alergie,\nuveitidu, vředy rohovky a další",
+    s2Eyebrow: "ZÁZNAMY DÁVEK",
+    s2Title: "Dnešní kapky přehledně",
+    s2Desc: "Naplánované časy i to, co už máte za sebou,\nna jedné přehledné časové ose\n\nDo poznámek si zapište obklady, výplach očí,\nmasti a další předepsanou péči",
+    s3Eyebrow: "UPOZORNĚNÍ NA KOLIZI",
+    s3Title: "Automatické upozornění\nmezi kapkami po sobě",
+    s3Desc: "Když kapete více přípravků,\nodstup 5 minut se spočítá sám\n\nDoporučený odstup tak snadno dodržíte",
+    s4Eyebrow: "NITROOČNÍ TLAK",
+    s4Title: "Vývoj tlaku v grafu",
+    s4Desc: "Zapisujte tlak levého (L) i pravého (P) oka\nz každé návštěvy\n\nGraf i poslední měření\nmáte na jedné obrazovce",
+    s5Eyebrow: "PŘÍSTUPNOST",
+    s5Title: "Nastavitelná velikost písma",
+    s5Desc: "Tři stupně — Normální, Velké, Největší —\npro pohodlné čtení\n\nČitelné i ve chvíli, kdy se vám\nhned po kapkách rozostří vidění",
+    contact: "Kontakt",
+    home: "Domů",
+    blog: "Blog",
+    privacy: "Zásady ochrany osobních údajů",
+    terms: "Podmínky služby"
+  },
+  da: {
+    title: "eyeday - påmindelse og log for øjendråber",
+    subtitle: "En øjendråbeapp til pleje efter operation\n(glaukom, grå stær, LASIK, LASEK, ICL)\nog til øjensygdomme\n\nEgne planer, dosislog og udvikling i øjentrykket\nalt i én app",
+    s1Eyebrow: "TILFØJ MEDICIN",
+    s1Title: "Læg en plan,\nder passer til din recept",
+    s1Desc: "Indtast blot navn, antal gange om dagen,\ninterval og starttidspunkt\n\nVælg selv-tilstand regner planen ud,\nf.eks. 3 gange dagligt hver 4. time eller 4 gange hver 3. time\n\nBrug den også til tørre øjne, allergi,\nuveitis, hornhindesår og mere",
+    s2Eyebrow: "DOSISLOG",
+    s2Title: "Dagens dråber på ét blik",
+    s2Desc: "Se planlagte tider og hvad du har taget\npå én overskuelig tidslinje\n\nBrug notater til omslag, øjenskyl,\nsalve og anden ordineret behandling",
+    s3Eyebrow: "ADVARSEL OM SAMMENFALD",
+    s3Title: "Automatisk advarsel mellem\ndråber lige efter hinanden",
+    s3Desc: "Når du bruger flere slags dråber,\nberegnes 5 minutters mellemrum automatisk\n\nSå er det nemt at holde det anbefalede mellemrum",
+    s4Eyebrow: "ØJENTRYK",
+    s4Title: "Udviklingen i øjentrykket som graf",
+    s4Desc: "Registrer øjentryk for venstre (V) og højre (H)\nfra hvert klinikbesøg\n\nGraf og seneste målinger\ndeler samme skærm",
+    s5Eyebrow: "TILGÆNGELIGHED",
+    s5Title: "Justerbar skriftstørrelse",
+    s5Desc: "Tre trin — Normal, Stor, Størst —\nså teksten bliver behagelig at læse\n\nLæsbar også når synet er sløret\nlige efter en dråbe",
+    contact: "Kontakt",
+    home: "Forside",
+    blog: "Blog",
+    privacy: "Privatlivspolitik",
+    terms: "Servicevilkår"
+  },
+  fi: {
+    title: "eyeday - silmätippojen muistutus ja kirjaus",
+    subtitle: "Silmätippasovellus leikkauksen jälkeiseen hoitoon\n(glaukooma, kaihi, LASIK, LASEK, ICL)\nja silmäsairauksiin\n\nOmat aikataulut, annoskirjaukset ja silmänpaineen kehitys\nkaikki yhdessä sovelluksessa",
+    s1Eyebrow: "LISÄÄ LÄÄKE",
+    s1Title: "Tee aikataulu,\njoka vastaa reseptiäsi",
+    s1Desc: "Anna vain nimi, kertojen määrä päivässä,\nväli ja aloitusaika\n\nAseta itse -tila laskee aikataulun puolestasi,\nesimerkiksi 3 kertaa päivässä 4 tunnin välein\n\nSopii myös kuivasilmäisyyteen, allergiaan,\nuveiittiin ja sarveiskalvon haavaumiin",
+    s2Eyebrow: "ANNOSKIRJAUKSET",
+    s2Title: "Päivän tipat yhdellä silmäyksellä",
+    s2Desc: "Näe suunnitellut ajat ja jo otetut annokset\nsamalla selkeällä aikajanalla\n\nKirjaa muistiinpanoihin haudet, silmien huuhtelu,\nvoiteet ja muu määrätty hoito",
+    s3Eyebrow: "PÄÄLLEKKÄISYYSVAROITUS",
+    s3Title: "Automaattinen varoitus\nperäkkäisten tippojen välillä",
+    s3Desc: "Kun otat useita tippoja,\n5 minuutin väli lasketaan automaattisesti\n\nSuositeltu väli on helppo pitää",
+    s4Eyebrow: "SILMÄNPAINE",
+    s4Title: "Silmänpaineen kehitys kuvaajana",
+    s4Desc: "Kirjaa vasemman (V) ja oikean (O) silmän paine\njokaiselta vastaanotolta\n\nKuvaaja ja viimeisimmät merkinnät\nnäkyvät samalla näytöllä",
+    s5Eyebrow: "SAAVUTETTAVUUS",
+    s5Title: "Säädettävä tekstin koko",
+    s5Desc: "Kolme askelta — Normaali, Suuri, Suurin —\ntekstin mukavaan suurentamiseen\n\nLuettava myös silloin, kun näkö sumenee\nheti tippojen jälkeen",
+    contact: "Ota yhteyttä",
+    home: "Etusivu",
+    blog: "Blogi",
+    privacy: "Tietosuojakäytäntö",
+    terms: "Käyttöehdot"
+  },
+  nl: {
+    title: "eyeday - herinnering en logboek voor oogdruppels",
+    subtitle: "Een oogdruppelapp voor nazorg\n(glaucoom, cataract, LASIK, LASEK, ICL)\nen bij oogaandoeningen\n\nEigen schema's, druppellogboek en verloop van de oogdruk\nallemaal in één app",
+    s1Eyebrow: "MEDICATIE TOEVOEGEN",
+    s1Title: "Stel een schema in\ndat bij je recept past",
+    s1Desc: "Vul alleen naam, aantal keer per dag,\ninterval en starttijd in\n\nZelf instellen rekent het schema uit,\nzoals 3x per dag om de 4 uur of 4x per dag om de 3 uur\n\nOok te gebruiken bij droge ogen, allergie,\nuveïtis, hoornvliedzweren en meer",
+    s2Eyebrow: "DRUPPELLOGBOEK",
+    s2Title: "De druppels van vandaag in één blik",
+    s2Desc: "Bekijk geplande tijden en wat je al gehad hebt\nop één overzichtelijke tijdlijn\n\nLeg in notities kompressen, ooglavage,\nzalf en andere voorgeschreven zorg vast",
+    s3Eyebrow: "WAARSCHUWING BIJ SAMENLOOP",
+    s3Title: "Automatische waarschuwing tussen\ndruppels kort na elkaar",
+    s3Desc: "Gebruik je meerdere oogdruppels,\ndan wordt 5 minuten afstand automatisch berekend\n\nZo houd je het aanbevolen interval makkelijk aan",
+    s4Eyebrow: "OOGDRUK",
+    s4Title: "Verloop van de oogdruk in een grafiek",
+    s4Desc: "Leg de oogdruk links (L) en rechts (R)\nvan elk bezoek vast\n\nGrafiek en recente metingen\nstaan op hetzelfde scherm",
+    s5Eyebrow: "TOEGANKELIJKHEID",
+    s5Title: "Aanpasbare tekstgrootte",
+    s5Desc: "Drie stappen — Normaal, Groot, Grootst —\nom de tekst comfortabel te vergroten\n\nOok leesbaar wanneer je zicht wazig is\nvlak na het druppelen",
+    contact: "Contact",
+    home: "Home",
+    blog: "Blog",
+    privacy: "Privacybeleid",
+    terms: "Servicevoorwaarden"
+  },
+  no: {
+    title: "eyeday - påminnelse og logg for øyedråper",
+    subtitle: "En øyedråpeapp til oppfølging etter operasjon\n(glaukom, grå stær, LASIK, LASEK, ICL)\nog ved øyesykdommer\n\nEgne planer, doselogg og utvikling i øyetrykket\nalt i én app",
+    s1Eyebrow: "LEGG TIL MEDISIN",
+    s1Title: "Lag en plan\nsom passer resepten din",
+    s1Desc: "Skriv bare inn navn, antall ganger per dag,\nintervall og starttidspunkt\n\nVelg selv-modus regner ut planen,\nfor eksempel 3 ganger daglig hver 4. time\n\nPasser også ved tørre øyne, allergi,\nuveitt, hornhinnesår og mer",
+    s2Eyebrow: "DOSELOGG",
+    s2Title: "Dagens dråper på ett blikk",
+    s2Desc: "Se planlagte tider og hva du har tatt\npå én oversiktlig tidslinje\n\nBruk notater til omslag, øyeskylling,\nsalve og annen behandling du har fått",
+    s3Eyebrow: "VARSEL OM KONFLIKT",
+    s3Title: "Automatisk varsel mellom\ndråper rett etter hverandre",
+    s3Desc: "Når du bruker flere slags dråper,\nberegnes 5 minutters avstand automatisk\n\nDa er det lett å holde anbefalt intervall",
+    s4Eyebrow: "ØYETRYKK",
+    s4Title: "Utviklingen i øyetrykket som graf",
+    s4Desc: "Registrer øyetrykk for venstre (V) og høyre (H)\nfra hver kontroll\n\nGraf og siste målinger\ndeler samme skjerm",
+    s5Eyebrow: "TILGJENGELIGHET",
+    s5Title: "Justerbar skriftstørrelse",
+    s5Desc: "Tre trinn — Normal, Stor, Størst —\nfor behagelig lesing\n\nLeselig også når synet er uklart\nrett etter en dråpe",
+    contact: "Kontakt",
+    home: "Hjem",
+    blog: "Blogg",
+    privacy: "Personvernerklæring",
+    terms: "Vilkår for bruk"
+  },
+  pl: {
+    title: "eyeday - przypomnienia i zapisy kropli do oczu",
+    subtitle: "Aplikacja do kropli na okres po operacji\n(jaskra, zaćma, LASIK, LASEK, ICL)\ni na schorzenia oczu\n\nWłasny plan, zapisy dawek i przebieg ciśnienia w oku\nwszystko w jednej aplikacji",
+    s1Eyebrow: "DODAJ LEK",
+    s1Title: "Ustaw plan\nzgodny z Twoją receptą",
+    s1Desc: "Podaj tylko nazwę, liczbę razy dziennie,\nodstęp i godzinę rozpoczęcia\n\nTryb własny sam wyliczy plan,\nna przykład 3 razy dziennie co 4 godziny\n\nPrzydaje się też przy zespole suchego oka, alergii,\nzapaleniu błony naczyniowej i owrzodzeniu rogówki",
+    s2Eyebrow: "ZAPISY DAWEK",
+    s2Title: "Dzisiejsze krople na pierwszy rzut oka",
+    s2Desc: "Zaplanowane godziny i to, co już podane,\nna jednej przejrzystej osi czasu\n\nW notatkach zapisz okłady, przemywanie oczu,\nmaści i inne zalecone zabiegi",
+    s3Eyebrow: "OSTRZEŻENIE O KOLIZJI",
+    s3Title: "Automatyczne ostrzeżenie między\nkroplami podawanymi po sobie",
+    s3Desc: "Gdy podajesz kilka kropli,\nodstęp 5 minut wyliczy się sam\n\nŁatwo utrzymasz zalecany odstęp",
+    s4Eyebrow: "CIŚNIENIE W OKU",
+    s4Title: "Przebieg ciśnienia na wykresie",
+    s4Desc: "Zapisuj ciśnienie lewego (L) i prawego (P) oka\nz każdej wizyty\n\nWykres i ostatnie pomiary\nna jednym ekranie",
+    s5Eyebrow: "DOSTĘPNOŚĆ",
+    s5Title: "Regulowany rozmiar tekstu",
+    s5Desc: "Trzy stopnie — Normalny, Duży, Największy —\ndla wygodnego czytania\n\nCzytelny nawet wtedy, gdy widzisz nieostro\nzaraz po zakropleniu",
+    contact: "Kontakt",
+    home: "Start",
+    blog: "Blog",
+    privacy: "Polityka prywatności",
+    terms: "Regulamin"
+  },
+  sv: {
+    title: "eyeday - påminnelse och logg för ögondroppar",
+    subtitle: "En ögondroppsapp för eftervård\n(glaukom, grå starr, LASIK, LASEK, ICL)\noch vid ögonsjukdomar\n\nEgna scheman, dosloggar och ögontryckets utveckling\nallt i samma app",
+    s1Eyebrow: "LÄGG TILL LÄKEMEDEL",
+    s1Title: "Gör ett schema\nsom följer ditt recept",
+    s1Desc: "Ange bara namn, antal gånger per dag,\nintervall och starttid\n\nStäll in själv-läget räknar ut schemat,\ntill exempel 3 gånger om dagen var 4:e timme\n\nFungerar även vid torra ögon, allergi,\nuveit och hornhinnesår",
+    s2Eyebrow: "DOSLOGG",
+    s2Title: "Dagens droppar med en blick",
+    s2Desc: "Se planerade tider och vad du redan tagit\npå en och samma tydliga tidslinje\n\nSkriv i anteckningarna om omslag, ögonskölj,\nsalvor och annan ordinerad behandling",
+    s3Eyebrow: "VARNING FÖR KROCK",
+    s3Title: "Automatisk varning mellan\ndroppar tätt efter varandra",
+    s3Desc: "När du tar flera olika droppar\nräknas 5 minuters mellanrum ut automatiskt\n\nDå är det lätt att hålla rekommenderat mellanrum",
+    s4Eyebrow: "ÖGONTRYCK",
+    s4Title: "Ögontryckets utveckling som diagram",
+    s4Desc: "Registrera ögontryck för vänster (V) och höger (H)\nfrån varje besök\n\nDiagram och senaste mätningar\ndelar samma skärm",
+    s5Eyebrow: "TILLGÄNGLIGHET",
+    s5Title: "Justerbar textstorlek",
+    s5Desc: "Tre steg — Normal, Stor, Störst —\nför bekväm läsning\n\nLäsbar även när synen är suddig\ndirekt efter en droppe",
+    contact: "Kontakt",
+    home: "Start",
+    blog: "Blogg",
+    privacy: "Integritetspolicy",
+    terms: "Användarvillkor"
+  },
+  tr: {
+    title: "eyeday - göz damlası hatırlatıcı ve kayıt",
+    subtitle: "Ameliyat sonrası bakım\n(glokom, katarakt, LASIK, LASEK, ICL)\nve göz hastalıkları için bir göz damlası uygulaması\n\nKendi planınız, doz kayıtları ve göz tansiyonu seyri\nhepsi tek uygulamada",
+    s1Eyebrow: "İLAÇ EKLE",
+    s1Title: "Reçetenize uygun\nbir plan kurun",
+    s1Desc: "Yalnızca adı, günde kaç kez,\naralık ve başlangıç saatini girin\n\nKendim ayarlayayım modu planı kendi hesaplar,\nörneğin günde 3 kez 4 saat arayla\n\nKuru göz, alerji, üveit ve kornea ülseri\ngibi durumlarda da kullanabilirsiniz",
+    s2Eyebrow: "DOZ KAYITLARI",
+    s2Title: "Bugünün damlaları bir bakışta",
+    s2Desc: "Planlanan saatleri ve tamamladıklarınızı\ntek ve anlaşılır bir zaman çizelgesinde görün\n\nNotlara kompres, göz yıkama, merhem gibi\ndiğer önerilen uygulamaları da yazın",
+    s3Eyebrow: "ÇAKIŞMA UYARISI",
+    s3Title: "Arka arkaya damlalar arasında\notomatik uyarı",
+    s3Desc: "Birden fazla damla kullandığınızda\n5 dakikalık aralık otomatik hesaplanır\n\nÖnerilen aralığı korumak kolaylaşır",
+    s4Eyebrow: "GÖZ TANSİYONU",
+    s4Title: "Göz tansiyonu seyri grafikte",
+    s4Desc: "Her muayeneden sol (S) ve sağ (Sğ)\ngöz tansiyonunu kaydedin\n\nGrafik ve son ölçümler\naynı ekranda",
+    s5Eyebrow: "ERİŞİLEBİLİRLİK",
+    s5Title: "Ayarlanabilir yazı boyutu",
+    s5Desc: "Üç kademe — Normal, Büyük, En büyük —\nrahat okumak için\n\nDamlattıktan hemen sonra görüş bulanıkken de\nokunabilir",
+    contact: "İletişim",
+    home: "Ana sayfa",
+    blog: "Blog",
+    privacy: "Gizlilik Politikası",
+    terms: "Hizmet Koşulları"
+  },
+  'zh-Hant': {
+    title: "eyeday - 眼藥水提醒與點眼記錄",
+    subtitle: "為術後照護（青光眼、白內障、\n近視雷射、LASEK、ICL）與眼睛疾病\n打造的眼藥水 App\n\n自訂點眼安排、點眼記錄、眼壓變化\n都在同一個 App",
+    s1Eyebrow: "新增藥水",
+    s1Title: "照著你的處方\n設定點眼安排",
+    s1Desc: "只要輸入名稱、每天次數、\n間隔和開始時間\n\n自行設定會自動算好安排，\n像是一天 3 次每 4 小時、一天 4 次每 3 小時\n\n乾眼、過敏、葡萄膜炎、角膜潰瘍\n等狀況也都用得上",
+    s2Eyebrow: "點眼記錄",
+    s2Title: "今天要點的一眼看完",
+    s2Desc: "在一條清楚的時間軸上\n看到預定時間和完成狀況\n\n用備註記下熱敷、洗眼、藥膏\n等一併拿到的處置",
+    s3Eyebrow: "間隔提醒",
+    s3Title: "連續點眼之間\n自動提醒",
+    s3Desc: "點多種眼藥水時，\n會自動算出 5 分鐘間隔\n\n輕鬆守住建議的間隔時間",
+    s4Eyebrow: "眼壓記錄",
+    s4Title: "眼壓變化一目瞭然",
+    s4Desc: "把每次回診的左（左）右（右）眼壓\n都記下來\n\n趨勢圖和最近的測量\n就在同一個畫面",
+    s5Eyebrow: "無障礙",
+    s5Title: "字體大小可調整",
+    s5Desc: "普通、大、最大三段，\n把字放到看得舒服為止\n\n剛點完眼藥水視線模糊時\n也讀得清楚",
+    contact: "聯絡我們",
+    home: "首頁",
+    blog: "部落格",
+    privacy: "隱私權政策",
+    terms: "服務條款"
   }
 };
 
@@ -1577,7 +1845,7 @@ const PLAY_TEXT = {
   it: { kicker: "Disponibile su", label: "Google Play" },
   pt: { kicker: "Disponivel no", label: "Google Play" }
 };
-const LANGS = ["ko","en","ja","fr","es","ru","de","it","pt"];
+const LANGS = ["ko","en","ja","fr","es","ru","de","it","pt","ar","cs","da","fi","nl","no","pl","sv","tr","zh-Hant"];
 
 function pickInitialLang() {
   const params = new URLSearchParams(location.search);
@@ -1614,7 +1882,7 @@ const MOCK = {
     metaFrom:'08:30부터 | 2회 | 12시간',metaBedtime:'자기 전',metaIndef:'무기한',
     time830am:'오전 8:30',time830pm:'오후 8:30',time1000pm:'오후 10:00',
     sub1Done:'오전 8:31 1회차 완료',
-    conflictTitle:'안약 간격 주의',conflictSnooze:'알겠어요',conflictDoNow:'지금 점안하기',
+    conflictTitle:'안약 간격 주의',conflictBody:'{med1}을(를) 넣은 지 얼마 되지 않았습니다\n여러 안약을 넣을 경우 5분 간격을 두세요',conflictSnooze:'알겠어요',conflictDoNow:'지금 점안하기',
     iopTitle:'안압 기록',iopRecentTitle:'최근 기록',leftAbbr:'좌',rightAbbr:'우',
     fontTitle:'글씨 크기',fontNormal:'보통',fontLarge:'크게',fontLargest:'제일 크게',
     fontPreview:'이 문장은 선택한 크기로 표시됩니다',
@@ -1634,7 +1902,7 @@ const MOCK = {
     metaFrom:'From 08:30 | 2x | 12h',metaBedtime:'Bedtime',metaIndef:'Indefinite',
     time830am:'8:30 AM',time830pm:'8:30 PM',time1000pm:'10:00 PM',
     sub1Done:'8:31 AM Dose 1 done',
-    conflictTitle:'Eye Drop Interval Warning',conflictSnooze:'Got It',conflictDoNow:'Apply Now',
+    conflictTitle:'Eye Drop Interval Warning',conflictBody:'It hasn\'t been long since you applied {med1}\nWait 5 minutes between different eye drops',conflictSnooze:'Got It',conflictDoNow:'Apply Now',
     iopTitle:'IOP History',iopRecentTitle:'Recent records',leftAbbr:'L',rightAbbr:'R',
     fontTitle:'Font Size',fontNormal:'Normal',fontLarge:'Large',fontLargest:'Largest',
     fontPreview:'This sentence is shown at the selected size',
@@ -1654,7 +1922,7 @@ const MOCK = {
     metaFrom:'08:30から | 2回 | 12時間',metaBedtime:'就寝前',metaIndef:'無期限',
     time830am:'午前 8:30',time830pm:'午後 8:30',time1000pm:'午後 10:00',
     sub1Done:'午前 8:31 1回目 完了',
-    conflictTitle:'点眼間隔の注意',conflictSnooze:'わかりました',conflictDoNow:'今すぐ点眼する',
+    conflictTitle:'点眼間隔の注意',conflictBody:'{med1}を点眼してからまだ間もないです\n複数の目薬を使う場合は5分間隔を空けてください',conflictSnooze:'わかりました',conflictDoNow:'今すぐ点眼する',
     iopTitle:'眼圧の記録',iopRecentTitle:'最近の記録',leftAbbr:'左',rightAbbr:'右',
     fontTitle:'文字サイズ',fontNormal:'標準',fontLarge:'大きめ',fontLargest:'最大',
     fontPreview:'この文章は選択したサイズで表示されます',
@@ -1674,7 +1942,7 @@ const MOCK = {
     metaFrom:'À partir de 08:30 | 2x | 12h',metaBedtime:'Au coucher',metaIndef:'Indéfini',
     time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
     sub1Done:'8:31 Dose 1 prise',
-    conflictTitle:'Intervalle de gouttes',conflictSnooze:'D\'accord',conflictDoNow:'Appliquer maintenant',
+    conflictTitle:'Intervalle de gouttes',conflictBody:'{med1} a été appliqué il y a peu de temps\nAttendez 5 minutes entre les différents collyres',conflictSnooze:'D\'accord',conflictDoNow:'Appliquer maintenant',
     iopTitle:'Historique TIO',iopRecentTitle:'Enregistrements récents',leftAbbr:'G',rightAbbr:'D',
     fontTitle:'Taille du texte',fontNormal:'Normale',fontLarge:'Grande',fontLargest:'Très grande',
     fontPreview:'Cette phrase s\'affiche dans la taille sélectionnée',
@@ -1694,7 +1962,7 @@ const MOCK = {
     metaFrom:'Desde 08:30 | 2x | 12h',metaBedtime:'Antes de dormir',metaIndef:'Indefinido',
     time830am:'8:30 AM',time830pm:'8:30 PM',time1000pm:'10:00 PM',
     sub1Done:'8:31 AM Dosis 1 aplicada',
-    conflictTitle:'Intervalo de gotas',conflictSnooze:'Entendido',conflictDoNow:'Aplicar ahora',
+    conflictTitle:'Intervalo de gotas',conflictBody:'{med1} se aplicó hace poco\nEspera 5 minutos entre diferentes gotas',conflictSnooze:'Entendido',conflictDoNow:'Aplicar ahora',
     iopTitle:'Historial de PIO',iopRecentTitle:'Registros recientes',leftAbbr:'I',rightAbbr:'D',
     fontTitle:'Tamaño del texto',fontNormal:'Normal',fontLarge:'Grande',fontLargest:'Muy grande',
     fontPreview:'Esta frase se muestra en el tamaño seleccionado',
@@ -1714,7 +1982,7 @@ const MOCK = {
     metaFrom:'С 08:30 | 2x | 12ч',metaBedtime:'Перед сном',metaIndef:'Бессрочно',
     time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
     sub1Done:'8:31 Доза 1 принята',
-    conflictTitle:'Интервал между каплями',conflictSnooze:'Понятно',conflictDoNow:'Закапать сейчас',
+    conflictTitle:'Интервал между каплями',conflictBody:'{med1} были закапаны совсем недавно\nМежду разными каплями подождите 5 минут',conflictSnooze:'Понятно',conflictDoNow:'Закапать сейчас',
     iopTitle:'История ВГД',iopRecentTitle:'Последние записи',leftAbbr:'Л',rightAbbr:'П',
     fontTitle:'Размер шрифта',fontNormal:'Обычный',fontLarge:'Крупный',fontLargest:'Самый крупный',
     fontPreview:'Это предложение отображается выбранным размером',
@@ -1734,7 +2002,7 @@ const MOCK = {
     metaFrom:'Ab 08:30 | 2× | 12 Std.',metaBedtime:'Vor dem Schlafen',metaIndef:'Unbefristet',
     time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
     sub1Done:'8:31 Dosis 1 erledigt',
-    conflictTitle:'Hinweis zum Tropfen-Abstand',conflictSnooze:'Verstanden',conflictDoNow:'Jetzt anwenden',
+    conflictTitle:'Hinweis zum Tropfen-Abstand',conflictBody:'{med1} wurde gerade erst angewendet\nWarte 5 Minuten zwischen verschiedenen Augentropfen',conflictSnooze:'Verstanden',conflictDoNow:'Jetzt anwenden',
     iopTitle:'IOD-Verlauf',iopRecentTitle:'Letzte Einträge',leftAbbr:'L',rightAbbr:'R',
     fontTitle:'Schriftgröße',fontNormal:'Normal',fontLarge:'Groß',fontLargest:'Sehr groß',
     fontPreview:'Dieser Satz wird in der gewählten Größe angezeigt',
@@ -1754,7 +2022,7 @@ const MOCK = {
     metaFrom:'Da 08:30 | 2× | 12h',metaBedtime:'Prima di dormire',metaIndef:'Indefinita',
     time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
     sub1Done:'8:31 Dose 1 eseguita',
-    conflictTitle:'Avviso intervallo gocce',conflictSnooze:'Capito',conflictDoNow:'Applica ora',
+    conflictTitle:'Avviso intervallo gocce',conflictBody:'{med1} è stato applicato da poco\nAspetta 5 minuti tra colliri diversi',conflictSnooze:'Capito',conflictDoNow:'Applica ora',
     iopTitle:'Cronologia PIO',iopRecentTitle:'Registri recenti',leftAbbr:'S',rightAbbr:'D',
     fontTitle:'Dimensione testo',fontNormal:'Normale',fontLarge:'Grande',fontLargest:'Molto grande',
     fontPreview:'Questa frase è mostrata nella dimensione selezionata',
@@ -1774,11 +2042,211 @@ const MOCK = {
     metaFrom:'A partir de 08:30 | 2× | 12h',metaBedtime:'Antes de dormir',metaIndef:'Indefinida',
     time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
     sub1Done:'8:31 Dose 1 aplicada',
-    conflictTitle:'Aviso de intervalo entre colírios',conflictSnooze:'Entendi',conflictDoNow:'Aplicar agora',
+    conflictTitle:'Aviso de intervalo entre colírios',conflictBody:'{med1} foi aplicado há pouco\nEspere 5 minutos entre colírios diferentes',conflictSnooze:'Entendi',conflictDoNow:'Aplicar agora',
     iopTitle:'Histórico de PIO',iopRecentTitle:'Registros recentes',leftAbbr:'E',rightAbbr:'D',
     fontTitle:'Tamanho do texto',fontNormal:'Normal',fontLarge:'Grande',fontLargest:'Muito grande',
     fontPreview:'Esta frase é exibida no tamanho selecionado',
     iopDates:['15.12.26','17.11.26','20.10.26','22.09.26','25.08.26','28.07.26','30.06.26','02.06.26']
+  },
+  ar: {
+    med1:'كوسوبت',med2:'زالاتان',leftEye:'العين اليسرى',
+    editTitle:'تعديل قطرة العين',deleteLabel:'حذف',saveLabel:'حفظ',addLabel:'إضافة',
+    medName:'اسم قطرة العين',scheduleType:'أوقات الجرعة',timesPerDay:'عدد المرات يوميًا',intervalLabel:'الفاصل الزمني',startTime:'وقت البدء',
+    morning:'الصباح',noon:'الظهر',evening:'المساء',bedtime:'قبل النوم',custom:'تخصيص',indefinite:'غير محددة',
+    am:'ص',pm:'م',
+    t1:'1×',t2:'2×',t3:'3×',t4:'4×',t5:'5×',t6:'6×',t7:'7×',t8:'8×',t9:'9×',t10:'10×',t11:'11×',t12:'12×',
+    h1:'1 س',h2:'2 س',h3:'3 س',h4:'4 س',h6:'6 س',h8:'8 س',h10:'10 س',h12:'12 س',
+    activeMeds:'القطرات المستخدمة حاليًا',todaySchedule:'سجل قطرات اليوم',
+    noteAdd:'ملاحظة',extraDropAdd:'جرعة إضافية',iopAdd:'ضغط العين',expand:'توسيع',
+    wd0:'أحد',wd1:'إثنين',wd2:'ثلاثاء',wd3:'أربعاء',wd4:'خميس',wd5:'جمعة',wd6:'سبت',
+    metaFrom:'من 08:30 | 2× | 12 س',metaBedtime:'قبل النوم',metaIndef:'غير محددة',
+    time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
+    sub1Done:'8:31 تمت الجرعة 1',
+    conflictTitle:'تنبيه الفاصل بين القطرات',conflictBody:'لم يمضِ وقت طويل على تقطير {med1}\nانتظر 5 دقائق بين القطرات المختلفة',conflictSnooze:'فهمت',conflictDoNow:'التقطير الآن',
+    iopTitle:'سجل ضغط العين',iopRecentTitle:'أحدث القياسات',leftAbbr:'يس',rightAbbr:'يم',
+    fontTitle:'حجم الخط',fontNormal:'عادي',fontLarge:'كبير',fontLargest:'الأكبر',
+    fontPreview:'تظهر هذه الجملة بالحجم المحدد',
+    iopDates:['15.12.26','17.11.26','20.10.26','22.09.26','25.08.26','28.07.26','30.06.26','02.06.26']
+  },
+  cs: {
+    med1:'Cosopt',med2:'Xalatan',leftEye:'Levé',
+    editTitle:'Upravit oční kapky',deleteLabel:'Smazat',saveLabel:'Uložit',addLabel:'Přidat',
+    medName:'Název očních kapek',scheduleType:'Časy dávkování',timesPerDay:'Kolikrát denně',intervalLabel:'Odstup',startTime:'Čas zahájení',
+    morning:'Ráno',noon:'V poledne',evening:'Večer',bedtime:'Před spaním',custom:'Nastavit vlastní',indefinite:'Bez omezení',
+    am:'dop.',pm:'odp.',
+    t1:'1x',t2:'2x',t3:'3x',t4:'4x',t5:'5x',t6:'6x',t7:'7x',t8:'8x',t9:'9x',t10:'10x',t11:'11x',t12:'12x',
+    h1:'1 h',h2:'2 h',h3:'3 h',h4:'4 h',h6:'6 h',h8:'8 h',h10:'10 h',h12:'12 h',
+    activeMeds:'Aktivní oční kapky',todaySchedule:'Dnešní záznamy kapek',
+    noteAdd:'Poznámka',extraDropAdd:'Dávka navíc',iopAdd:'Nitroočni tlak',expand:'Rozbalit',
+    wd0:'ne',wd1:'po',wd2:'út',wd3:'st',wd4:'čt',wd5:'pá',wd6:'so',
+    metaFrom:'Od 08:30 | 2x | 12 h',metaBedtime:'Před spaním',metaIndef:'Bez omezení',
+    time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
+    sub1Done:'8:31 1. dávka hotová',
+    conflictTitle:'Upozornění na odstup kapek',conflictBody:'{med1} jste aplikovali teprve nedávno\nMezi různými očními kapkami počkejte 5 minut',conflictSnooze:'Rozumím',conflictDoNow:'Aplikovat nyní',
+    iopTitle:'Historie nitroočniho tlaku',iopRecentTitle:'Poslední měření',leftAbbr:'L',rightAbbr:'P',
+    fontTitle:'Velikost písma',fontNormal:'Normální',fontLarge:'Velké',fontLargest:'Největší',
+    fontPreview:'Tato věta se zobrazí ve vybrané velikosti',
+    iopDates:['15.12.26','17.11.26','20.10.26','22.09.26','25.08.26','28.07.26','30.06.26','02.06.26']
+  },
+  da: {
+    med1:'Cosopt',med2:'Xalatan',leftEye:'Venstre',
+    editTitle:'Rediger øjendråbe',deleteLabel:'Slet',saveLabel:'Gem',addLabel:'Tilføj',
+    medName:'Navn på øjendråbe',scheduleType:'Doseringstidspunkter',timesPerDay:'Gange om dagen',intervalLabel:'Interval',startTime:'Starttidspunkt',
+    morning:'Morgen',noon:'Middag',evening:'Aften',bedtime:'Sengetid',custom:'Vælg selv',indefinite:'Ubegrænset',
+    am:'AM',pm:'PM',
+    t1:'1x',t2:'2x',t3:'3x',t4:'4x',t5:'5x',t6:'6x',t7:'7x',t8:'8x',t9:'9x',t10:'10x',t11:'11x',t12:'12x',
+    h1:'1 t',h2:'2 t',h3:'3 t',h4:'4 t',h6:'6 t',h8:'8 t',h10:'10 t',h12:'12 t',
+    activeMeds:'Aktive øjendråber',todaySchedule:'Dagens dråbelog',
+    noteAdd:'Notat',extraDropAdd:'Ekstra dosis',iopAdd:'Øjentryk',expand:'Udvid',
+    wd0:'søn',wd1:'man',wd2:'tir',wd3:'ons',wd4:'tor',wd5:'fre',wd6:'lør',
+    metaFrom:'Fra 08:30 | 2x | 12 t',metaBedtime:'Sengetid',metaIndef:'Ubegrænset',
+    time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
+    sub1Done:'8:31 Dosis 1 taget',
+    conflictTitle:'Advarsel om dråbeinterval',conflictBody:'Det er ikke længe siden, du tog {med1}\nVent 5 minutter mellem forskellige øjendråber',conflictSnooze:'Forstået',conflictDoNow:'Tag nu',
+    iopTitle:'Øjentrykshistorik',iopRecentTitle:'Seneste målinger',leftAbbr:'V',rightAbbr:'H',
+    fontTitle:'Skriftstørrelse',fontNormal:'Normal',fontLarge:'Stor',fontLargest:'Størst',
+    fontPreview:'Denne sætning vises i den valgte størrelse',
+    iopDates:['15.12.26','17.11.26','20.10.26','22.09.26','25.08.26','28.07.26','30.06.26','02.06.26']
+  },
+  fi: {
+    med1:'Cosopt',med2:'Xalatan',leftEye:'Vasen',
+    editTitle:'Muokkaa silmätippoja',deleteLabel:'Poista',saveLabel:'Tallenna',addLabel:'Lisää',
+    medName:'Silmätippojen nimi',scheduleType:'Annostusajat',timesPerDay:'Kertaa päivässä',intervalLabel:'Väli',startTime:'Aloitusaika',
+    morning:'Aamu',noon:'Keskipäivä',evening:'Ilta',bedtime:'Ennen nukkumaanmenoa',custom:'Aseta itse',indefinite:'Toistaiseksi',
+    am:'ap.',pm:'ip.',
+    t1:'1x',t2:'2x',t3:'3x',t4:'4x',t5:'5x',t6:'6x',t7:'7x',t8:'8x',t9:'9x',t10:'10x',t11:'11x',t12:'12x',
+    h1:'1 h',h2:'2 h',h3:'3 h',h4:'4 h',h6:'6 h',h8:'8 h',h10:'10 h',h12:'12 h',
+    activeMeds:'Käytössä olevat silmätipat',todaySchedule:'Tämän päivän tippakirjaukset',
+    noteAdd:'Muistiinpano',extraDropAdd:'Ylimääräinen annos',iopAdd:'Silmänpaine',expand:'Laajenna',
+    wd0:'su',wd1:'ma',wd2:'ti',wd3:'ke',wd4:'to',wd5:'pe',wd6:'la',
+    metaFrom:'Alkaen 08:30 | 2x | 12 h',metaBedtime:'Ennen nukkumaanmenoa',metaIndef:'Toistaiseksi',
+    time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
+    sub1Done:'8:31 Annos 1 otettu',
+    conflictTitle:'Varoitus tippojen välistä',conflictBody:'{med1} tiputtamisesta on kulunut vasta hetki\nOdota 5 minuuttia eri silmätippojen välillä',conflictSnooze:'Selvä',conflictDoNow:'Tiputa nyt',
+    iopTitle:'Silmänpaineen historia',iopRecentTitle:'Viimeisimmät mittaukset',leftAbbr:'V',rightAbbr:'O',
+    fontTitle:'Tekstin koko',fontNormal:'Normaali',fontLarge:'Suuri',fontLargest:'Suurin',
+    fontPreview:'Tämä lause näkyy valitussa koossa',
+    iopDates:['15.12.26','17.11.26','20.10.26','22.09.26','25.08.26','28.07.26','30.06.26','02.06.26']
+  },
+  nl: {
+    med1:'Cosopt',med2:'Xalatan',leftEye:'Links',
+    editTitle:'Oogdruppel bewerken',deleteLabel:'Verwijderen',saveLabel:'Opslaan',addLabel:'Toevoegen',
+    medName:'Naam oogdruppel',scheduleType:'Doseertijden',timesPerDay:'Keer per dag',intervalLabel:'Interval',startTime:'Starttijd',
+    morning:'Ochtend',noon:'Middag',evening:'Avond',bedtime:'Voor het slapen',custom:'Zelf instellen',indefinite:'Onbepaald',
+    am:'AM',pm:'PM',
+    t1:'1x',t2:'2x',t3:'3x',t4:'4x',t5:'5x',t6:'6x',t7:'7x',t8:'8x',t9:'9x',t10:'10x',t11:'11x',t12:'12x',
+    h1:'1 u',h2:'2 u',h3:'3 u',h4:'4 u',h6:'6 u',h8:'8 u',h10:'10 u',h12:'12 u',
+    activeMeds:'Actieve oogdruppels',todaySchedule:'Druppels van vandaag',
+    noteAdd:'Notitie',extraDropAdd:'Extra dosis',iopAdd:'Oogdruk',expand:'Uitklappen',
+    wd0:'zo',wd1:'ma',wd2:'di',wd3:'wo',wd4:'do',wd5:'vr',wd6:'za',
+    metaFrom:'Vanaf 08:30 | 2x | 12 u',metaBedtime:'Voor het slapen',metaIndef:'Onbepaald',
+    time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
+    sub1Done:'8:31 Dosis 1 gedaan',
+    conflictTitle:'Waarschuwing druppelinterval',conflictBody:'Je hebt {med1} net gebruikt\nWacht 5 minuten tussen verschillende oogdruppels',conflictSnooze:'Begrepen',conflictDoNow:'Nu gebruiken',
+    iopTitle:'Oogdrukgeschiedenis',iopRecentTitle:'Recente metingen',leftAbbr:'L',rightAbbr:'R',
+    fontTitle:'Tekstgrootte',fontNormal:'Normaal',fontLarge:'Groot',fontLargest:'Grootst',
+    fontPreview:'Deze zin wordt in de gekozen grootte getoond',
+    iopDates:['15.12.26','17.11.26','20.10.26','22.09.26','25.08.26','28.07.26','30.06.26','02.06.26']
+  },
+  no: {
+    med1:'Cosopt',med2:'Xalatan',leftEye:'Venstre',
+    editTitle:'Rediger øyedråpe',deleteLabel:'Slett',saveLabel:'Lagre',addLabel:'Legg til',
+    medName:'Navn på øyedråpe',scheduleType:'Doseringstidspunkt',timesPerDay:'Ganger per dag',intervalLabel:'Intervall',startTime:'Starttidspunkt',
+    morning:'Morgen',noon:'Midt på dagen',evening:'Kveld',bedtime:'Leggetid',custom:'Velg selv',indefinite:'Ubegrenset',
+    am:'AM',pm:'PM',
+    t1:'1x',t2:'2x',t3:'3x',t4:'4x',t5:'5x',t6:'6x',t7:'7x',t8:'8x',t9:'9x',t10:'10x',t11:'11x',t12:'12x',
+    h1:'1 t',h2:'2 t',h3:'3 t',h4:'4 t',h6:'6 t',h8:'8 t',h10:'10 t',h12:'12 t',
+    activeMeds:'Aktive øyedråper',todaySchedule:'Dagens dråpelogg',
+    noteAdd:'Notat',extraDropAdd:'Ekstra dose',iopAdd:'Øyetrykk',expand:'Utvid',
+    wd0:'søn',wd1:'man',wd2:'tir',wd3:'ons',wd4:'tor',wd5:'fre',wd6:'lør',
+    metaFrom:'Fra 08:30 | 2x | 12 t',metaBedtime:'Leggetid',metaIndef:'Ubegrenset',
+    time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
+    sub1Done:'8:31 Dose 1 tatt',
+    conflictTitle:'Advarsel om dråpeintervall',conflictBody:'Det er ikke lenge siden du tok {med1}\nVent 5 minutter mellom ulike øyedråper',conflictSnooze:'Forstått',conflictDoNow:'Ta nå',
+    iopTitle:'Øyetrykkshistorikk',iopRecentTitle:'Siste målinger',leftAbbr:'V',rightAbbr:'H',
+    fontTitle:'Skriftstørrelse',fontNormal:'Normal',fontLarge:'Stor',fontLargest:'Størst',
+    fontPreview:'Denne setningen vises i den valgte størrelsen',
+    iopDates:['15.12.26','17.11.26','20.10.26','22.09.26','25.08.26','28.07.26','30.06.26','02.06.26']
+  },
+  pl: {
+    med1:'Cosopt',med2:'Xalatan',leftEye:'Lewe',
+    editTitle:'Edytuj krople do oczu',deleteLabel:'Usuń',saveLabel:'Zapisz',addLabel:'Dodaj',
+    medName:'Nazwa kropli',scheduleType:'Godziny podania',timesPerDay:'Razy dziennie',intervalLabel:'Odstęp',startTime:'Godzina rozpoczęcia',
+    morning:'Rano',noon:'W południe',evening:'Wieczorem',bedtime:'Przed snem',custom:'Ustawię samodzielnie',indefinite:'Bez końca',
+    am:'przed poł.',pm:'po poł.',
+    t1:'1x',t2:'2x',t3:'3x',t4:'4x',t5:'5x',t6:'6x',t7:'7x',t8:'8x',t9:'9x',t10:'10x',t11:'11x',t12:'12x',
+    h1:'1 godz.',h2:'2 godz.',h3:'3 godz.',h4:'4 godz.',h6:'6 godz.',h8:'8 godz.',h10:'10 godz.',h12:'12 godz.',
+    activeMeds:'Aktywne krople do oczu',todaySchedule:'Dzisiejsze zapisy kropli',
+    noteAdd:'Notatka',extraDropAdd:'Dodatkowa dawka',iopAdd:'Ciśnienie w oku',expand:'Rozwiń',
+    wd0:'nd',wd1:'pon',wd2:'wt',wd3:'śr',wd4:'czw',wd5:'pt',wd6:'sob',
+    metaFrom:'Od 08:30 | 2x | 12 godz.',metaBedtime:'Przed snem',metaIndef:'Bez końca',
+    time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
+    sub1Done:'8:31 Dawka 1 podana',
+    conflictTitle:'Uwaga na odstęp między kroplami',conflictBody:'{med1} podano całkiem niedawno\nOdczekaj 5 minut między różnymi kroplami',conflictSnooze:'Rozumiem',conflictDoNow:'Podaj teraz',
+    iopTitle:'Historia ciśnienia w oku',iopRecentTitle:'Ostatnie pomiary',leftAbbr:'L',rightAbbr:'P',
+    fontTitle:'Rozmiar tekstu',fontNormal:'Normalny',fontLarge:'Duży',fontLargest:'Największy',
+    fontPreview:'To zdanie jest pokazane w wybranym rozmiarze',
+    iopDates:['15.12.26','17.11.26','20.10.26','22.09.26','25.08.26','28.07.26','30.06.26','02.06.26']
+  },
+  sv: {
+    med1:'Cosopt',med2:'Xalatan',leftEye:'Vänster',
+    editTitle:'Redigera ögondroppar',deleteLabel:'Radera',saveLabel:'Spara',addLabel:'Lägg till',
+    medName:'Namn på ögondroppar',scheduleType:'Doseringstider',timesPerDay:'Gånger per dag',intervalLabel:'Intervall',startTime:'Starttid',
+    morning:'Morgon',noon:'Mitt på dagen',evening:'Kväll',bedtime:'Läggdags',custom:'Ställ in själv',indefinite:'Tills vidare',
+    am:'AM',pm:'PM',
+    t1:'1x',t2:'2x',t3:'3x',t4:'4x',t5:'5x',t6:'6x',t7:'7x',t8:'8x',t9:'9x',t10:'10x',t11:'11x',t12:'12x',
+    h1:'1 tim',h2:'2 tim',h3:'3 tim',h4:'4 tim',h6:'6 tim',h8:'8 tim',h10:'10 tim',h12:'12 tim',
+    activeMeds:'Aktiva ögondroppar',todaySchedule:'Dagens dropplogg',
+    noteAdd:'Anteckning',extraDropAdd:'Extra dos',iopAdd:'Ögontryck',expand:'Expandera',
+    wd0:'sön',wd1:'mån',wd2:'tis',wd3:'ons',wd4:'tors',wd5:'fre',wd6:'lör',
+    metaFrom:'Från 08:30 | 2x | 12 tim',metaBedtime:'Läggdags',metaIndef:'Tills vidare',
+    time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
+    sub1Done:'8:31 Dos 1 tagen',
+    conflictTitle:'Varning för droppintervall',conflictBody:'Det var inte länge sedan du tog {med1}\nVänta 5 minuter mellan olika ögondroppar',conflictSnooze:'Uppfattat',conflictDoNow:'Ta nu',
+    iopTitle:'Ögontryckshistorik',iopRecentTitle:'Senaste mätningar',leftAbbr:'V',rightAbbr:'H',
+    fontTitle:'Textstorlek',fontNormal:'Normal',fontLarge:'Stor',fontLargest:'Störst',
+    fontPreview:'Den här meningen visas i den valda storleken',
+    iopDates:['26-12-15','26-11-17','26-10-20','26-09-22','26-08-25','26-07-28','26-06-30','26-06-02']
+  },
+  tr: {
+    med1:'Cosopt',med2:'Xalatan',leftEye:'Sol',
+    editTitle:'Göz damlasını düzenle',deleteLabel:'Sil',saveLabel:'Kaydet',addLabel:'Ekle',
+    medName:'Göz damlası adı',scheduleType:'Uygulama saatleri',timesPerDay:'Günde kaç kez',intervalLabel:'Aralık',startTime:'Başlangıç saati',
+    morning:'Sabah',noon:'Öğlen',evening:'Akşam',bedtime:'Yatmadan önce',custom:'Kendim ayarlayayım',indefinite:'Süresiz',
+    am:'ÖÖ',pm:'ÖS',
+    t1:'1x',t2:'2x',t3:'3x',t4:'4x',t5:'5x',t6:'6x',t7:'7x',t8:'8x',t9:'9x',t10:'10x',t11:'11x',t12:'12x',
+    h1:'1 sa',h2:'2 sa',h3:'3 sa',h4:'4 sa',h6:'6 sa',h8:'8 sa',h10:'10 sa',h12:'12 sa',
+    activeMeds:'Aktif göz damlaları',todaySchedule:'Bugünün damla kayıtları',
+    noteAdd:'Not',extraDropAdd:'Ek doz',iopAdd:'Göz tansiyonu',expand:'Genişlet',
+    wd0:'Paz',wd1:'Pzt',wd2:'Sal',wd3:'Çar',wd4:'Per',wd5:'Cum',wd6:'Cmt',
+    metaFrom:'08:30\'dan itibaren | 2x | 12 sa',metaBedtime:'Yatmadan önce',metaIndef:'Süresiz',
+    time830am:'8:30',time830pm:'20:30',time1000pm:'22:00',
+    sub1Done:'8:31 1. doz tamamlandı',
+    conflictTitle:'Damla aralığı uyarısı',conflictBody:'{med1} damlatalı henüz çok olmadı\nFarklı göz damlaları arasında 5 dakika bekleyin',conflictSnooze:'Anladım',conflictDoNow:'Şimdi damlat',
+    iopTitle:'Göz tansiyonu geçmişi',iopRecentTitle:'Son ölçümler',leftAbbr:'S',rightAbbr:'Sğ',
+    fontTitle:'Yazı boyutu',fontNormal:'Normal',fontLarge:'Büyük',fontLargest:'En büyük',
+    fontPreview:'Bu cümle seçilen boyutta gösterilir',
+    iopDates:['15.12.26','17.11.26','20.10.26','22.09.26','25.08.26','28.07.26','30.06.26','02.06.26']
+  },
+  'zh-Hant': {
+    med1:'可舒目',med2:'適麗能',leftEye:'左眼',
+    editTitle:'編輯眼藥水',deleteLabel:'刪除',saveLabel:'儲存',addLabel:'新增',
+    medName:'眼藥水名稱',scheduleType:'給藥時間',timesPerDay:'每天次數',intervalLabel:'間隔',startTime:'開始時間',
+    morning:'早上',noon:'中午',evening:'晚上',bedtime:'睡前',custom:'自行設定',indefinite:'無限期',
+    am:'上午',pm:'下午',
+    t1:'1 次',t2:'2 次',t3:'3 次',t4:'4 次',t5:'5 次',t6:'6 次',t7:'7 次',t8:'8 次',t9:'9 次',t10:'10 次',t11:'11 次',t12:'12 次',
+    h1:'1 小時',h2:'2 小時',h3:'3 小時',h4:'4 小時',h6:'6 小時',h8:'8 小時',h10:'10 小時',h12:'12 小時',
+    activeMeds:'使用中的眼藥水',todaySchedule:'今日點眼記錄',
+    noteAdd:'備註',extraDropAdd:'額外點眼',iopAdd:'眼壓',expand:'展開',
+    wd0:'日',wd1:'一',wd2:'二',wd3:'三',wd4:'四',wd5:'五',wd6:'六',
+    metaFrom:'08:30 起 | 2 次 | 12 小時',metaBedtime:'睡前',metaIndef:'無限期',
+    time830am:'上午 8:30',time830pm:'下午 8:30',time1000pm:'下午 10:00',
+    sub1Done:'上午 8:31 第 1 次已完成',
+    conflictTitle:'點眼間隔提醒',conflictBody:'{med1} 才剛點不久\n點多種眼藥水時，請間隔 5 分鐘',conflictSnooze:'我知道了',conflictDoNow:'現在就點',
+    iopTitle:'眼壓紀錄',iopRecentTitle:'最近的測量',leftAbbr:'左',rightAbbr:'右',
+    fontTitle:'字體大小',fontNormal:'普通',fontLarge:'大',fontLargest:'最大',
+    fontPreview:'這句話會以選定的大小顯示',
+    iopDates:['26/12/15','26/11/17','26/10/20','26/09/22','26/08/25','26/07/28','26/06/30','26/06/02']
   }
 };
 
@@ -1786,6 +2254,7 @@ function applyLang(lang) {
   const dict = UI[lang] || UI.ko;
   const mock = MOCK[lang] || MOCK.ko;
   document.documentElement.lang = lang;
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
   document.title = dict.title;
   document.querySelectorAll('[data-i]').forEach((el) => {
     const k = el.getAttribute('data-i');
@@ -1807,7 +2276,9 @@ function applyLang(lang) {
   });
   // Conflict body referencing med1
   document.querySelectorAll('[data-mock-tpl]').forEach((el) => {
-    const tpl = el.getAttribute('data-mock-tpl');
+    const key = el.getAttribute('data-mock-tpl');
+    const tpl = mock[key] != null ? mock[key] : MOCK.ko[key];
+    if (tpl == null) return;
     el.innerHTML = '';
     tpl.replace(/\{med1\}/g, mock.med1).split('\n').forEach((line, i) => {
       if (i > 0) el.appendChild(document.createElement('br'));

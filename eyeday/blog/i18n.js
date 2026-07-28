@@ -53,7 +53,7 @@
       gtag("js", new Date());
     }
     const slug = location.pathname.split("/").filter(Boolean).at(-1) || "blog";
-    const isIndex = location.pathname.endsWith("/eyeday/blog/") || location.pathname.endsWith("/eyeday/blog");
+    const isIndex = /\/blog\/?$/.test(location.pathname);
     gtag("config", GA_ID, {
       page_title: document.title,
       page_path: location.pathname + location.search,
@@ -103,11 +103,12 @@
   }
   function ensureShell(l) {
     const c = COMMON[l] || COMMON.ko;
-    const homeHref = "/";
+    const base = location.pathname.startsWith("/eyeday/") ? "/eyeday" : "";
+    const homeHref = base + "/";
     document.documentElement.lang = l;
     let nav = document.querySelector(".blog-top");
     if (nav && !document.getElementById("blogLang")) {
-      const isIndex = location.pathname.endsWith("/eyeday/blog/") || location.pathname.endsWith("/eyeday/blog");
+      const isIndex = /\/blog\/?$/.test(location.pathname);
       nav.innerHTML = `<a class="brand" href="${homeHref}">eyeday</a><div class="top-links"><a href="${homeHref}">${c.home}</a><a href="${isIndex ? "./" : "../"}">${c.blog}</a><select id="blogLang" aria-label="Language">${LANGS.map(([k,n]) => `<option value="${k}">${n}</option>`).join("")}</select></div>`;
       const sel = document.getElementById("blogLang");
       sel.value = l;
@@ -120,7 +121,7 @@
     const back = document.querySelector(".back-blog");
     if (back) back.textContent = c.back;
     if (!document.querySelector(".blog-footer")) {
-      document.body.insertAdjacentHTML("beforeend", `<footer class="blog-footer"><div><a href="/eyeday/privacy/">${c.privacy}</a><a href="/eyeday/terms/">${c.terms}</a><a href="/eyeday/contact/">${c.contact}</a></div><div class="copyright">© 2026 posiki</div></footer>`);
+      document.body.insertAdjacentHTML("beforeend", `<footer class="blog-footer"><div><a href="${base}/privacy/">${c.privacy}</a><a href="${base}/terms/">${c.terms}</a><a href="${base}/contact/">${c.contact}</a></div><div class="copyright">© 2026 posiki</div></footer>`);
     }
   }
   function renderIndex(l) {
@@ -150,7 +151,7 @@
   }
   const l = lang();
   ensureShell(l);
-  if (location.pathname.endsWith("/eyeday/blog/") || location.pathname.endsWith("/eyeday/blog")) renderIndex(l);
+  if (/\/blog\/?$/.test(location.pathname)) renderIndex(l);
   else renderArticle(l);
   initAnalytics(l);
   wireAnalytics(l);
