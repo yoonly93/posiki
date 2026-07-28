@@ -1,4 +1,7 @@
 .git
 .git/**
+.wrangler
+.wrangler/**
 wrangler.toml
 .assetsignore
+worker.js
