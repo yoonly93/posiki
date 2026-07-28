@@ -13,10 +13,20 @@ const EYEDAY_PREFIX = '/eyeday';
 // app-ads.txt 는 AdMob 이 마케팅 URL 도메인의 루트에서 크롤링하므로 반드시 제외한다.
 const ROOT_PASSTHROUGH = new Set([
   '/app-ads.txt',
-  '/robots.txt',
   '/sitemap.xml',
   '/favicon.ico',
 ]);
+
+// Cloudflare 가 넣어주는 기본 robots.txt 에는 Sitemap 지시가 없어서
+// 크롤러가 사이트맵을 못 찾는다. 호스트에 맞는 경로를 직접 내려준다.
+function robotsTxt(hostname) {
+  const sitemap = hostname === EYEDAY_HOST
+    ? `https://${EYEDAY_HOST}/blog-sitemap.xml`
+    : 'https://posiki.com/eyeday/blog-sitemap.xml';
+  return new Response(
+    `User-agent: *\nAllow: /\n\nSitemap: ${sitemap}\n`,
+    { headers: { 'content-type': 'text/plain; charset=utf-8' } });
+}
 
 // wrangler dev 는 request.url 의 호스트를 첫 번째 라우트로 고정해 버리기 때문에
 // Host 헤더를 우선해서 읽는다. 프로덕션에서는 둘이 같은 값이다.
@@ -29,8 +39,13 @@ function resolveHostname(request) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    const hostname = resolveHostname(request);
 
-    if (resolveHostname(request) !== EYEDAY_HOST) {
+    if (url.pathname === '/robots.txt') {
+      return robotsTxt(hostname);
+    }
+
+    if (hostname !== EYEDAY_HOST) {
       return env.ASSETS.fetch(request);
     }
 

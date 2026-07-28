@@ -5,3 +5,6 @@
 wrangler.toml
 .assetsignore
 worker.js
+eyeday/blog/_build.py
+eyeday/blog/_content
+eyeday/blog/_content/**
