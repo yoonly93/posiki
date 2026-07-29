@@ -56,7 +56,13 @@ def home_href(lang):
 
 
 def esc(s):
+    """속성값용 — 따옴표까지 이스케이프한다"""
     return html.escape(s, quote=True)
+
+
+def txt(s):
+    """텍스트 노드용 — 따옴표는 그대로 둔다"""
+    return html.escape(s, quote=False)
 
 
 def alternates(langs, slug=None):
@@ -70,7 +76,7 @@ def alternates(langs, slug=None):
 
 def lang_switcher(langs, names, cur, slug=None):
     opts = ''.join(
-        f'<option value="{url_for(l, slug)}"{" selected" if l == cur else ""}>{esc(names[l])}</option>'
+        f'<option value="{url_for(l, slug)}"{" selected" if l == cur else ""}>{txt(names[l])}</option>'
         for l in langs)
     return (f'<select class="blog-lang" aria-label="Language" '
             f'onchange="location.href=this.value">{opts}</select>')
@@ -78,9 +84,9 @@ def lang_switcher(langs, names, cur, slug=None):
 
 def footer(ui):
     return ('<footer class="blog-footer"><div>'
-            f'<a href="/privacy/">{esc(ui["privacy"])}</a>'
-            f'<a href="/terms/">{esc(ui["terms"])}</a>'
-            f'<a href="/contact/">{esc(ui["contact"])}</a>'
+            f'<a href="/privacy/">{txt(ui["privacy"])}</a>'
+            f'<a href="/terms/">{txt(ui["terms"])}</a>'
+            f'<a href="/contact/">{txt(ui["contact"])}</a>'
             '</div><div class="copyright">© 2026 posiki</div></footer>')
 
 
@@ -108,7 +114,7 @@ def render_article(lang, post, ui, langs, names):
         f'<!DOCTYPE html><html lang="{lang}"{" dir=\"rtl\"" if lang == "ar" else ""}>'
         f'<head><meta charset="utf-8">'
         f'<meta name="viewport" content="width=device-width, initial-scale=1.0">'
-        f'<title>{esc(post["title"])} - EyeDay</title>'
+        f'<title>{txt(post["title"])} - EyeDay</title>'
         f'<meta name="description" content="{esc(post["description"])}">'
         f'<link rel="canonical" href="{url_for(lang, post["slug"])}">'
         f'{alternates(langs, post["slug"])}'
@@ -119,8 +125,8 @@ def render_article(lang, post, ui, langs, names):
         f'<link rel="stylesheet" href="{css_href(lang, False)}"></head>'
         f'<body><main class="blog-shell">'
         f'<nav class="blog-top"><a class="brand" href="{home_href(lang)}">eyeday</a>'
-        f'<div class="top-links"><a href="../">{esc(ui["blog"])}</a>'
-        f'<a href="{home_href(lang)}">{esc(ui["home"])}</a>'
+        f'<div class="top-links"><a href="../">{txt(ui["blog"])}</a>'
+        f'<a href="{home_href(lang)}">{txt(ui["home"])}</a>'
         f'{lang_switcher(langs, names, lang, post["slug"])}</div></nav>'
         f'<article><span class="eyebrow">{post["eyebrow"]}</span>'
         f'<h1>{post["h1"]}</h1>'
@@ -128,7 +134,7 @@ def render_article(lang, post, ui, langs, names):
         f'<p class="summary">{post["summary"]}</p>'
         f'<div class="note">{post["note"]}</div>'
         f'{"".join(blocks)}{cta_html}</article>'
-        f'<a class="back-blog" href="../">{esc(ui["back"])}</a></main>'
+        f'<a class="back-blog" href="../">{txt(ui["back"])}</a></main>'
         f'{footer(ui)}'
         f'</body></html>')
 
@@ -143,7 +149,7 @@ def render_index(lang, posts, ui, langs, names):
         f'<!DOCTYPE html><html lang="{lang}"{" dir=\"rtl\"" if lang == "ar" else ""}>'
         f'<head><meta charset="utf-8">'
         f'<meta name="viewport" content="width=device-width, initial-scale=1.0">'
-        f'<title>{esc(ui["indexTitle"])}</title>'
+        f'<title>{txt(ui["indexTitle"])}</title>'
         f'<meta name="description" content="{esc(ui["indexDescription"])}">'
         f'<link rel="canonical" href="{url_for(lang)}">'
         f'{alternates(langs)}'
@@ -154,13 +160,13 @@ def render_index(lang, posts, ui, langs, names):
         f'<link rel="stylesheet" href="{css_href(lang, True)}"></head>'
         f'<body><main class="blog-shell">'
         f'<nav class="blog-top"><a class="brand" href="{home_href(lang)}">eyeday</a>'
-        f'<div class="top-links"><a href="./">{esc(ui["blog"])}</a>'
-        f'<a href="{home_href(lang)}">{esc(ui["home"])}</a>'
+        f'<div class="top-links"><a href="./">{txt(ui["blog"])}</a>'
+        f'<a href="{home_href(lang)}">{txt(ui["home"])}</a>'
         f'{lang_switcher(langs, names, lang)}</div></nav>'
-        f'<div class="hero-copy"><span class="eyebrow">{esc(ui["eyebrow"])}</span>'
+        f'<div class="hero-copy"><span class="eyebrow">{txt(ui["eyebrow"])}</span>'
         f'<h1>{ui["indexHeading"]}</h1>'
-        f'<p class="lead">{esc(ui["lead"])}</p>'
-        f'<div class="note">{esc(ui["disclaimer"])}</div></div>'
+        f'<p class="lead">{txt(ui["lead"])}</p>'
+        f'<div class="note">{txt(ui["disclaimer"])}</div></div>'
         f'<div class="post-list">{cards}</div></main>'
         f'{footer(ui)}'
         f'</body></html>')

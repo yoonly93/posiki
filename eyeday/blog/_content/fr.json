@@ -1,0 +1,344 @@
+{
+  "ui": {
+    "languageName": "Français",
+    "home": "Accueil", "blog": "Blog", "back": "← Retour au blog",
+    "privacy": "Confidentialité", "terms": "Conditions d'utilisation", "contact": "Contact",
+    "eyebrow": "GUIDE DES COLLYRES",
+    "indexTitle": "Blog EyeDay - Rappels de collyres et journal d'instillation",
+    "indexDescription": "Des guides pratiques sur les rappels de collyres et le suivi des instillations : glaucome, suites de chirurgie de la cataracte, LASIK et LASEK.",
+    "indexHeading": "Comment tenir ses collyres<br>au quotidien",
+    "lead": "L'ordonnance compte, mais respecter les heures et les intervalles est souvent le plus difficile. Le blog EyeDay reprend les questions qui reviennent le plus en consultation : rappels, journal d'instillation et suivi de la pression intraoculaire.",
+    "disclaimer": "*Les types et la fréquence des collyres après une chirurgie varient d'un établissement à l'autre. Ceci est une orientation générale ; suivez toujours les consignes de l'établissement qui vous a opéré."
+  },
+  "posts": [
+    {
+      "slug": "cataract-surgery-eye-drops",
+      "title": "Garder son plan de collyres clair après une chirurgie de la cataracte",
+      "description": "Comment gérer antibiotiques, anti-inflammatoires et larmes artificielles après une chirurgie de la cataracte sans les confondre.",
+      "eyebrow": "Collyres après la cataracte",
+      "h1": "Garder son plan de collyres clair après une chirurgie de la cataracte",
+      "date": "27 juillet 2026",
+      "summary": "La chirurgie de la cataracte ne s'arrête pas à la sortie du bloc. Utiliser correctement les collyres prescrits pendant les semaines qui suivent fait partie de la récupération.",
+      "note": "Les types et la fréquence des collyres après une chirurgie varient d'un établissement à l'autre. Ceci est une orientation générale ; suivez toujours les consignes de l'établissement qui vous a opéré.",
+      "blocks": [
+        {"t": "h2", "v": "Vous pouvez repartir avec plusieurs collyres"},
+        {"t": "p", "v": "Après une chirurgie de la cataracte, on vous prescrit parfois ensemble des antibiotiques, des anti-inflammatoires, des collyres à base de corticoïdes et des larmes artificielles. Chacun a son propre nombre de prises par jour et sa propre durée, si bien qu'une note sur papier devient confuse au bout de quelques jours."},
+        {"t": "p", "v": "La première semaine comporte en général le plus de prises, et le rythme est ensuite réduit progressivement. Quand c'est le cas, vérifiez trois choses séparément : à partir de quand on réduit, dans quel œil va chaque collyre, et combien de temps attendre entre deux."},
+        {"t": "h2", "v": "Découpez le suivi en trois"},
+        {"t": "ul", "v": [
+          "Le nom du produit : ne vous fiez pas à la forme ou à la couleur du flacon",
+          "La durée : date de début, date de fin et chaque jour où le rythme change",
+          "L'intervalle : le temps à laisser quand vous enchaînez plusieurs collyres"
+        ]},
+        {"t": "p", "v": "Juste après l'opération, la vue peut être trouble ou l'œil inconfortable, et un proche aide souvent. C'est exactement là qu'un relevé de ce qui a réellement été instillé vaut mieux qu'une simple alarme."},
+        {"t": "h2", "v": "Utiliser EyeDay"},
+        {"t": "p", "v": "Dans EyeDay, vous définissez pour chaque collyre le nombre de prises quotidiennes et l'heure de début, et vous pouvez construire votre propre programme. Quand plusieurs collyres se suivent sur une période fixe, comme après une cataracte, tenir la date de fin de chacun séparément et noter chaque prise rend la relecture facile avant le prochain rendez-vous."}
+      ],
+      "cta": {
+        "title": "Si le tableau des collyres vous embrouille",
+        "body": "Gardez la feuille papier et vérifiez les heures du jour dans l'application.",
+        "appStore": "Sur iPhone, depuis l'App Store",
+        "playStore": "Sur Samsung, Google Pixel, Xiaomi et autres Android, depuis Google Play"
+      }
+    },
+    {
+      "slug": "dry-eye-artificial-tears-reminder",
+      "title": "Les larmes artificielles ont-elles aussi besoin de rappels ?",
+      "description": "Pour celles et ceux qui utilisent des larmes artificielles contre la sécheresse oculaire : comment installer une routine et tenir un relevé utile.",
+      "eyebrow": "Sécheresse oculaire et larmes artificielles",
+      "h1": "Les larmes artificielles ont-elles aussi besoin de rappels ?",
+      "date": "27 juillet 2026",
+      "summary": "Les larmes artificielles passent pour l'option anodine. Mais si la sécheresse revient sans cesse, noter simplement quand et à quelle fréquence vous les utilisez en dit long sur vos propres habitudes.",
+      "note": "Le mode d'emploi des larmes artificielles peut varier selon le produit et la présence de conservateurs. Si la gêne persiste ou s'aggrave, consultez un ophtalmologue.",
+      "blocks": [
+        {"t": "h2", "v": "N'attendez-vous pas que ça pique déjà ?"},
+        {"t": "p", "v": "Quand on a les yeux secs, on cherche les larmes artificielles au moment où ça gratte ou ça brûle. Les utiliser lorsque les symptômes apparaissent aide, bien sûr, mais si vous passez la journée devant un écran, il vaut aussi la peine de prendre les devants."},
+        {"t": "p", "v": "Au travail, une prise saute vite quand on est concentré. Si vos yeux ne deviennent lourds et flous qu'en fin d'après-midi, placer un rappel plus tôt dans la journée peut aider."},
+        {"t": "h2", "v": "Un relevé révèle vos habitudes"},
+        {"t": "ul", "v": [
+          "Si la sécheresse est plus forte l'après-midi que le matin",
+          "Si vous instillez davantage les jours où vous portez des lentilles",
+          "Si les symptômes s'accentuent après une nuit courte ou avec le chauffage"
+        ]},
+        {"t": "p", "v": "Ce relevé vous aide à ajuster vos propres habitudes, et il vous donne quelque chose de concret à décrire en consultation plutôt qu'une impression vague."},
+        {"t": "h2", "v": "Ajouter des larmes artificielles dans EyeDay"},
+        {"t": "p", "v": "EyeDay ne sert pas qu'aux collyres sur ordonnance : vous pouvez y ajouter ce que vous utilisez de façon répétée, comme des larmes artificielles. Notez-les en prise supplémentaire au moment voulu, ou placez des rappels à heures fixes pour voir le rythme se dessiner."}
+      ],
+      "cta": {
+        "title": "Si la sécheresse revient sans cesse",
+        "body": "Commencez par noter quand et à quelle fréquence vous utilisez vos larmes artificielles.",
+        "appStore": "Sur iPhone, depuis l'App Store",
+        "playStore": "Sur Samsung, Google Pixel, Xiaomi et autres Android, depuis Google Play"
+      }
+    },
+    {
+      "slug": "eye-drop-5-minute-interval",
+      "title": "Pourquoi cinq minutes entre deux collyres ?",
+      "description": "Pourquoi laisser environ cinq minutes entre des collyres différents, et comment s'y tenir au quotidien.",
+      "eyebrow": "L'intervalle de cinq minutes",
+      "h1": "Pourquoi plusieurs collyres demandent cinq minutes d'écart",
+      "date": "27 juillet 2026",
+      "summary": "Quand on vous prescrit deux ou trois collyres, on aimerait tout mettre d'un coup et en finir. Mais des collyres différents s'accompagnent en général de consignes d'espacement.",
+      "note": "L'intervalle recommandé peut varier selon le produit et les consignes de votre établissement. Si vous utilisez plusieurs collyres ensemble, confirmez l'ordre et l'écart avec votre équipe soignante.",
+      "blocks": [
+        {"t": "h2", "v": "L'œil ne peut en contenir qu'une petite quantité"},
+        {"t": "p", "v": "Quand vous instillez une goutte, une partie reste à la surface de l'œil et une partie s'évacue par les voies lacrymales. Ajouter la goutte suivante tout de suite peut chasser la première avant qu'elle ait eu le temps de rester en place. C'est pourquoi il vaut mieux laisser un écart quand vous enchaînez plusieurs collyres."},
+        {"t": "p", "v": "Beaucoup de fiches de consultation parlent d'« environ cinq minutes ». L'essentiel tient moins au chiffre exact qu'à l'habitude de ne pas tout instiller d'affilée."},
+        {"t": "h2", "v": "Cinq minutes, c'est plus long qu'il n'y paraît"},
+        {"t": "p", "v": "Avant de partir travailler ou juste avant de dormir, cinq minutes ne sont pas courtes. Vous mettez le premier collyre, vous commencez autre chose et vous oubliez le second — ou bien l'impatience l'emporte et vous enchaînez aussitôt."},
+        {"t": "ul", "v": [
+          "Lancer un minuteur dès que la première goutte est mise",
+          "Attribuer à chaque produit une couleur ou une place fixe",
+          "Cocher le premier pour ne pas sauter le second"
+        ]},
+        {"t": "h2", "v": "L'alerte d'intervalle dans EyeDay"},
+        {"t": "p", "v": "Quand vous notez plusieurs collyres, EyeDay vérifie l'écart à partir de vos prises récentes. Pour qui utilise plusieurs produits à la fois — glaucome, ou les semaines qui suivent une opération — c'est ce rappel « vous venez d'en mettre un » qui rend service."}
+      ],
+      "cta": {
+        "title": "Si l'intervalle vous échappe souvent",
+        "body": "Gérez le minuteur de cinq minutes et le journal d'instillation au même endroit.",
+        "appStore": "Sur iPhone, depuis l'App Store",
+        "playStore": "Sur Samsung, Google Pixel, Xiaomi et autres Android, depuis Google Play"
+      }
+    },
+    {
+      "slug": "eye-drop-reminder-app-checklist",
+      "title": "Que regarder dans une application de rappel de collyres",
+      "description": "Au-delà de la simple alarme : programmes par produit, écart de cinq minutes, journal d'instillation et relevés de pression intraoculaire.",
+      "eyebrow": "Applications de rappel de collyres",
+      "h1": "Que regarder dans une application de rappel de collyres",
+      "date": "27 juillet 2026",
+      "summary": "Une simple application d'alarme suffit à vous amener à l'heure. Mais dès que les collyres se multiplient, ou que le suivi dure des mois, il vaut la peine de vérifier si l'application a vraiment été conçue pour les collyres.",
+      "note": "Une application ne remplace pas une ordonnance. Voyez-la comme un outil pour mieux suivre la prescription que vous avez déjà.",
+      "blocks": [
+        {"t": "h2", "v": "D'abord, un programme distinct par produit"},
+        {"t": "p", "v": "Les collyres diffèrent par le nombre de prises, l'œil concerné, le moment du début et la durée. Tout écrire dans le titre d'une seule alarme paraît tenable au départ et s'effondre dès le flacon suivant."},
+        {"t": "h2", "v": "Ensuite, un relevé des prises effectuées"},
+        {"t": "p", "v": "« Le rappel a sonné » et « j'ai bien instillé » ne sont pas la même chose. Un relevé jour par jour compte surtout quand un proche aide, ou quand vous voulez revoir la période avant un rendez-vous."},
+        {"t": "h2", "v": "Ensuite, une vérification de l'écart entre collyres"},
+        {"t": "p", "v": "Quand on prend deux collyres ou plus, on s'entend souvent dire de laisser environ cinq minutes. Que l'application le vérifie pour vous réduit les erreurs, en particulier dans la bousculade du matin."},
+        {"t": "h2", "v": "Enfin, de la place pour le suivi de vos yeux"},
+        {"t": "p", "v": "En cas de glaucome, les relevés de pression aident ; après une opération, ce sont les notes sur les symptômes. Quand le journal d'instillation et le suivi oculaire vivent à des endroits séparés, on ne retrouve ni l'un ni l'autre."}
+      ],
+      "cta": {
+        "title": "EyeDay est conçue pour les collyres",
+        "body": "Programmes, journal d'instillation, alertes de cinq minutes et relevés de pression dans une seule application.",
+        "appStore": "Sur iPhone, depuis l'App Store",
+        "playStore": "Sur Samsung, Google Pixel, Xiaomi et autres Android, depuis Google Play"
+      }
+    },
+    {
+      "slug": "glaucoma-eye-drop-reminder",
+      "title": "Collyres du glaucome : pourquoi la même heure chaque jour",
+      "description": "Pourquoi les collyres du glaucome doivent être instillés à heures fixes, et comment rappels et journal d'instillation aident sur la durée.",
+      "eyebrow": "Rappels dans le glaucome",
+      "h1": "Pourquoi instiller les collyres du glaucome à la même heure chaque jour ?",
+      "date": "27 juillet 2026",
+      "summary": "Le glaucome demande un suivi régulier même quand on ne ressent presque rien. Pour les collyres en particulier, l'habitude qui compte est de les instiller aux heures prescrites plutôt qu'au moment où l'on y pense.",
+      "note": "Ce sont des informations générales sur la gestion des collyres. Le produit, la fréquence et l'arrêt éventuel relèvent de votre ophtalmologue.",
+      "blocks": [
+        {"t": "h2", "v": "La régularité, c'est tout l'enjeu"},
+        {"t": "p", "v": "Les collyres sont très utilisés dans le glaucome pour maintenir la pression intraoculaire. La difficulté, c'est qu'un glaucome débutant provoque souvent peu de gêne : du point de vue du patient, sauter un jour ou deux ne se sent pas. Or les collyres se gèrent d'après le programme prescrit, pas d'après la sensation du moment."},
+        {"t": "p", "v": "« J'ai oublié hier, je peux en mettre deux aujourd'hui ? » revient constamment en consultation. La plupart des collyres ne se rattrapent pas en doublant une prise. Cela dépend du moment où vous y avez pensé, de l'heure de la prise suivante et du produit : suivez les consignes de votre établissement."},
+        {"t": "h2", "v": "Quand les heures glissent, le relevé glisse aussi"},
+        {"t": "p", "v": "Les collyres du glaucome paraissent simples — une ou deux fois par jour — mais ils se ratent facilement dans la vraie vie. Le trajet du matin, une soirée dehors, la fatigue au coucher : le même créneau recule sans cesse. Il devient alors plus commode de séparer rappel et relevé."},
+        {"t": "ul", "v": [
+          "Le rappel vous dit que c'est l'heure",
+          "Le relevé confirme que vous l'avez fait",
+          "Les mesures de pression donnent la tendance avant le rendez-vous"
+        ]},
+        {"t": "h2", "v": "Quand EyeDay convient"},
+        {"t": "p", "v": "EyeDay est faite pour que les personnes sous collyres au long cours, comme dans le glaucome, enregistrent séparément le nom du produit, l'œil concerné, le nombre de prises et l'heure de début. Vous voyez les prises du jour sur une frise, et vous notez la pression mesurée en consultation pour l'œil gauche et l'œil droit."}
+      ],
+      "cta": {
+        "title": "Si vous oubliez souvent vos collyres du glaucome",
+        "body": "Avant de changer l'ordonnance, vérifiez si vous les instillez vraiment à la même heure chaque jour.",
+        "appStore": "Sur iPhone, depuis l'App Store",
+        "playStore": "Sur Samsung, Google Pixel, Xiaomi et autres Android, depuis Google Play"
+      }
+    },
+    {
+      "slug": "global-eye-drop-reminder-apps",
+      "title": "Applications de collyres et de rappel de médicaments comparées",
+      "description": "Comparatif d'EyeDropAlarm, Drop Reminder, Medisafe, MyTherapy, Apple Santé et EyeDay pour les rappels de collyres.",
+      "eyebrow": "Applications de collyres dans le monde",
+      "h1": "Applications de collyres et de rappel de médicaments comparées",
+      "date": "27 juillet 2026",
+      "summary": "Cherchez un rappel de collyres et vous tombez à la fois sur des applications dédiées, des rappels de médicaments généralistes et l'application santé intégrée au téléphone. Elles ne brillent pas sur les mêmes points : le choix dépend de la simplicité ou de la complexité de votre ordonnance.",
+      "note": "Ce comparatif général s'appuie sur les présentations publiques et les fiches des magasins d'applications. Les fonctions et les pays couverts évoluent avec le temps.",
+      "blocks": [
+        {"t": "h2", "v": "EyeDropAlarm"},
+        {"t": "p", "v": "EyeDropAlarm est une application iPhone centrée sur les rappels de collyres. Elle met en avant ce qui est propre aux collyres : couleur du flacon, œil concerné et écart entre les produits."},
+        {"t": "h2", "v": "Drop Reminder"},
+        {"t": "p", "v": "Drop Reminder est une application iPhone présentée pour gérer plusieurs programmes de collyres à la fois : après une cataracte, en cas de glaucome, en cas de sécheresse oculaire. Son argument est un parcours simple, sans compte."},
+        {"t": "h2", "v": "Medisafe"},
+        {"t": "p", "v": "Medisafe est un rappel de médicaments généraliste très connu. Il est solide sur les comprimés, les compléments, les alertes aux proches et les rapports d'observance, mais les détails propres aux collyres — œil gauche ou droit, écart de cinq minutes — peuvent rester à votre charge."},
+        {"t": "h2", "v": "MyTherapy"},
+        {"t": "p", "v": "MyTherapy combine aussi rappels de médicaments et suivi de santé. C'est pratique pour couvrir largement traitements, mesures et rendez-vous, mais ses écrans ne sont pas organisés autour des collyres comme ceux d'une application dédiée telle qu'EyeDay."},
+        {"t": "h2", "v": "Les médicaments dans Apple Santé"},
+        {"t": "p", "v": "Sur iPhone, l'application Santé permet de créer des rappels de médicaments de base. L'avantage est de n'avoir rien à installer ; les limites apparaissent sur les alertes d'intervalle et sur un parcours construit autour du journal d'instillation."},
+        {"t": "h2", "v": "EyeDay"},
+        {"t": "p", "v": "EyeDay a été conçue dès le départ pour les collyres. Nom du produit, œil gauche, œil droit ou les deux, nombre de prises, heure de début et programme personnalisé : chacun a son propre champ."},
+        {"t": "p", "v": "Quand vous enchaînez plusieurs collyres, elle vérifie l'écart à partir de vos prises récentes. Sous traitement au long cours pour un glaucome, vous conservez les relevés de pression à côté ; pour une cure limitée après une cataracte ou une chirurgie au laser, vous voyez les prises du jour sur une frise."},
+        {"t": "p", "v": "Elle prend aussi en charge le français, l'anglais, le japonais et d'autres langues, et fonctionne sur iPhone comme sur Android. Elle s'adresse à celles et ceux pour qui « la goutte est-elle bien passée » compte plus qu'un simple rappel de comprimés."},
+        {"t": "h2", "v": "Alors, laquelle choisir ?"},
+        {"t": "ul", "v": [
+          "Pour gérer comprimés et compléments dans la foulée, un rappel de médicaments généraliste sera peut-être plus commode.",
+          "Avec un seul collyre et un simple coup de pouce, le rappel intégré au téléphone peut suffire.",
+          "Avec plusieurs collyres, ou si vous avez besoin de l'œil gauche et droit, des écarts de cinq minutes et des relevés de pression, une application dédiée convient mieux."
+        ]}
+      ],
+      "cta": {
+        "title": "Si vous avez besoin d'un suivi propre aux collyres",
+        "body": "Gérez programme, relevé des prises et pression intraoculaire ensemble dans EyeDay.",
+        "appStore": "Sur iPhone, depuis l'App Store",
+        "playStore": "Sur Samsung, Google Pixel, Xiaomi et autres Android, depuis Google Play"
+      }
+    },
+    {
+      "slug": "lasik-lasek-eye-drop-schedule",
+      "title": "Pourquoi les rappels de collyres comptent après un LASIK ou un LASEK",
+      "description": "Comment tenir le rythme des antibiotiques, anti-inflammatoires et larmes artificielles après un LASIK ou un LASEK.",
+      "eyebrow": "Collyres après LASIK et LASEK",
+      "h1": "Pourquoi les rappels de collyres comptent après un LASIK ou un LASEK",
+      "date": "27 juillet 2026",
+      "summary": "Après une chirurgie réfractive, l'essentiel est d'utiliser les collyres prescrits avec régularité jusqu'à ce que les yeux se stabilisent. Les premiers jours en particulier peuvent donner l'impression d'un programme compliqué.",
+      "note": "Les collyres et la durée de la cure dépendent de la technique, de l'état de la cornée et du protocole de votre établissement. Ceci est une orientation générale ; les consignes de votre établissement priment.",
+      "blocks": [
+        {"t": "h2", "v": "Bien voir et en avoir fini, ce n'est pas pareil"},
+        {"t": "p", "v": "Quand la vue remonte vite après un LASIK ou un LASEK, les collyres semblent moins importants. Or les collyres postopératoires ne s'utilisent généralement pas seulement quand l'œil gêne : ils se prennent sur une période fixe, au rythme indiqué."},
+        {"t": "p", "v": "Antibiotiques, anti-inflammatoires, collyres à base de corticoïdes et larmes artificielles peuvent avoir des rôles différents. Les noms et les flacons se ressemblent : notez à côté de chaque nom ce à quoi il sert."},
+        {"t": "h2", "v": "Avec le LASEK, c'est la durée qu'il faut surveiller"},
+        {"t": "p", "v": "La récupération après un LASEK peut faire paraître la cure relativement longue. Les premiers jours sont difficiles à noter soi-même à cause de la lentille pansement, de la douleur et de la photophobie — et plus tard, quand tout devient confortable, on oublie facilement."},
+        {"t": "ul", "v": [
+          "Photographiez la fiche remise le jour de l'opération",
+          "Vérifiez séparément la date de début et de fin de chaque produit",
+          "Enregistrez les larmes artificielles à part des collyres sur ordonnance"
+        ]},
+        {"t": "h2", "v": "Construire une routine postopératoire dans EyeDay"},
+        {"t": "p", "v": "EyeDay permet de définir votre propre programme pour des collyres qui reviennent plusieurs fois par jour, et de voir les prises sur une frise. C'est pratique quand un proche vérifie avec vous les premiers jours, et ensuite vous ne gardez que les collyres encore nécessaires."}
+      ],
+      "cta": {
+        "title": "S'il vous faut une routine après l'opération",
+        "body": "Saisissez le programme tel qu'il vous a été donné et cochez-le chaque jour.",
+        "appStore": "Sur iPhone, depuis l'App Store",
+        "playStore": "Sur Samsung, Google Pixel, Xiaomi et autres Android, depuis Google Play"
+      }
+    },
+    {
+      "slug": "multiple-eye-drops-schedule",
+      "title": "Construire un programme pour deux ou trois collyres",
+      "description": "Comment séparer nom du produit, œil gauche et droit, nombre de prises et intervalle quand vous utilisez plusieurs collyres à la fois.",
+      "eyebrow": "Programmes à plusieurs collyres",
+      "h1": "Construire un programme quand vous avez deux ou trois collyres",
+      "date": "27 juillet 2026",
+      "summary": "Avec un seul collyre, une alarme peut suffire. Dès qu'il y en a deux ou plus, heures, ordre, œil gauche et droit et durée se mélangent, et les erreurs s'installent.",
+      "note": "L'ordre et l'espacement peuvent varier selon l'ordonnance. Si votre établissement vous a indiqué un ordre précis, suivez-le.",
+      "blocks": [
+        {"t": "h2", "v": "Commencez par séparer les informations par produit"},
+        {"t": "p", "v": "L'erreur la plus courante avec plusieurs collyres est de les mémoriser par l'heure seule — « celui du matin ». En pratique, chaque produit a son nombre de prises et sa durée, et certains ne vont que dans un œil. Construisez plutôt le programme autour du nom du produit."},
+        {"t": "ul", "v": [
+          "Notez le nom du produit avec la couleur du flacon",
+          "Confirmez : œil gauche, œil droit ou les deux",
+          "Enregistrez séparément le nombre de prises et l'heure de début",
+          "Marquez la date de fin, ou le jour où le rythme change"
+        ]},
+        {"t": "h2", "v": "Séparez les heures fixes des programmes personnalisés"},
+        {"t": "p", "v": "Un cas clair comme « une fois par jour au coucher » se gère au mieux avec un rappel à heure fixe. Un collyre qui demande un calcul — quatre fois par jour, toutes les trois heures — est plus sûr sur un programme personnalisé. Vouloir tout couler dans le même moule rend en général les choses plus confuses, pas moins."},
+        {"t": "h2", "v": "Pourquoi cocher compte"},
+        {"t": "p", "v": "Avec plusieurs collyres, « j'ai vu le rappel » et « je l'ai mis » peuvent diverger. On écarte la notification en se disant qu'on le fera dans un instant, puis on oublie. C'est pour cela que chaque prise a besoin de son propre relevé."}
+      ],
+      "cta": {
+        "title": "Faites passer ce tableau compliqué dans l'application",
+        "body": "Dans EyeDay, vous enregistrez séparément le nombre, les heures et l'intervalle de chaque produit.",
+        "appStore": "Sur iPhone, depuis l'App Store",
+        "playStore": "Sur Samsung, Google Pixel, Xiaomi et autres Android, depuis Google Play"
+      }
+    },
+    {
+      "slug": "parents-eye-drop-care",
+      "title": "Que vérifier quand la famille aide un parent avec ses collyres",
+      "description": "Relevés d'instillation, œil gauche et droit et points à contrôler avant le rendez-vous, pour les familles qui aident un parent après une opération ou pour un glaucome.",
+      "eyebrow": "Aider un parent",
+      "h1": "Que vérifier quand la famille aide un parent avec ses collyres",
+      "date": "27 juillet 2026",
+      "summary": "Quand un parent suit un traitement au long cours pour un glaucome, ou rentre d'une chirurgie de la cataracte avec plusieurs flacons, le simple fait que la famille vérifie suffit souvent à réduire les erreurs.",
+      "note": "Même si la famille aide, tout changement, arrêt ou remplacement doit être discuté avec l'ophtalmologue qui suit le patient.",
+      "blocks": [
+        {"t": "h2", "v": "« Tu l'as mis ? » compte moins que « lequel, et quand ? »"},
+        {"t": "p", "v": "Demander seulement si les gouttes ont été mises peut ne pas suffire. Avec plusieurs flacons, ce qui compte est quel produit, quel œil et à quelle heure. Quand l'œil gauche et l'œil droit ont des prescriptions différentes, la famille s'y perd autant que le patient."},
+        {"t": "p", "v": "Même quand un parent se débrouille seul, lire à chaque fois les petits caractères d'un sachet ou d'une étiquette est difficile. Mieux vaut afficher le nom en gros et garder chaque flacon dans une couleur ou à une place fixe."},
+        {"t": "h2", "v": "Ce que la famille gagne à vérifier"},
+        {"t": "ul", "v": [
+          "Si tous les collyres prévus aujourd'hui ont été mis",
+          "Si un collyre destiné à un seul œil n'est pas allé dans les deux",
+          "Si un collyre postopératoire qui devait s'arrêter est toujours utilisé",
+          "S'il existe des relevés de pression à montrer au prochain rendez-vous"
+        ]},
+        {"t": "h2", "v": "Pourquoi le relevé aide"},
+        {"t": "p", "v": "EyeDay montre les prises jour par jour et conserve les relevés de pression à côté. Avant un rendez-vous, vous n'avez plus à vous fier à la mémoire pour savoir si les gouttes ont bien été mises depuis la dernière fois. Installez-la sur le téléphone de votre parent et apprenez à vous en servir ensemble : tout devient plus simple."}
+      ],
+      "cta": {
+        "title": "Si vous gérez les collyres d'un proche",
+        "body": "Commencez par le nom du produit, l'œil concerné et un relevé des prises.",
+        "appStore": "Sur iPhone, depuis l'App Store",
+        "playStore": "Sur Samsung, Google Pixel, Xiaomi et autres Android, depuis Google Play"
+      }
+    },
+    {
+      "slug": "pred-forte-after-cataract-surgery",
+      "title": "Utiliser des collyres corticoïdes après une chirurgie de la cataracte",
+      "description": "Pourquoi la durée et la fréquence des collyres corticoïdes après une cataracte ne doivent pas être modifiées de soi-même.",
+      "eyebrow": "Collyres corticoïdes",
+      "h1": "Ce qu'il faut surveiller avec les collyres corticoïdes après une cataracte",
+      "date": "27 juillet 2026",
+      "summary": "Des collyres à base de corticoïdes sont souvent prescrits après une chirurgie de la cataracte. Ce qui compte, plus que le nom du produit, c'est de respecter la fréquence et la durée indiquées par votre établissement.",
+      "note": "Les collyres corticoïdes nécessitent parfois une surveillance, notamment de la pression intraoculaire. Ne les commencez ni ne les arrêtez de vous-même : suivez les consignes de votre ophtalmologue.",
+      "blocks": [
+        {"t": "h2", "v": "N'arrêtez pas parce que ça va mieux"},
+        {"t": "p", "v": "Quelques jours après l'opération, une fois l'œil confortable, on a envie de réduire ou d'arrêter. Mais une prescription postopératoire ne se règle pas sur les seuls symptômes. Contrôler l'inflammation, prévenir l'infection et surveiller la cicatrisation sont autant de raisons pour lesquelles on vous demande de poursuivre sur une durée définie."},
+        {"t": "p", "v": "L'inverse est tout aussi déconseillé : reprendre de soi-même un reste de collyre corticoïde parce que quelque chose gêne. Savoir s'il faut ajuster le traitement, ou s'il se passe autre chose, c'est précisément l'objet d'une consultation."},
+        {"t": "h2", "v": "Marquez les jours où le rythme diminue"},
+        {"t": "p", "v": "Les collyres postopératoires commencent souvent à un rythme soutenu, puis diminuent tous les quelques jours ou toutes les quelques semaines. Rater une de ces dates de changement, c'est risquer d'en mettre trop, ou de réduire trop tôt."},
+        {"t": "ul", "v": [
+          "Photographiez la fiche de prescription",
+          "Marquez les dates de réduction dans un agenda ou une application",
+          "Ne partagez pas un flacon avec la famille"
+        ]},
+        {"t": "h2", "v": "Suivre la cure dans EyeDay"},
+        {"t": "p", "v": "Quand vous ajoutez un produit dans EyeDay, saisir séparément le nombre de prises et l'heure de début rend le programme postopératoire récurrent facile à suivre. Le jour où le rythme change, modifiez le programme existant ou enregistrez-en un nouveau : tout reste sans ambiguïté."}
+      ],
+      "cta": {
+        "title": "Si les dates de réduction vous embrouillent",
+        "body": "Notez séparément la durée et le nombre de prises pour chaque produit.",
+        "appStore": "Sur iPhone, depuis l'App Store",
+        "playStore": "Sur Samsung, Google Pixel, Xiaomi et autres Android, depuis Google Play"
+      }
+    },
+    {
+      "slug": "timolol-latanoprost-reminder",
+      "title": "Ne pas oublier les collyres au timolol et au latanoprost",
+      "description": "Rappels et relevés qui aident à tenir les collyres du glaucome comme le timolol et le latanoprost.",
+      "eyebrow": "Noms des traitements du glaucome",
+      "h1": "Comment ne pas oublier les collyres au timolol et au latanoprost",
+      "date": "27 juillet 2026",
+      "summary": "Les collyres du glaucome ont un nom de molécule, un nom commercial et une forme de flacon qui diffèrent tous, ce qui les rend compliqués du point de vue du patient. L'important est d'utiliser le produit prescrit, comme on vous l'a dit, avec régularité.",
+      "note": "Ceci n'est pas une recommandation d'utiliser un produit en particulier. Que le timolol, le latanoprost ou autre chose vous convienne relève de votre médecin.",
+      "blocks": [
+        {"t": "h2", "v": "Un changement de nom embrouille encore plus"},
+        {"t": "p", "v": "En consultation, on peut vous passer à un autre produit de la même famille, ou le nom commercial peut différer selon l'établissement et la pharmacie. C'est là que l'on se demande « est-ce le même qu'avant ? » ou « dois-je prendre les deux ? ». Vérifiez toujours auprès de l'établissement ou de la pharmacie, et n'utilisez jamais deux produits ensemble de votre propre initiative."},
+        {"t": "p", "v": "Enregistrez le produit dans l'application sous le nom exact figurant sur le flacon, et mettez la molécule ou l'explication de votre établissement dans une note : ce sera facile à retrouver."},
+        {"t": "h2", "v": "Une prise par jour se rate aussi"},
+        {"t": "p", "v": "Un collyre une fois par jour paraît simple, mais le rater fait perdre la journée entière. Celui du coucher s'oublie quand on est fatigué ; celui du matin recule pendant qu'on se prépare. Plutôt que « ce n'est qu'une fois par jour, ça ira », la bonne pensée est « justement, une seule fois : je m'assure de le cocher »."},
+        {"t": "h2", "v": "Le relevé sert aussi en consultation"},
+        {"t": "p", "v": "Quand la pression ne baisse pas comme espéré, il peut être utile de distinguer si le problème vient du produit lui-même ou d'horaires qui ont dérivé. L'analyse revient à votre équipe soignante, mais arriver avec un relevé d'instillation rend l'échange bien plus concret."}
+      ],
+      "cta": {
+        "title": "Si vous oubliez souvent vos collyres du glaucome",
+        "body": "Enregistrez le produit sous son propre nom et cochez-le chaque jour.",
+        "appStore": "Sur iPhone, depuis l'App Store",
+        "playStore": "Sur Samsung, Google Pixel, Xiaomi et autres Android, depuis Google Play"
+      }
+    }
+  ]
+}
