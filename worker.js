@@ -13,7 +13,6 @@ const EYEDAY_PREFIX = '/eyeday';
 // app-ads.txt 는 AdMob 이 마케팅 URL 도메인의 루트에서 크롤링하므로 반드시 제외한다.
 const ROOT_PASSTHROUGH = new Set([
   '/app-ads.txt',
-  '/sitemap.xml',
   '/favicon.ico',
 ]);
 
@@ -21,7 +20,7 @@ const ROOT_PASSTHROUGH = new Set([
 // 크롤러가 사이트맵을 못 찾는다. 호스트에 맞는 경로를 직접 내려준다.
 function robotsTxt(hostname) {
   const sitemap = hostname === EYEDAY_HOST
-    ? `https://${EYEDAY_HOST}/blog-sitemap.xml`
+    ? `https://${EYEDAY_HOST}/sitemap.xml\nSitemap: https://${EYEDAY_HOST}/landing-sitemap.xml\nSitemap: https://${EYEDAY_HOST}/blog-sitemap.xml`
     : 'https://posiki.com/eyeday/blog-sitemap.xml';
   return new Response(
     `User-agent: *\nAllow: /\n\nSitemap: ${sitemap}\n`,

@@ -2333,7 +2333,7 @@ function applyLang(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const initLang = pickInitialLang();
+  const initLang = "ko";
   applyLang(initLang);
   gtag('event', 'page_view_lang', { language: initLang });
 
