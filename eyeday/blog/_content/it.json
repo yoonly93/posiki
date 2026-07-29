@@ -1,0 +1,344 @@
+{
+  "ui": {
+    "languageName": "Italiano",
+    "home": "Home", "blog": "Blog", "back": "← Torna al blog",
+    "privacy": "Informativa sulla privacy", "terms": "Termini di servizio", "contact": "Contatti",
+    "eyebrow": "GUIDA ALLE GOCCE OCULARI",
+    "indexTitle": "Blog EyeDay - Promemoria e registri per colliri",
+    "indexDescription": "Guide pratiche su promemoria e registri per colliri in caso di glaucoma, recupero dopo cataratta, LASIK e LASEK.",
+    "indexHeading": "Modi pratici per seguire<br>la routine dei colliri",
+    "lead": "La prescrizione conta, ma rispettare orari e intervalli è spesso la parte più difficile. Il blog di EyeDay raccoglie le domande più frequenti in ambulatorio: promemoria, registri delle applicazioni e controllo della pressione oculare.",
+    "disclaimer": "*Tipi e frequenza dei colliri dopo un intervento possono variare da clinica a clinica. Queste sono indicazioni generali; segui sempre le istruzioni del centro che ti ha seguito."
+  },
+  "posts": [
+    {
+      "slug": "cataract-surgery-eye-drops",
+      "title": "Come gestire i colliri dopo l'intervento di cataratta",
+      "description": "Come gestire antibiotici, antinfiammatori e lacrime artificiali dopo la cataratta senza confonderli.",
+      "eyebrow": "Colliri dopo cataratta",
+      "h1": "Come non confondere il programma dei colliri dopo l'intervento di cataratta",
+      "date": "27 lug 2026",
+      "summary": "L'intervento di cataratta non finisce quando si lascia la sala operatoria. Usare correttamente i colliri prescritti nelle settimane successive fa parte della guarigione.",
+      "note": "Tipi e frequenza dei colliri dopo un intervento possono variare da clinica a clinica. Queste sono indicazioni generali; segui sempre le istruzioni del centro che ti ha seguito.",
+      "blocks": [
+        {"t": "h2", "v": "Potresti dover usare diversi colliri"},
+        {"t": "p", "v": "Dopo la cataratta possono essere prescritti insieme antibiotici, antinfiammatori, colliri steroidei e lacrime artificiali. Ognuno può avere una frequenza giornaliera e una durata proprie, quindi anche un foglio scritto può diventare confuso dopo pochi giorni."},
+        {"t": "p", "v": "La prima settimana spesso prevede più applicazioni, poi la frequenza viene ridotta gradualmente. In quel momento conviene controllare separatamente quando inizia la riduzione, in quale occhio va ogni collirio e quanto aspettare tra uno e l'altro."},
+        {"t": "h2", "v": "Dividi il controllo in tre parti"},
+        {"t": "ul", "v": [
+          "Nome del farmaco: non affidarti solo alla forma o al colore del flacone",
+          "Durata: annota data di inizio, data finale e giorni in cui cambia la frequenza",
+          "Intervallo: lascia tempo tra un collirio e l'altro quando ne usi diversi di seguito"
+        ]},
+        {"t": "p", "v": "Subito dopo l'intervento la vista può essere annebbiata o l'occhio fastidioso, e spesso aiuta un familiare. In quel momento un registro di ciò che è stato davvero applicato vale più di una semplice sveglia."},
+        {"t": "h2", "v": "Usare EyeDay"},
+        {"t": "p", "v": "In EyeDay puoi impostare la frequenza giornaliera e l'orario di inizio per ogni collirio, oltre a creare programmi personalizzati. Quando usi più colliri per un periodo definito, come dopo la cataratta, controllare separatamente la data finale di ciascuno e registrare ogni applicazione rende più facile ricostruire la situazione prima della visita."}
+      ],
+      "cta": {
+        "title": "Se la tabella postoperatoria ti confonde",
+        "body": "Conserva il foglio della clinica e controlla gli orari quotidiani nell'app.",
+        "appStore": "Su iPhone, da App Store",
+        "playStore": "Su Samsung, Google Pixel, Xiaomi e altri telefoni Android, da Google Play"
+      }
+    },
+    {
+      "slug": "dry-eye-artificial-tears-reminder",
+      "title": "Anche le lacrime artificiali hanno bisogno di promemoria?",
+      "description": "Per chi usa lacrime artificiali per occhio secco: come creare un'abitudine regolare e tenere un registro utile.",
+      "eyebrow": "Occhio secco e lacrime artificiali",
+      "h1": "Servono promemoria anche per le lacrime artificiali?",
+      "date": "27 lug 2026",
+      "summary": "Le lacrime artificiali sembrano una soluzione leggera, ma se l'occhio secco si ripete, registrare quando e quanto spesso le usi può mostrare molto sulle tue abitudini.",
+      "note": "Le istruzioni per le lacrime artificiali possono variare in base al prodotto e alla presenza di conservanti. Se il fastidio persiste o peggiora, è meglio consultare un oculista.",
+      "blocks": [
+        {"t": "h2", "v": "Le usi solo quando il fastidio è già forte?"},
+        {"t": "p", "v": "Chi soffre di occhio secco tende a cercare le lacrime artificiali quando sente bruciore, pizzicore o sabbia negli occhi. Usarle quando compaiono i sintomi può aiutare, ma se passi la giornata davanti a uno schermo vale la pena anticipare il fastidio."},
+        {"t": "p", "v": "Durante il lavoro è particolarmente facile saltare un'applicazione perché si è concentrati. Se gli occhi diventano pesanti o annebbiati solo nel pomeriggio, un promemoria prima di quel momento può essere utile."},
+        {"t": "h2", "v": "Il registro mostra i tuoi schemi"},
+        {"t": "ul", "v": [
+          "Se la secchezza è peggiore nel pomeriggio rispetto al mattino",
+          "Se usi più gocce nei giorni in cui porti lenti a contatto",
+          "Se i sintomi peggiorano dopo poco sonno o con il riscaldamento interno"
+        ]},
+        {"t": "p", "v": "Questo registro aiuta ad aggiustare le abitudini quotidiane e offre elementi più concreti da riferire durante la visita, invece di una sensazione generica."},
+        {"t": "h2", "v": "Aggiungere lacrime artificiali in EyeDay"},
+        {"t": "p", "v": "EyeDay non serve solo per i colliri prescritti: puoi aggiungere anche prodotti usati ripetutamente, come le lacrime artificiali. Registrale come applicazione extra quando le usi, oppure imposta promemoria a orari fissi per osservare il tuo schema."}
+      ],
+      "cta": {
+        "title": "Se la secchezza continua a tornare",
+        "body": "Inizia registrando quando e quanto spesso usi le lacrime artificiali.",
+        "appStore": "Su iPhone, da App Store",
+        "playStore": "Su Samsung, Google Pixel, Xiaomi e altri telefoni Android, da Google Play"
+      }
+    },
+    {
+      "slug": "eye-drop-5-minute-interval",
+      "title": "Perché aspettare cinque minuti tra un collirio e l'altro?",
+      "description": "Perché lasciare circa cinque minuti tra colliri diversi e come riuscirci nella vita quotidiana.",
+      "eyebrow": "Intervallo di cinque minuti",
+      "h1": "Perché più colliri richiedono un intervallo di cinque minuti",
+      "date": "27 lug 2026",
+      "summary": "Quando vengono prescritti due o tre colliri, viene voglia di metterli tutti insieme e finire. Ma di solito i colliri diversi vanno distanziati.",
+      "note": "L'intervallo consigliato può variare in base al farmaco e alle istruzioni della clinica. Se usi più colliri insieme, conferma ordine e distanza con il personale sanitario.",
+      "blocks": [
+        {"t": "h2", "v": "L'occhio può trattenere solo una quantità limitata"},
+        {"t": "p", "v": "Quando applichi una goccia, una parte resta sulla superficie dell'occhio e una parte defluisce attraverso il canale lacrimale. Se aggiungi subito il collirio successivo, può trascinare via il primo prima che abbia avuto tempo di restare. Per questo è utile lasciare un intervallo quando usi più colliri di seguito."},
+        {"t": "p", "v": "Molti fogli informativi parlano di 'circa cinque minuti'. Il punto non è solo il numero esatto, ma l'abitudine di non mettere tutto insieme."},
+        {"t": "h2", "v": "Cinque minuti sono più difficili di quanto sembri"},
+        {"t": "p", "v": "Prima di uscire per andare al lavoro o appena prima di dormire, cinque minuti non sono pochi. Metti il primo collirio, inizi a fare altro e dimentichi il secondo, oppure ti spazientisci e lo metti subito."},
+        {"t": "ul", "v": [
+          "Avvia un timer appena hai messo la prima goccia",
+          "Assegna a ogni farmaco un colore o un posto fisso",
+          "Segna il primo come completato per non saltare il secondo"
+        ]},
+        {"t": "h2", "v": "L'avviso di intervallo in EyeDay"},
+        {"t": "p", "v": "Quando registri più colliri, EyeDay controlla la distanza rispetto alle applicazioni recenti. Per chi usa diversi colliri insieme, come nel glaucoma o dopo un intervento, quel controllo 'hai appena messo una goccia' può evitare errori."}
+      ],
+      "cta": {
+        "title": "Se perdi spesso il conto dell'intervallo",
+        "body": "Gestisci il timer da cinque minuti e il registro delle applicazioni nello stesso posto.",
+        "appStore": "Su iPhone, da App Store",
+        "playStore": "Su Samsung, Google Pixel, Xiaomi e altri telefoni Android, da Google Play"
+      }
+    },
+    {
+      "slug": "eye-drop-reminder-app-checklist",
+      "title": "Cosa cercare in un'app per promemoria dei colliri",
+      "description": "Oltre a una sveglia: programmi per farmaco, intervallo di cinque minuti, registri delle applicazioni e pressione oculare.",
+      "eyebrow": "App per promemoria colliri",
+      "h1": "Cosa controllare quando scegli un'app per ricordare i colliri",
+      "date": "27 lug 2026",
+      "summary": "Una normale app sveglia può avvisarti all'orario giusto. Ma se usi più colliri o li gestisci per mesi, conviene verificare se l'app è davvero pensata per i colliri.",
+      "note": "Un'app non sostituisce una prescrizione. Va usata come strumento per seguire meglio le indicazioni già ricevute.",
+      "blocks": [
+        {"t": "h2", "v": "Primo, un programma separato per ogni farmaco"},
+        {"t": "p", "v": "I colliri possono differire per frequenza giornaliera, occhio di applicazione, data di inizio e durata. Mettere tutto nel titolo di una sola sveglia sembra pratico all'inizio, ma diventa fragile appena si aggiunge un altro flacone."},
+        {"t": "h2", "v": "Secondo, un registro di completamento"},
+        {"t": "p", "v": "'Il promemoria è suonato' e 'ho davvero messo il collirio' non sono la stessa cosa. Un registro giorno per giorno conta soprattutto quando aiuta un familiare o quando vuoi controllare l'aderenza prima di una visita."},
+        {"t": "h2", "v": "Terzo, un controllo dell'intervallo tra colliri"},
+        {"t": "p", "v": "A chi usa due o più colliri viene spesso detto di lasciare circa cinque minuti. Se l'app lo controlla, si riducono gli errori nelle mattine di fretta."},
+        {"t": "h2", "v": "Quarto, spazio per il registro della salute oculare"},
+        {"t": "p", "v": "Se hai il glaucoma, i valori di pressione oculare aiutano; dopo un intervento possono aiutare le note sui sintomi. Quando il registro dei colliri e quello degli occhi sono separati, in seguito è difficile ritrovarli."}
+      ],
+      "cta": {
+        "title": "EyeDay è pensata per i colliri",
+        "body": "Programmi, registri, avvisi da cinque minuti e pressione oculare in un'unica app.",
+        "appStore": "Su iPhone, da App Store",
+        "playStore": "Su Samsung, Google Pixel, Xiaomi e altri telefoni Android, da Google Play"
+      }
+    },
+    {
+      "slug": "glaucoma-eye-drop-reminder",
+      "title": "Colliri per glaucoma: perché conta la stessa ora ogni giorno",
+      "description": "Perché i colliri per glaucoma vanno usati a orari stabiliti e come promemoria e registri aiutano nel lungo periodo.",
+      "eyebrow": "Promemoria per glaucoma",
+      "h1": "Perché i colliri per glaucoma dovrebbero essere messi alla stessa ora ogni giorno?",
+      "date": "27 lug 2026",
+      "summary": "Il glaucoma richiede gestione costante anche quando quasi non si avverte nulla. Con i colliri, l'abitudine importante è usarli agli orari prescritti, non quando vengono in mente.",
+      "note": "Queste sono informazioni generali sulla gestione dei colliri. Farmaco, frequenza ed eventuale sospensione vanno decisi con il tuo oculista.",
+      "blocks": [
+        {"t": "h2", "v": "La costanza è il punto centrale"},
+        {"t": "p", "v": "I colliri sono usati spesso nella cura del glaucoma per mantenere la pressione oculare nel range indicato. La difficoltà è che il glaucoma iniziale dà spesso pochi fastidi, quindi saltare uno o due giorni può non sembrare diverso. Ma i colliri vanno gestiti secondo il programma prescritto, non secondo come si sentono gli occhi."},
+        {"t": "p", "v": "'Ieri l'ho dimenticato, posso metterne due oggi?' è una domanda frequente in ambulatorio. La maggior parte dei colliri non si recupera raddoppiando. Dipende da quando te ne sei ricordato, da quando è prevista la dose successiva e dal farmaco, quindi segui le indicazioni della clinica."},
+        {"t": "h2", "v": "Quando l'orario scivola, scivola anche il registro"},
+        {"t": "p", "v": "I colliri per glaucoma sembrano semplici, una o due volte al giorno, ma nella vita reale si dimenticano facilmente. Il tragitto del mattino, una serata fuori, la stanchezza prima di dormire: lo stesso orario continua a spostarsi. Aiuta pensare a promemoria e registro come due compiti distinti."},
+        {"t": "ul", "v": [
+          "Il promemoria ti dice che è ora",
+          "Il registro conferma che l'hai fatto davvero",
+          "Il registro della pressione oculare mostra la tendenza prima della visita"
+        ]},
+        {"t": "h2", "v": "Dove si inserisce EyeDay"},
+        {"t": "p", "v": "EyeDay è pensata perché chi usa colliri a lungo termine, come nel glaucoma, possa registrare separatamente nome del farmaco, occhio, frequenza giornaliera e ora di inizio. Puoi vedere le applicazioni di oggi su una timeline e registrare la pressione misurata in clinica per occhio destro e sinistro."}
+      ],
+      "cta": {
+        "title": "Se dimentichi spesso i colliri per glaucoma",
+        "body": "Prima di cambiare prescrizione, controlla se li stai davvero usando alla stessa ora ogni giorno.",
+        "appStore": "Su iPhone, da App Store",
+        "playStore": "Su Samsung, Google Pixel, Xiaomi e altri telefoni Android, da Google Play"
+      }
+    },
+    {
+      "slug": "global-eye-drop-reminder-apps",
+      "title": "Confronto tra app per colliri e app per farmaci",
+      "description": "Confronto tra EyeDropAlarm, Drop Reminder, Medisafe, MyTherapy, Apple Health e EyeDay per promemoria dei colliri.",
+      "eyebrow": "App per colliri nel mondo",
+      "h1": "App per promemoria dei colliri e app per farmaci a confronto",
+      "date": "27 lug 2026",
+      "summary": "Cercando un promemoria per colliri compaiono app specifiche per colliri, promemoria generali per farmaci e l'app salute del telefono. Sono utili per cose diverse, quindi la scelta dipende da quanto è semplice o complessa la prescrizione.",
+      "note": "Questo è un confronto generale basato su schede pubbliche e descrizioni negli store. Funzioni e paesi disponibili possono cambiare nel tempo.",
+      "blocks": [
+        {"t": "h2", "v": "EyeDropAlarm"},
+        {"t": "p", "v": "EyeDropAlarm è un'app per iPhone focalizzata sui promemoria per colliri. Punta su dettagli specifici: colore del flacone, occhio in cui applicare la goccia e intervallo tra colliri."},
+        {"t": "h2", "v": "Drop Reminder"},
+        {"t": "p", "v": "Drop Reminder è presentata come app per iPhone per gestire più programmi di colliri insieme: dopo cataratta, per glaucoma o per occhio secco. Il suo punto forte è un flusso semplice senza account."},
+        {"t": "h2", "v": "Medisafe"},
+        {"t": "p", "v": "Medisafe è un noto promemoria generale per farmaci. È forte su pillole, integratori, avvisi per caregiver e report di aderenza, ma i dettagli più fini dei colliri, come occhio sinistro o destro e intervallo di cinque minuti, potrebbero dover essere organizzati manualmente."},
+        {"t": "h2", "v": "MyTherapy"},
+        {"t": "p", "v": "MyTherapy combina promemoria per farmaci e registri di salute. È utile per seguire farmaci, misurazioni e appuntamenti in generale, ma le sue schermate non sono costruite intorno ai colliri come in un'app dedicata come EyeDay."},
+        {"t": "h2", "v": "Farmaci in Apple Health"},
+        {"t": "p", "v": "Su iPhone puoi impostare promemoria base per i farmaci nell'app Salute. Il vantaggio è non installare nulla in più; i limiti emergono con gli avvisi sugli intervalli tra colliri e con un flusso basato sui registri di applicazione."},
+        {"t": "h2", "v": "EyeDay"},
+        {"t": "p", "v": "EyeDay è stata costruita fin dall'inizio per i colliri. Registri nome del farmaco, occhio sinistro, destro o entrambi, frequenza giornaliera, ora di inizio e programma personalizzato, ciascuno come campo separato."},
+        {"t": "p", "v": "Quando usi più colliri di seguito, controlla l'intervallo rispetto alle applicazioni recenti. Chi usa colliri a lungo termine per glaucoma può tenere anche i registri della pressione oculare, e per un trattamento a durata fissa dopo cataratta o chirurgia laser può vedere le applicazioni del giorno su una timeline."},
+        {"t": "p", "v": "Supporta inoltre coreano, giapponese, inglese e altre lingue, e funziona sia su iPhone sia su Android. È pensata per persone per cui sapere se la goccia è stata davvero applicata conta più di un semplice promemoria per pillole."},
+        {"t": "h2", "v": "Quindi quale scegliere?"},
+        {"t": "ul", "v": [
+          "Se vuoi gestire insieme pillole e integratori, un promemoria generale per farmaci può essere più semplice.",
+          "Se hai un solo collirio e ti serve solo un avviso, il promemoria integrato del telefono può bastare.",
+          "Se usi più colliri o ti servono occhio sinistro/destro, intervalli di cinque minuti e pressione oculare, è più adatta un'app dedicata ai colliri."
+        ]}
+      ],
+      "cta": {
+        "title": "Se ti serve un monitoraggio specifico per colliri",
+        "body": "Gestisci programma, registri di applicazione e pressione oculare insieme in EyeDay.",
+        "appStore": "Su iPhone, da App Store",
+        "playStore": "Su Samsung, Google Pixel, Xiaomi e altri telefoni Android, da Google Play"
+      }
+    },
+    {
+      "slug": "lasik-lasek-eye-drop-schedule",
+      "title": "Perché i promemoria dei colliri contano dopo LASIK e LASEK",
+      "description": "Come seguire antibiotici, antinfiammatori e lacrime artificiali dopo LASIK o LASEK.",
+      "eyebrow": "Colliri per LASIK e LASEK",
+      "h1": "Perché i promemoria dei colliri contano dopo LASIK e LASEK",
+      "date": "27 lug 2026",
+      "summary": "Dopo un intervento di correzione visiva, usare con costanza i colliri prescritti finché gli occhi si stabilizzano è la parte importante. I primi giorni possono sembrare un programma complicato.",
+      "note": "I colliri e la durata del trattamento dipendono dal metodo chirurgico, dallo stato della cornea e dal protocollo della clinica. Queste sono indicazioni generali; le istruzioni della tua clinica vengono prima.",
+      "blocks": [
+        {"t": "h2", "v": "Vedere bene non significa che sia finita"},
+        {"t": "p", "v": "Quando la vista migliora rapidamente dopo LASIK o LASEK, i colliri possono sembrare meno importanti. Ma i colliri postoperatori di solito non si usano solo quando gli occhi danno fastidio: si usano per un periodo stabilito e con la frequenza indicata."},
+        {"t": "p", "v": "Antibiotici, antinfiammatori, colliri steroidei e lacrime artificiali possono svolgere funzioni diverse. Nomi e flaconi si assomigliano, quindi è utile scrivere a cosa serve ciascuno accanto al nome."},
+        {"t": "h2", "v": "Con LASEK, guarda soprattutto la durata"},
+        {"t": "p", "v": "Il recupero da LASEK può far sembrare il ciclo di colliri relativamente lungo. I primi giorni sono difficili da registrare da soli per lente terapeutica, dolore e sensibilità alla luce; più avanti, quando va meglio, diventa facile dimenticare."},
+        {"t": "ul", "v": [
+          "Fotografa il foglio ricevuto il giorno dell'intervento",
+          "Controlla separatamente data di inizio e fine di ogni farmaco",
+          "Registra le lacrime artificiali separatamente dai colliri prescritti"
+        ]},
+        {"t": "h2", "v": "Creare una routine postoperatoria in EyeDay"},
+        {"t": "p", "v": "EyeDay ti permette di impostare programmi personalizzati per colliri ripetuti più volte al giorno e di vedere il completamento su una timeline. È utile quando un familiare controlla con te nei primi giorni, e in seguito puoi mantenere solo i colliri ancora necessari."}
+      ],
+      "cta": {
+        "title": "Se ti serve una routine postoperatoria",
+        "body": "Inserisci il programma esattamente come ti è stato indicato e spuntalo ogni giorno.",
+        "appStore": "Su iPhone, da App Store",
+        "playStore": "Su Samsung, Google Pixel, Xiaomi e altri telefoni Android, da Google Play"
+      }
+    },
+    {
+      "slug": "multiple-eye-drops-schedule",
+      "title": "Come programmare due o tre colliri",
+      "description": "Come separare nome del farmaco, occhio sinistro e destro, frequenza giornaliera e intervallo quando usi più colliri.",
+      "eyebrow": "Programmi con più colliri",
+      "h1": "Come costruire un programma quando hai due o tre colliri",
+      "date": "27 lug 2026",
+      "summary": "Con un solo collirio, una sveglia può bastare. Da due in poi, orari, ordine, occhio sinistro e destro e durata si mescolano, e gli errori diventano più facili.",
+      "note": "Ordine e distanza possono variare in base alla prescrizione. Se la clinica ti ha dato un ordine specifico, seguilo.",
+      "blocks": [
+        {"t": "h2", "v": "Inizia separando i dettagli per farmaco"},
+        {"t": "p", "v": "L'errore più comune con più colliri è ricordarli solo per orario: 'quello del mattino'. In pratica ogni farmaco ha frequenza e durata proprie, e alcuni vanno in un solo occhio. Costruisci il programma intorno al nome del farmaco."},
+        {"t": "ul", "v": [
+          "Scrivi il nome del farmaco insieme al colore del flacone",
+          "Conferma occhio sinistro, destro o entrambi",
+          "Registra separatamente frequenza giornaliera e ora di inizio",
+          "Segna la data finale o il giorno in cui cambia la frequenza"
+        ]},
+        {"t": "h2", "v": "Separa i colliri a orario fisso da quelli personalizzati"},
+        {"t": "p", "v": "Un'indicazione chiara come 'una volta al giorno prima di dormire' funziona bene come promemoria fisso. Un collirio che richiede calcoli, ad esempio quattro volte al giorno ogni tre ore, è più sicuro con un programma personalizzato. Forzare tutto nello stesso schema tende ad aumentare la confusione."},
+        {"t": "h2", "v": "Perché spuntare le applicazioni conta"},
+        {"t": "p", "v": "Con più colliri, 'ho visto il promemoria' e 'ho messo il collirio' possono diventare due cose diverse. Si chiude la notifica pensando di farlo subito e poi ci si dimentica. Per questo ogni applicazione ha bisogno di un registro proprio."}
+      ],
+      "cta": {
+        "title": "Porta quella tabella complicata nell'app",
+        "body": "In EyeDay puoi registrare separatamente frequenza, orari e intervallo di ogni farmaco.",
+        "appStore": "Su iPhone, da App Store",
+        "playStore": "Su Samsung, Google Pixel, Xiaomi e altri telefoni Android, da Google Play"
+      }
+    },
+    {
+      "slug": "parents-eye-drop-care",
+      "title": "Cosa controllare quando la famiglia aiuta con i colliri di un genitore",
+      "description": "Registri delle applicazioni, occhio sinistro e destro e controlli prima della visita per famiglie che aiutano con glaucoma o colliri postoperatori.",
+      "eyebrow": "Aiutare un genitore",
+      "h1": "Cosa controllare quando la famiglia aiuta con i colliri di un genitore",
+      "date": "27 lug 2026",
+      "summary": "Quando un genitore usa colliri per glaucoma a lungo termine o torna dalla cataratta con diversi flaconi, il controllo della famiglia spesso basta già a ridurre gli errori.",
+      "note": "Anche quando aiuta la famiglia, qualsiasi modifica, pausa o sostituzione va discussa con l'oculista curante.",
+      "blocks": [
+        {"t": "h2", "v": "'Li hai messi?' conta meno di 'quale e quando?'"},
+        {"t": "p", "v": "Chiedere solo se i colliri sono stati messi può non bastare. Con diversi flaconi, conta quale farmaco, in quale occhio e a che ora. Quando occhio sinistro e destro hanno prescrizioni diverse, la famiglia si confonde insieme al paziente."},
+        {"t": "p", "v": "Anche quando un genitore riesce a gestirsi da solo, leggere ogni volta caratteri piccoli su una busta o un'etichetta è difficile. Aiuta mostrare il nome del farmaco in grande e tenere ogni flacone in un colore o posto fisso."},
+        {"t": "h2", "v": "Cosa vale la pena controllare in famiglia"},
+        {"t": "ul", "v": [
+          "Se tutti i colliri programmati per oggi sono stati applicati",
+          "Se un collirio per un solo occhio è finito per errore in entrambi",
+          "Se un collirio postoperatorio che doveva essere terminato è ancora in uso",
+          "Se ci sono registri di pressione oculare da mostrare alla prossima visita"
+        ]},
+        {"t": "h2", "v": "Perché il registro aiuta"},
+        {"t": "p", "v": "EyeDay mostra il completamento giorno per giorno e conserva anche i registri di pressione oculare. Prima di una visita non serve più affidarsi alla memoria per sapere se i colliri sono stati usati dall'ultima volta. Configuralo sul telefono del tuo genitore e imparate a usarlo insieme."}
+      ],
+      "cta": {
+        "title": "Se gestisci i colliri per la famiglia",
+        "body": "Parti dal nome del farmaco, dall'occhio corretto e da un registro di completamento.",
+        "appStore": "Su iPhone, da App Store",
+        "playStore": "Su Samsung, Google Pixel, Xiaomi e altri telefoni Android, da Google Play"
+      }
+    },
+    {
+      "slug": "pred-forte-after-cataract-surgery",
+      "title": "Uso dei colliri steroidei dopo l'intervento di cataratta",
+      "description": "Perché durata e frequenza dei colliri steroidei dopo cataratta non dovrebbero essere cambiate da soli.",
+      "eyebrow": "Colliri steroidei",
+      "h1": "Cosa controllare quando usi colliri steroidei dopo la cataratta",
+      "date": "27 lug 2026",
+      "summary": "I colliri steroidei sono spesso prescritti dopo l'intervento di cataratta. Conta meno il nome del farmaco che seguire frequenza e durata indicate dalla clinica.",
+      "note": "I colliri steroidei possono richiedere controlli, anche della pressione oculare. Non iniziarli e non sospenderli da solo; segui le istruzioni del tuo oculista.",
+      "blocks": [
+        {"t": "h2", "v": "Non fermarti solo perché l'occhio sta meglio"},
+        {"t": "p", "v": "Qualche giorno dopo l'intervento, quando l'occhio è più comodo, può venire voglia di ridurre o smettere. Ma una prescrizione postoperatoria non si basa solo sui sintomi. Controllare l'infiammazione, prevenire infezioni e monitorare il recupero sono tutti motivi per continuare per il periodo indicato."},
+        {"t": "p", "v": "Anche l'opposto è imprudente: usare di propria iniziativa colliri steroidei avanzati perché qualcosa dà fastidio. Se il farmaco va modificato o se sta succedendo altro, serve una visita."},
+        {"t": "h2", "v": "Segna i giorni in cui la frequenza scende"},
+        {"t": "p", "v": "I colliri postoperatori spesso iniziano frequenti e poi vengono ridotti ogni pochi giorni o settimane. Se salti una di quelle date di cambio, potresti usarne troppo o ridurre troppo presto."},
+        {"t": "ul", "v": [
+          "Fotografa il foglio della prescrizione",
+          "Segna le date di riduzione in un calendario o in un'app",
+          "Non condividere un flacone con i familiari"
+        ]},
+        {"t": "h2", "v": "Gestire il ciclo in EyeDay"},
+        {"t": "p", "v": "Quando aggiungi un farmaco in EyeDay, inserire separatamente frequenza giornaliera e ora di inizio rende facile seguire il programma postoperatorio ripetuto. Il giorno in cui cambia la frequenza, modifica il programma esistente o registrane uno nuovo per evitare ambiguità."}
+      ],
+      "cta": {
+        "title": "Se le date di riduzione ti confondono",
+        "body": "Registra durata e frequenza separatamente per ogni farmaco.",
+        "appStore": "Su iPhone, da App Store",
+        "playStore": "Su Samsung, Google Pixel, Xiaomi e altri telefoni Android, da Google Play"
+      }
+    },
+    {
+      "slug": "timolol-latanoprost-reminder",
+      "title": "Ricordare i colliri timololo e latanoprost",
+      "description": "Promemoria e registri che aiutano a seguire colliri per glaucoma come timololo e latanoprost.",
+      "eyebrow": "Nomi dei farmaci per glaucoma",
+      "h1": "Come non dimenticare i colliri timololo e latanoprost",
+      "date": "27 lug 2026",
+      "summary": "I colliri per glaucoma possono avere nome generico, nome commerciale e flacone diversi, e questo li rende complessi dal punto di vista del paziente. Conta usare con costanza il farmaco prescritto, nel modo indicato.",
+      "note": "Questa non è una raccomandazione a usare un farmaco specifico. Se timololo, latanoprost o altro siano adatti a te è una decisione del medico.",
+      "blocks": [
+        {"t": "h2", "v": "Un cambio di nome crea più confusione"},
+        {"t": "p", "v": "Durante una visita potresti passare a un prodotto diverso della stessa classe, oppure il nome commerciale può cambiare tra clinica e farmacia. È allora che nascono dubbi come 'è lo stesso di prima?' o 'li uso entrambi?'. Controlla sempre con la clinica o la farmacia e non usarne mai due insieme di tua iniziativa."},
+        {"t": "p", "v": "Registra nell'app il nome del prodotto esattamente come è scritto, e aggiungi in una nota il nome generico o la spiegazione della clinica per poterlo verificare in seguito."},
+        {"t": "h2", "v": "Anche i colliri una volta al giorno si dimenticano"},
+        {"t": "p", "v": "Un collirio una volta al giorno sembra semplice, ma dimenticarlo significa perdere tutta la giornata. Quello della sera si dimentica quando si è stanchi; quello del mattino scivola durante i preparativi. Invece di pensare 'è solo una volta al giorno, va bene', è più utile pensare 'proprio perché è una volta al giorno, lo spunto'."},
+        {"t": "h2", "v": "Il registro aiuta anche durante la visita"},
+        {"t": "p", "v": "Quando la pressione oculare non scende come previsto, può contare se il problema sia il farmaco o l'orario che si è spostato. Il giudizio spetta al team curante, ma arrivare con un registro delle applicazioni rende la conversazione molto più concreta."}
+      ],
+      "cta": {
+        "title": "Se dimentichi spesso i colliri per glaucoma",
+        "body": "Registra il farmaco con il suo nome e spuntalo ogni giorno.",
+        "appStore": "Su iPhone, da App Store",
+        "playStore": "Su Samsung, Google Pixel, Xiaomi e altri telefoni Android, da Google Play"
+      }
+    }
+  ]
+}

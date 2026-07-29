@@ -1,0 +1,344 @@
+{
+  "ui": {
+    "languageName": "Español",
+    "home": "Inicio", "blog": "Blog", "back": "← Volver al blog",
+    "privacy": "Política de privacidad", "terms": "Términos del servicio", "contact": "Contacto",
+    "eyebrow": "GUÍA DE GOTAS OFTÁLMICAS",
+    "indexTitle": "Blog de EyeDay - Recordatorios y registros de gotas oftálmicas",
+    "indexDescription": "Guías prácticas sobre recordatorios y registros de gotas oftálmicas para glaucoma, recuperación de cirugía de cataratas, LASIK y LASEK.",
+    "indexHeading": "Formas prácticas de mantener<br>la rutina de tus gotas",
+    "lead": "La receta es importante, pero respetar los horarios y los intervalos suele ser la parte más difícil. En el blog de EyeDay repasamos preguntas frecuentes de la consulta: recordatorios, registros de aplicación y seguimiento de la presión ocular.",
+    "disclaimer": "*Los tipos y la frecuencia de las gotas después de una cirugía pueden variar según la clínica. Esta es una guía general; sigue siempre las indicaciones del centro que te atendió."
+  },
+  "posts": [
+    {
+      "slug": "cataract-surgery-eye-drops",
+      "title": "Cómo organizar las gotas después de una cirugía de cataratas",
+      "description": "Cómo gestionar antibióticos, antiinflamatorios y lágrimas artificiales después de una cirugía de cataratas sin confundirlos.",
+      "eyebrow": "Gotas después de cataratas",
+      "h1": "Cómo no confundirte con el horario de gotas después de una cirugía de cataratas",
+      "date": "27 jul 2026",
+      "summary": "La cirugía de cataratas no termina al salir del quirófano. Usar correctamente las gotas recetadas durante las semanas posteriores forma parte de la recuperación.",
+      "note": "Los tipos y la frecuencia de las gotas después de una cirugía pueden variar según la clínica. Esta es una guía general; sigue siempre las indicaciones del centro que te atendió.",
+      "blocks": [
+        {"t": "h2", "v": "Puedes terminar usando varias gotas diferentes"},
+        {"t": "p", "v": "Después de una cirugía de cataratas pueden recetarte antibióticos, antiinflamatorios, gotas con esteroides y lágrimas artificiales al mismo tiempo. Cada una puede tener una frecuencia diaria y una duración distintas, así que incluso una nota en papel empieza a confundirse después de unos días."},
+        {"t": "p", "v": "La primera semana suele concentrar más aplicaciones, y luego a menudo se reduce la frecuencia. En ese momento conviene revisar por separado cuándo empieza la reducción, en qué ojo va cada gota y cuánto esperar entre una y otra."},
+        {"t": "h2", "v": "Divide el seguimiento en tres partes"},
+        {"t": "ul", "v": [
+          "Nombre del medicamento: no confiar solo en la forma o el color del frasco",
+          "Duración: anotar fecha de inicio, fecha final y días en que cambia la frecuencia",
+          "Intervalo: dejar tiempo entre gotas cuando usas varias seguidas"
+        ]},
+        {"t": "p", "v": "Justo después de la cirugía la visión puede estar borrosa o el ojo incómodo, y muchas veces ayuda un familiar. En ese momento, un registro de lo que realmente se aplicó es más útil que una alarma simple."},
+        {"t": "h2", "v": "Cómo usar EyeDay"},
+        {"t": "p", "v": "En EyeDay puedes definir la frecuencia diaria y la hora de inicio de cada gota, y crear horarios personalizados. Cuando usas varias gotas durante un periodo fijo, como después de cataratas, revisar por separado la fecha final de cada una y registrar cada aplicación facilita mirar atrás antes de la próxima consulta."}
+      ],
+      "cta": {
+        "title": "Si la tabla posoperatoria te confunde",
+        "body": "Conserva la hoja de la clínica y revisa los horarios diarios en la app.",
+        "appStore": "En iPhone, desde App Store",
+        "playStore": "En Samsung, Google Pixel, Xiaomi y otros teléfonos Android, desde Google Play"
+      }
+    },
+    {
+      "slug": "dry-eye-artificial-tears-reminder",
+      "title": "¿Las lágrimas artificiales también necesitan recordatorios?",
+      "description": "Para personas que usan lágrimas artificiales por ojo seco: cómo crear un hábito regular y llevar un registro útil.",
+      "eyebrow": "Ojo seco y lágrimas artificiales",
+      "h1": "¿También conviene poner recordatorios para las lágrimas artificiales?",
+      "date": "27 jul 2026",
+      "summary": "Las lágrimas artificiales parecen una opción ligera, pero si el ojo seco se repite, registrar cuándo y con qué frecuencia las usas puede mostrar mucho sobre tus patrones.",
+      "note": "Las instrucciones de las lágrimas artificiales pueden variar según el producto y según tengan o no conservantes. Si la molestia persiste o empeora, conviene consultar a un oftalmólogo.",
+      "blocks": [
+        {"t": "h2", "v": "¿Solo las usas cuando ya duele o molesta?"},
+        {"t": "p", "v": "Quienes tienen ojo seco suelen buscar lágrimas artificiales cuando sienten arenilla, tirantez o escozor. Usarlas cuando aparecen los síntomas puede ayudar, pero si pasas el día frente a una pantalla también vale la pena adelantarse a la molestia."},
+        {"t": "p", "v": "Durante el trabajo es especialmente fácil saltarse una aplicación por estar concentrado. Si los ojos se sienten pesados o borrosos recién por la tarde, un recordatorio antes de ese momento puede ayudar."},
+        {"t": "h2", "v": "El registro revela tus patrones"},
+        {"t": "ul", "v": [
+          "Si la sequedad es peor por la tarde que por la mañana",
+          "Si usas más gotas los días que llevas lentes de contacto",
+          "Si los síntomas empeoran tras dormir poco o con calefacción interior"
+        ]},
+        {"t": "p", "v": "Ese registro ayuda a ajustar hábitos propios y también ofrece datos más concretos para explicar los síntomas en consulta, en lugar de depender solo de una impresión general."},
+        {"t": "h2", "v": "Añadir lágrimas artificiales en EyeDay"},
+        {"t": "p", "v": "EyeDay no es solo para gotas con receta: también puedes añadir productos que usas repetidamente, como lágrimas artificiales. Regístralas como una aplicación extra cuando las uses, o configura recordatorios en horarios fijos para ver el patrón."}
+      ],
+      "cta": {
+        "title": "Si la sequedad vuelve una y otra vez",
+        "body": "Empieza registrando cuándo y con qué frecuencia usas lágrimas artificiales.",
+        "appStore": "En iPhone, desde App Store",
+        "playStore": "En Samsung, Google Pixel, Xiaomi y otros teléfonos Android, desde Google Play"
+      }
+    },
+    {
+      "slug": "eye-drop-5-minute-interval",
+      "title": "¿Por qué esperar cinco minutos entre gotas oftálmicas?",
+      "description": "Por qué conviene dejar unos cinco minutos entre gotas diferentes y cómo hacerlo en la vida diaria.",
+      "eyebrow": "Intervalo de cinco minutos",
+      "h1": "Por qué varias gotas oftálmicas necesitan un intervalo de cinco minutos",
+      "date": "27 jul 2026",
+      "summary": "Cuando te recetan dos o tres gotas, dan ganas de aplicarlas todas de una vez. Pero las gotas diferentes suelen indicarse con separación entre ellas.",
+      "note": "El intervalo recomendado puede variar según el medicamento y las indicaciones de tu clínica. Si usas varias gotas juntas, confirma el orden y el tiempo de espera con tu equipo médico.",
+      "blocks": [
+        {"t": "h2", "v": "El ojo solo puede retener una cantidad limitada"},
+        {"t": "p", "v": "Al aplicar una gota, una parte queda en la superficie del ojo y otra se drena por la vía lagrimal. Si aplicas la siguiente de inmediato, puede arrastrar la primera antes de que haya tenido tiempo de permanecer. Por eso ayuda dejar un intervalo cuando usas varias gotas seguidas."},
+        {"t": "p", "v": "Muchas hojas de indicaciones hablan de 'unos cinco minutos'. Lo importante no es solo el número exacto, sino el hábito de no poner todas las gotas juntas."},
+        {"t": "h2", "v": "Cinco minutos son más difíciles de lo que parecen"},
+        {"t": "p", "v": "Antes de salir al trabajo o justo antes de dormir, cinco minutos no se sienten tan cortos. Te pones la primera gota, haces otra cosa y olvidas la segunda, o pierdes la paciencia y la aplicas enseguida."},
+        {"t": "ul", "v": [
+          "Iniciar un temporizador en cuanto entra la primera gota",
+          "Asignar a cada medicamento un color o un lugar fijo",
+          "Marcar la primera como hecha para no saltarte la segunda"
+        ]},
+        {"t": "h2", "v": "La alerta de intervalo en EyeDay"},
+        {"t": "p", "v": "Cuando registras varias gotas, EyeDay revisa el intervalo según tus aplicaciones recientes. Para quienes usan varias gotas a la vez, como en glaucoma o después de una cirugía, esa comprobación de 'acabas de ponerte una gota' resulta útil."}
+      ],
+      "cta": {
+        "title": "Si sueles perder la cuenta del intervalo",
+        "body": "Gestiona el temporizador de cinco minutos y el registro de aplicaciones en un solo lugar.",
+        "appStore": "En iPhone, desde App Store",
+        "playStore": "En Samsung, Google Pixel, Xiaomi y otros teléfonos Android, desde Google Play"
+      }
+    },
+    {
+      "slug": "eye-drop-reminder-app-checklist",
+      "title": "Qué mirar al elegir una app de recordatorios para gotas oftálmicas",
+      "description": "Más allá de una alarma: horarios por medicamento, intervalo de cinco minutos, registros de aplicación y presión ocular.",
+      "eyebrow": "Apps de recordatorio de gotas",
+      "h1": "Qué funciones conviene revisar en una app de recordatorios para gotas",
+      "date": "27 jul 2026",
+      "summary": "Una app de alarmas común puede avisarte a la hora correcta. Pero si usas varias gotas o las gestionas durante meses, conviene revisar si la app está pensada para gotas oftálmicas.",
+      "note": "Una app no reemplaza una receta. Úsala como herramienta para seguir mejor la indicación que ya recibiste.",
+      "blocks": [
+        {"t": "h2", "v": "Primero, un horario separado para cada medicamento"},
+        {"t": "p", "v": "Las gotas pueden diferir en frecuencia diaria, ojo de aplicación, fecha de inicio y duración. Poner todo en el título de una sola alarma parece suficiente al principio, pero se vuelve confuso en cuanto aparece otro frasco."},
+        {"t": "h2", "v": "Segundo, un registro de finalización"},
+        {"t": "p", "v": "'Sonó el recordatorio' y 'me puse la gota' no son lo mismo. Un registro día por día importa especialmente cuando ayuda un familiar o cuando quieres revisar la adherencia antes de una consulta."},
+        {"t": "h2", "v": "Tercero, comprobar el intervalo entre gotas"},
+        {"t": "p", "v": "A quienes usan dos o más gotas a menudo se les indica dejar unos cinco minutos. Que la app lo compruebe ayuda a reducir errores en una mañana apurada."},
+        {"t": "h2", "v": "Cuarto, espacio para registrar la salud ocular"},
+        {"t": "p", "v": "Si tienes glaucoma, los valores de presión ocular ayudan; después de una cirugía, también pueden ayudar las notas de síntomas. Cuando el registro de gotas y el del estado ocular viven separados, luego cuesta encontrar ambos."}
+      ],
+      "cta": {
+        "title": "EyeDay está hecho para gotas oftálmicas",
+        "body": "Horarios, registros de aplicación, alertas de cinco minutos y presión ocular en una sola app.",
+        "appStore": "En iPhone, desde App Store",
+        "playStore": "En Samsung, Google Pixel, Xiaomi y otros teléfonos Android, desde Google Play"
+      }
+    },
+    {
+      "slug": "glaucoma-eye-drop-reminder",
+      "title": "Gotas para glaucoma: por qué importa la misma hora cada día",
+      "description": "Por qué las gotas para glaucoma deben usarse en horarios fijos y cómo ayudan los recordatorios y registros a largo plazo.",
+      "eyebrow": "Recordatorios para glaucoma",
+      "h1": "¿Por qué las gotas para glaucoma deben aplicarse a la misma hora cada día?",
+      "date": "27 jul 2026",
+      "summary": "El glaucoma requiere control constante aunque casi no notes síntomas. Con las gotas, el hábito importante es usarlas en los horarios indicados, no cuando te acuerdes.",
+      "note": "Esta es información general sobre la gestión de gotas oftálmicas. El medicamento, la frecuencia y cualquier suspensión deben decidirse con tu oftalmólogo.",
+      "blocks": [
+        {"t": "h2", "v": "La constancia es el punto central"},
+        {"t": "p", "v": "Las gotas se usan con frecuencia en el cuidado del glaucoma para mantener la presión ocular dentro del rango indicado. La dificultad es que el glaucoma temprano suele causar poca molestia, así que saltarse uno o dos días puede no sentirse distinto. Pero las gotas deben seguir el horario recetado, no cómo se sientan los ojos ese día."},
+        {"t": "p", "v": "'Ayer se me olvidó, ¿puedo ponerme dos hoy?' es una pregunta común en consulta. La mayoría de las gotas no se compensan duplicando dosis. Depende de cuándo lo recordaste, cuándo toca la siguiente y qué medicamento es, así que sigue la orientación de tu clínica."},
+        {"t": "h2", "v": "Cuando se mueve el horario, también se mueve el registro"},
+        {"t": "p", "v": "Las gotas para glaucoma parecen simples, una o dos veces al día, pero en la vida real se olvidan fácilmente. El trayecto de la mañana, una salida por la noche, el cansancio antes de dormir: el mismo horario empieza a desplazarse. Ayuda pensar en recordatorio y registro como dos tareas distintas."},
+        {"t": "ul", "v": [
+          "El recordatorio te avisa que llegó la hora",
+          "El registro confirma que realmente lo hiciste",
+          "El registro de presión ocular muestra la tendencia antes de la consulta"
+        ]},
+        {"t": "h2", "v": "Dónde encaja EyeDay"},
+        {"t": "p", "v": "EyeDay está pensado para que quienes usan gotas a largo plazo, como en glaucoma, puedan registrar por separado el nombre del medicamento, el ojo, la frecuencia diaria y la hora de inicio. Puedes ver las aplicaciones de hoy en una línea de tiempo y anotar la presión medida en la clínica para cada ojo."}
+      ],
+      "cta": {
+        "title": "Si olvidas con frecuencia tus gotas para glaucoma",
+        "body": "Antes de cambiar la receta, revisa si realmente las estás usando a la misma hora cada día.",
+        "appStore": "En iPhone, desde App Store",
+        "playStore": "En Samsung, Google Pixel, Xiaomi y otros teléfonos Android, desde Google Play"
+      }
+    },
+    {
+      "slug": "global-eye-drop-reminder-apps",
+      "title": "Comparación de apps de recordatorio de gotas y apps de medicación",
+      "description": "Comparación de EyeDropAlarm, Drop Reminder, Medisafe, MyTherapy, Apple Health y EyeDay para recordatorios de gotas.",
+      "eyebrow": "Apps de gotas en el mundo",
+      "h1": "Apps de recordatorio de gotas y apps de medicación comparadas",
+      "date": "27 jul 2026",
+      "summary": "Al buscar recordatorios para gotas aparecen apps específicas para gotas, recordatorios generales de medicación y la app de salud del teléfono. Sirven para cosas distintas, así que la elección depende de si tu receta es simple o compleja.",
+      "note": "Esta es una comparación general basada en listados públicos y descripciones de tiendas. Las funciones y los países disponibles pueden cambiar con el tiempo.",
+      "blocks": [
+        {"t": "h2", "v": "EyeDropAlarm"},
+        {"t": "p", "v": "EyeDropAlarm es una app para iPhone enfocada en recordatorios de gotas oftálmicas. Usa detalles propios de las gotas: color del frasco, en qué ojo se aplica y el intervalo entre gotas."},
+        {"t": "h2", "v": "Drop Reminder"},
+        {"t": "p", "v": "Drop Reminder se presenta como una app para iPhone que gestiona varios horarios de gotas a la vez: después de cataratas, para glaucoma o para ojo seco. Su punto fuerte es un flujo simple sin cuenta."},
+        {"t": "h2", "v": "Medisafe"},
+        {"t": "p", "v": "Medisafe es un recordatorio general de medicación muy conocido. Es fuerte en pastillas, suplementos, alertas para cuidadores e informes de adherencia, pero detalles finos de gotas, como ojo izquierdo o derecho y el intervalo de cinco minutos, quizá debas organizarlos tú."},
+        {"t": "h2", "v": "MyTherapy"},
+        {"t": "p", "v": "MyTherapy también combina recordatorios de medicación con registros de salud. Es útil para registrar medicación, mediciones y citas en general, pero sus pantallas no están organizadas alrededor de gotas oftálmicas como una app dedicada tipo EyeDay."},
+        {"t": "h2", "v": "Medicamentos en Apple Health"},
+        {"t": "p", "v": "En iPhone puedes configurar recordatorios básicos de medicación en la app Salud. La ventaja es que no instalas nada extra; las limitaciones aparecen en alertas de intervalo entre gotas y en un flujo centrado en registros de aplicación."},
+        {"t": "h2", "v": "EyeDay"},
+        {"t": "p", "v": "EyeDay fue creada desde el inicio para gotas oftálmicas. Registras el nombre del medicamento, ojo izquierdo, derecho o ambos, la frecuencia diaria, la hora de inicio y un horario personalizado, cada dato en su propio campo."},
+        {"t": "p", "v": "Cuando usas varias gotas seguidas, revisa el intervalo según tus aplicaciones recientes. Las personas con gotas de largo plazo para glaucoma pueden guardar también registros de presión ocular, y en tratamientos con duración fija después de cataratas o cirugía láser pueden ver las aplicaciones del día en una línea de tiempo."},
+        {"t": "p", "v": "También admite coreano, japonés, inglés y otros idiomas, y funciona tanto en iPhone como en Android. Está pensada para personas a las que les importa más saber si la gota realmente se aplicó que recibir un simple recordatorio de pastillas."},
+        {"t": "h2", "v": "Entonces, ¿cuál elegir?"},
+        {"t": "ul", "v": [
+          "Si quieres gestionar pastillas y suplementos juntos, quizá sea más fácil un recordatorio general de medicación.",
+          "Si tienes una sola gota y solo necesitas un aviso, el recordatorio integrado del teléfono puede bastar.",
+          "Si usas varias gotas o necesitas ojo izquierdo/derecho, intervalos de cinco minutos y presión ocular, encaja mejor una app dedicada a gotas."
+        ]}
+      ],
+      "cta": {
+        "title": "Si necesitas seguimiento específico para gotas",
+        "body": "Gestiona horarios, registros de aplicación y presión ocular juntos en EyeDay.",
+        "appStore": "En iPhone, desde App Store",
+        "playStore": "En Samsung, Google Pixel, Xiaomi y otros teléfonos Android, desde Google Play"
+      }
+    },
+    {
+      "slug": "lasik-lasek-eye-drop-schedule",
+      "title": "Por qué importan los recordatorios de gotas después de LASIK y LASEK",
+      "description": "Cómo seguir antibióticos, antiinflamatorios y lágrimas artificiales después de LASIK o LASEK.",
+      "eyebrow": "Gotas para LASIK y LASEK",
+      "h1": "Por qué importan los recordatorios de gotas después de LASIK y LASEK",
+      "date": "27 jul 2026",
+      "summary": "Después de una cirugía refractiva, usar de forma constante las gotas recetadas hasta que los ojos se estabilicen es la parte clave. Los primeros días pueden sentirse como un horario complicado.",
+      "note": "Las gotas y la duración del tratamiento dependen del método quirúrgico, el estado de la córnea y el protocolo de la clínica. Esta es una guía general; las instrucciones de tu clínica tienen prioridad.",
+      "blocks": [
+        {"t": "h2", "v": "Ver bien no significa que el cuidado haya terminado"},
+        {"t": "p", "v": "Cuando la visión mejora rápido después de LASIK o LASEK, las gotas pueden parecer menos importantes. Pero las gotas posoperatorias normalmente no se usan solo cuando el ojo se siente raro: se usan durante un periodo definido y con la frecuencia indicada."},
+        {"t": "p", "v": "Antibióticos, antiinflamatorios, esteroides y lágrimas artificiales pueden cumplir funciones distintas. Los nombres y frascos se parecen, así que ayuda escribir para qué sirve cada uno junto a su nombre."},
+        {"t": "h2", "v": "Con LASEK, hay que vigilar la duración"},
+        {"t": "p", "v": "La recuperación de LASEK puede hacer que el tratamiento con gotas se sienta relativamente largo. Los primeros días son difíciles de registrar por la lente terapéutica, el dolor y la sensibilidad a la luz; luego, cuando todo se siente cómodo, es fácil olvidarlo."},
+        {"t": "ul", "v": [
+          "Fotografiar la hoja que recibiste el día de la cirugía",
+          "Comprobar por separado la fecha de inicio y final de cada medicamento",
+          "Registrar las lágrimas artificiales aparte de las gotas con receta"
+        ]},
+        {"t": "h2", "v": "Crear una rutina posoperatoria en EyeDay"},
+        {"t": "p", "v": "EyeDay permite configurar horarios propios para gotas que se repiten varias veces al día y ver el cumplimiento en una línea de tiempo. Funciona bien cuando un familiar revisa contigo los primeros días, y después puedes conservar solo las gotas que sigues necesitando."}
+      ],
+      "cta": {
+        "title": "Si necesitas una rutina posoperatoria",
+        "body": "Introduce el horario tal como te lo indicaron y márcalo cada día.",
+        "appStore": "En iPhone, desde App Store",
+        "playStore": "En Samsung, Google Pixel, Xiaomi y otros teléfonos Android, desde Google Play"
+      }
+    },
+    {
+      "slug": "multiple-eye-drops-schedule",
+      "title": "Cómo programar dos o tres gotas oftálmicas",
+      "description": "Cómo separar nombre del medicamento, ojo izquierdo y derecho, frecuencia diaria e intervalo cuando usas varias gotas.",
+      "eyebrow": "Horarios con varias gotas",
+      "h1": "Cómo crear un horario cuando tienes dos o tres gotas",
+      "date": "27 jul 2026",
+      "summary": "Con una sola gota, una alarma puede bastar. Con dos o más, horarios, orden, ojo izquierdo y derecho y duración se mezclan, y ahí aparecen errores.",
+      "note": "El orden y el intervalo pueden variar según la receta. Si tu clínica te dio un orden concreto, sigue esa indicación.",
+      "blocks": [
+        {"t": "h2", "v": "Empieza separando los detalles por medicamento"},
+        {"t": "p", "v": "El error más común con varias gotas es recordarlas solo por la hora: 'la de la mañana'. En la práctica cada medicamento tiene su propia frecuencia y duración, y algunos van en un solo ojo. Construye el horario alrededor del nombre del medicamento."},
+        {"t": "ul", "v": [
+          "Anotar el nombre del medicamento junto con el color del frasco",
+          "Confirmar si va en el ojo izquierdo, derecho o en ambos",
+          "Registrar por separado la frecuencia diaria y la hora de inicio",
+          "Marcar la fecha final o el día en que cambia la frecuencia"
+        ]},
+        {"t": "h2", "v": "Separa las gotas de hora fija de las personalizadas"},
+        {"t": "p", "v": "Una indicación clara como 'una vez al día antes de dormir' funciona bien como recordatorio de hora fija. Una gota que exige calcular, por ejemplo cuatro veces al día cada tres horas, es más segura con un horario personalizado. Forzar todo al mismo formato suele aumentar la confusión."},
+        {"t": "h2", "v": "Por qué importa marcarlo como hecho"},
+        {"t": "p", "v": "Con varias gotas, 'vi el recordatorio' y 'me puse la gota' pueden separarse. Muchas personas cierran la notificación pensando hacerlo enseguida y luego se olvidan. Por eso cada aplicación necesita su propio registro."}
+      ],
+      "cta": {
+        "title": "Pasa esa tabla complicada a la app",
+        "body": "En EyeDay puedes registrar por separado la frecuencia, los horarios y el intervalo de cada medicamento.",
+        "appStore": "En iPhone, desde App Store",
+        "playStore": "En Samsung, Google Pixel, Xiaomi y otros teléfonos Android, desde Google Play"
+      }
+    },
+    {
+      "slug": "parents-eye-drop-care",
+      "title": "Qué revisar cuando la familia ayuda con las gotas de un padre o una madre",
+      "description": "Registros de aplicación, ojo izquierdo y derecho, y revisiones antes de consulta para familias que ayudan con glaucoma o gotas posoperatorias.",
+      "eyebrow": "Ayudar a un familiar mayor",
+      "h1": "Qué revisar cuando la familia ayuda con las gotas de un padre o una madre",
+      "date": "27 jul 2026",
+      "summary": "Cuando un padre usa gotas para glaucoma a largo plazo o vuelve de una cirugía de cataratas con varios frascos, que la familia revise el proceso suele bastar para reducir errores.",
+      "note": "Aunque la familia ayude, cualquier cambio, pausa o sustitución debe hablarse con el oftalmólogo que trata al paciente.",
+      "blocks": [
+        {"t": "h2", "v": "'¿Te las pusiste?' importa menos que 'cuál y cuándo'"},
+        {"t": "p", "v": "Preguntar solo si se aplicaron las gotas puede no ser suficiente. Con varios frascos, importa qué medicamento fue, en qué ojo y a qué hora. Si el ojo izquierdo y el derecho tienen recetas distintas, la familia puede confundirse igual que el paciente."},
+        {"t": "p", "v": "Incluso cuando un padre se maneja solo, leer letra pequeña en una bolsa o etiqueta cada vez es difícil. Ayuda mostrar el nombre del medicamento en letra grande y mantener cada frasco en un color o lugar fijo."},
+        {"t": "h2", "v": "Qué vale la pena revisar en familia"},
+        {"t": "ul", "v": [
+          "Si todas las gotas programadas para hoy se aplicaron",
+          "Si una gota de un solo ojo terminó por error en ambos",
+          "Si una gota posoperatoria que ya debía terminarse sigue en uso",
+          "Si hay registros de presión ocular para mostrar en la próxima visita"
+        ]},
+        {"t": "h2", "v": "Por qué ayuda el registro"},
+        {"t": "p", "v": "EyeDay muestra la finalización día por día y guarda registros de presión ocular junto a las gotas. Antes de una consulta ya no hace falta depender de la memoria para saber si se han usado desde la última visita. Configúralo en el teléfono de tu familiar y aprendan a usarlo juntos."}
+      ],
+      "cta": {
+        "title": "Si gestionas gotas para tu familia",
+        "body": "Empieza por el nombre del medicamento, el ojo correspondiente y un registro de finalización.",
+        "appStore": "En iPhone, desde App Store",
+        "playStore": "En Samsung, Google Pixel, Xiaomi y otros teléfonos Android, desde Google Play"
+      }
+    },
+    {
+      "slug": "pred-forte-after-cataract-surgery",
+      "title": "Uso de gotas con esteroides después de una cirugía de cataratas",
+      "description": "Por qué no conviene cambiar por cuenta propia la duración ni la frecuencia de las gotas con esteroides después de cataratas.",
+      "eyebrow": "Gotas con esteroides",
+      "h1": "Qué vigilar al usar gotas con esteroides después de una cirugía de cataratas",
+      "date": "27 jul 2026",
+      "summary": "Las gotas con esteroides se recetan a menudo después de una cirugía de cataratas. Lo importante no es tanto el nombre del medicamento, sino seguir la frecuencia y duración indicadas por la clínica.",
+      "note": "Las gotas con esteroides pueden requerir controles, incluida la presión ocular. No las empieces ni las suspendas por tu cuenta; sigue las indicaciones de tu oftalmólogo.",
+      "blocks": [
+        {"t": "h2", "v": "No las suspendas solo porque el ojo se siente mejor"},
+        {"t": "p", "v": "Unos días después de la cirugía, cuando el ojo ya está cómodo, puede tentar reducirlas o dejarlas. Pero una receta posoperatoria no se decide solo por los síntomas. Controlar la inflamación, prevenir infecciones y vigilar la recuperación son razones para mantenerlas durante el periodo indicado."},
+        {"t": "p", "v": "Lo contrario también es poco prudente: usar por cuenta propia gotas con esteroides sobrantes porque algo molesta. Si hay que ajustar el medicamento o si ocurre otra cosa, eso debe valorarse en consulta."},
+        {"t": "h2", "v": "Marca los días en que baja la frecuencia"},
+        {"t": "p", "v": "Las gotas posoperatorias suelen empezar con frecuencia alta y luego reducirse cada pocos días o semanas. Si se te pasa una de esas fechas de cambio, puedes usar demasiado o reducir antes de tiempo."},
+        {"t": "ul", "v": [
+          "Fotografiar la hoja de la receta",
+          "Marcar las fechas de reducción en un calendario o una app",
+          "No compartir un frasco con familiares"
+        ]},
+        {"t": "h2", "v": "Gestionar el tratamiento en EyeDay"},
+        {"t": "p", "v": "Al añadir un medicamento en EyeDay, introducir por separado la frecuencia diaria y la hora de inicio facilita seguir un horario posoperatorio repetido. El día en que cambie la frecuencia, edita el horario existente o registra uno nuevo para que no haya ambigüedades."}
+      ],
+      "cta": {
+        "title": "Si las fechas de reducción te confunden",
+        "body": "Registra la duración y la frecuencia por separado para cada medicamento.",
+        "appStore": "En iPhone, desde App Store",
+        "playStore": "En Samsung, Google Pixel, Xiaomi y otros teléfonos Android, desde Google Play"
+      }
+    },
+    {
+      "slug": "timolol-latanoprost-reminder",
+      "title": "Cómo recordar las gotas de timolol y latanoprost",
+      "description": "Recordatorios y registros que ayudan a mantener gotas para glaucoma como timolol y latanoprost.",
+      "eyebrow": "Nombres de medicamentos para glaucoma",
+      "h1": "Cómo no olvidar las gotas de timolol y latanoprost",
+      "date": "27 jul 2026",
+      "summary": "Las gotas para glaucoma pueden tener nombre genérico, nombre comercial y frascos distintos, lo que las vuelve confusas para el paciente. Lo importante es usar el medicamento recetado, de la forma indicada, con constancia.",
+      "note": "Esto no es una recomendación para usar un medicamento concreto. Si timolol, latanoprost u otro tratamiento te conviene es una decisión de tu médico.",
+      "blocks": [
+        {"t": "h2", "v": "Un cambio de nombre aumenta la confusión"},
+        {"t": "p", "v": "En una visita pueden cambiarte a otro producto de la misma clase, o el nombre comercial puede verse distinto según la clínica y la farmacia. Ahí surgen dudas como '¿es lo mismo que el anterior?' o '¿uso ambos?'. Confirma siempre con la clínica o la farmacia, y nunca uses dos juntos por tu cuenta."},
+        {"t": "p", "v": "Registra en la app el nombre del producto tal como aparece escrito, y añade el nombre genérico o la explicación de la clínica en una nota para consultarlo después."},
+        {"t": "h2", "v": "Las gotas de una vez al día también se olvidan"},
+        {"t": "p", "v": "Una gota diaria parece simple, pero olvidarla significa perder todo el día. La de antes de dormir se olvida cuando estás cansado; la de la mañana se pierde entre preparativos. En vez de pensar 'es solo una vez al día, no pasa nada', ayuda pensar 'justamente porque es una vez al día, voy a marcarla'."},
+        {"t": "h2", "v": "El registro también ayuda en consulta"},
+        {"t": "p", "v": "Cuando la presión ocular no baja como se esperaba, puede importar si el problema está en el medicamento o en que el horario se desplazó. La valoración corresponde a tu equipo médico, pero llegar con un registro de aplicaciones hace la conversación mucho más concreta."}
+      ],
+      "cta": {
+        "title": "Si olvidas con frecuencia tus gotas para glaucoma",
+        "body": "Registra el medicamento con su propio nombre y márcalo cada día.",
+        "appStore": "En iPhone, desde App Store",
+        "playStore": "En Samsung, Google Pixel, Xiaomi y otros teléfonos Android, desde Google Play"
+      }
+    }
+  ]
+}
