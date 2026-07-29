@@ -1,0 +1,843 @@
+{
+  "ui": {
+    "languageName": "繁體中文",
+    "home": "首頁",
+    "blog": "部落格",
+    "back": "← 返回部落格",
+    "privacy": "隱私權政策",
+    "terms": "服務條款",
+    "contact": "聯絡我們",
+    "eyebrow": "眼藥水指南",
+    "indexTitle": "EyeDay 部落格 - 眼藥水提醒與用藥紀錄",
+    "indexDescription": "關於青光眼、白內障術後、LASIK、PRK 與 ICL 的眼藥水提醒和點藥紀錄實用指南。",
+    "indexHeading": "更穩定追蹤<br>眼藥水的方法",
+    "lead": "處方很重要，但真正困難的常常是按時、按間隔使用並留下紀錄。EyeDay 部落格整理門診常見的眼藥水提醒、點藥紀錄與眼壓追蹤問題。",
+    "disclaimer": "*術後眼藥水種類與頻率會因診所而異。本文為一般資訊；請一律遵照為你治療的診所指示。"
+  },
+  "posts": [
+    {
+      "slug": "cataract-surgery-eye-drops",
+      "title": "How to keep your eye drop schedule straight after cataract surgery",
+      "description": "How to manage antibiotics, anti-inflammatory drops and artificial tears after cataract surgery without mixing them up.",
+      "eyebrow": "Eye drops after cataract surgery",
+      "h1": "How to keep your eye drop schedule straight after cataract surgery",
+      "date": "Jul 27, 2026",
+      "summary": "Cataract surgery does not end when you leave the operating room. Using the prescribed drops correctly for the weeks that follow is a real part of recovery.",
+      "note": "The types and frequency of eye drops after surgery vary from clinic to clinic. This is general guidance; always follow the instructions from the clinic that treated you.",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "You may end up with several different drops"
+        },
+        {
+          "t": "p",
+          "v": "After cataract surgery you may be given antibiotics, anti-inflammatory drops, steroid drops and artificial tears together. Each one can have its own daily count and its own duration, so even a note on paper starts to get confusing after a few days."
+        },
+        {
+          "t": "p",
+          "v": "The first week usually has the most doses, and the count is often stepped down after that. When it is, check three things separately: when the step-down starts, which eye each drop goes in, and how long to wait between drops."
+        },
+        {
+          "t": "h2",
+          "v": "Split the tracking into three parts"
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Drug name: don't rely on the bottle's shape or colour alone",
+            "Duration: note the start date, end date, and any day the count changes",
+            "Interval: leave time between drops when you use several in a row"
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Right after surgery your vision may be cloudy or uncomfortable, and a family member is often helping out. That is exactly when a record of what was actually put in beats a bare alarm."
+        },
+        {
+          "t": "h2",
+          "v": "Using EyeDay"
+        },
+        {
+          "t": "p",
+          "v": "In EyeDay you can set a daily count and start time for each drop, and build your own custom schedule. When you are on several drops for a fixed period, as after cataract surgery, tracking each one's end date separately and logging every dose makes it easy to look back before your next appointment."
+        }
+      ],
+      "cta": {
+        "title": "If the post-op drop chart is confusing",
+        "body": "Keep the paper handout, and check the daily times in the app.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    },
+    {
+      "slug": "dry-eye-artificial-tears-reminder",
+      "title": "Do artificial tears need reminders too?",
+      "description": "For people using artificial tears for dry eye — how to build a regular dosing habit and keep a useful record.",
+      "eyebrow": "Dry eye and artificial tears",
+      "h1": "Do artificial tears need reminders too?",
+      "date": "Jul 27, 2026",
+      "summary": "Artificial tears feel like the casual option, but if dry eye keeps coming back, simply recording when and how often you use them tells you a lot about your own patterns.",
+      "note": "Instructions for artificial tears can differ by product and by whether they contain preservatives. If discomfort persists or gets worse, see an eye doctor.",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "Are you only reaching for them once it already hurts?"
+        },
+        {
+          "t": "p",
+          "v": "People with dry eye tend to look for artificial tears when their eyes feel gritty or stinging. Using them when symptoms appear does help, but if you spend the day in front of a screen, it is also worth getting ahead of the discomfort."
+        },
+        {
+          "t": "p",
+          "v": "It is especially easy to miss a dose while you are concentrating at work. If your eyes only start to feel heavy and blurry in the afternoon, setting a reminder for earlier in the day can help."
+        },
+        {
+          "t": "h2",
+          "v": "A record reveals your patterns"
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Whether dryness is worse in the afternoon than the morning",
+            "Whether you use more drops on days you wear contact lenses",
+            "Whether symptoms flare after short sleep or indoor heating"
+          ]
+        },
+        {
+          "t": "p",
+          "v": "That record helps you adjust your own habits, and it gives you something concrete to describe at your appointment instead of a vague impression."
+        },
+        {
+          "t": "h2",
+          "v": "Adding artificial tears in EyeDay"
+        },
+        {
+          "t": "p",
+          "v": "EyeDay is not only for prescription drops — you can add something you reach for repeatedly, like artificial tears. Log them as an extra dose whenever you use them, or set reminders at fixed times to see the pattern."
+        }
+      ],
+      "cta": {
+        "title": "If the dryness keeps coming back",
+        "body": "Start by recording when and how often you use artificial tears.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    },
+    {
+      "slug": "eye-drop-5-minute-interval",
+      "title": "Why five minutes between eye drops?",
+      "description": "Why you leave roughly five minutes between different eye drops, and how to actually manage it day to day.",
+      "eyebrow": "The five-minute interval",
+      "h1": "Why multiple eye drops need a five-minute gap",
+      "date": "Jul 27, 2026",
+      "summary": "When you are prescribed two or three drops, it is tempting to put them all in at once and be done. But different drops usually come with instructions to space them out.",
+      "note": "The recommended interval can vary by drug and by your clinic's instructions. If you use several drops together, confirm the order and spacing with your care team.",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "Your eye can only hold so much"
+        },
+        {
+          "t": "p",
+          "v": "When you put in a drop, some of it stays on the surface of the eye and some drains away through the tear duct. Adding the next drop straight away can wash the first one out before it has had time to stay put. That is why it helps to leave a gap when you use several drops in a row."
+        },
+        {
+          "t": "p",
+          "v": "Plenty of clinic handouts say something like 'about five minutes'. The point is less the exact number and more the habit of not putting everything in at once."
+        },
+        {
+          "t": "h2",
+          "v": "Five minutes is harder than it sounds"
+        },
+        {
+          "t": "p",
+          "v": "Before leaving for work or right before bed, five minutes is not short. You put in the first drop, start doing something else, and forget the second one — or you get impatient and put it in immediately."
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Start a timer as soon as the first drop is in",
+            "Give each drug a fixed colour or a fixed place",
+            "Tick off the first one so you don't skip the second"
+          ]
+        },
+        {
+          "t": "h2",
+          "v": "The interval warning in EyeDay"
+        },
+        {
+          "t": "p",
+          "v": "When you log several drops, EyeDay checks the spacing against your recent doses. For people on several drops at once — glaucoma, or the weeks after surgery — that 'you just put one in' check is the useful part."
+        }
+      ],
+      "cta": {
+        "title": "If you keep losing track of the gap",
+        "body": "Manage the five-minute timer and your dosing record in one place.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    },
+    {
+      "slug": "eye-drop-reminder-app-checklist",
+      "title": "What to look for in an eye drop reminder app",
+      "description": "Beyond a plain alarm — per-drug schedules, the five-minute gap, dosing records and eye pressure logs to check for when choosing an app.",
+      "eyebrow": "Eye drop reminder apps",
+      "h1": "What to look for in an eye drop reminder app",
+      "date": "Jul 27, 2026",
+      "summary": "A plain alarm app can get you to the right time. But once you have several drops, or you are managing them for months, it is worth checking whether an app was actually built for eye drops.",
+      "note": "An app does not replace a prescription. Treat it as a tool for following the prescription you already have.",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "First, a separate schedule per drug"
+        },
+        {
+          "t": "p",
+          "v": "Drops differ in daily count, which eye they go in, when they start and how long they last. Putting all of that into one alarm's title looks fine at first and falls apart as soon as you add another bottle."
+        },
+        {
+          "t": "h2",
+          "v": "Second, a completion record"
+        },
+        {
+          "t": "p",
+          "v": "'The reminder went off' and 'I actually put the drop in' are not the same thing. A day-by-day record matters most when a family member is helping, or when you want to look back before an appointment."
+        },
+        {
+          "t": "h2",
+          "v": "Third, a check on the gap between drops"
+        },
+        {
+          "t": "p",
+          "v": "People on two or more drops are often told to leave about five minutes. Having the app check that for you cuts down on mistakes in a rushed morning."
+        },
+        {
+          "t": "h2",
+          "v": "Fourth, room for your eye health record"
+        },
+        {
+          "t": "p",
+          "v": "If you have glaucoma, eye pressure readings help; after surgery, notes on symptoms do. When your dosing record and your eye records live in separate places, neither is easy to find later."
+        }
+      ],
+      "cta": {
+        "title": "EyeDay is built for eye drops",
+        "body": "Schedules, dosing records, five-minute warnings and eye pressure logs in one app.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    },
+    {
+      "slug": "glaucoma-eye-drop-reminder",
+      "title": "Glaucoma drops: why the same time every day matters",
+      "description": "Why glaucoma drops need to go in at set times, and how reminders and dosing records help over the long run.",
+      "eyebrow": "Glaucoma drop reminders",
+      "h1": "Why should glaucoma drops go in at the same time every day?",
+      "date": "Jul 27, 2026",
+      "summary": "Glaucoma needs steady management even when you barely feel anything. With drops in particular, the habit that matters is using them at the prescribed times rather than whenever they come to mind.",
+      "note": "This is general information about managing eye drops. The drug, the frequency and whether to stop are decisions for your own ophthalmologist.",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "Consistency is the whole point"
+        },
+        {
+          "t": "p",
+          "v": "Drops are used constantly in glaucoma care to keep eye pressure in range. The difficulty is that early glaucoma often causes little discomfort, so missing a day or two feels like nothing from the patient's side. But drops should be managed against the prescribed schedule, not against how your eyes happen to feel."
+        },
+        {
+          "t": "p",
+          "v": "'I missed yesterday — can I do two today?' comes up constantly in the clinic. Most drops are not used by doubling up to make up a missed dose. It depends on when you remembered, when the next dose is due and which drug it is, so follow your clinic's guidance."
+        },
+        {
+          "t": "h2",
+          "v": "When the timing slips, so does the record"
+        },
+        {
+          "t": "p",
+          "v": "Glaucoma drops look simple — once or twice a day — but they are easy to miss in real life. The morning commute, an evening out, being too tired before bed: the same slot keeps sliding. It helps to think of reminders and records as two separate jobs."
+        },
+        {
+          "t": "ul",
+          "v": [
+            "The reminder tells you it is time",
+            "The record confirms you actually did it",
+            "The eye pressure log gives you the trend before an appointment"
+          ]
+        },
+        {
+          "t": "h2",
+          "v": "When EyeDay fits"
+        },
+        {
+          "t": "p",
+          "v": "EyeDay is built so that people on long-term drops, as in glaucoma, can register the drug name, which eye, the daily count and the start time separately. You can see today's doses on a timeline, and record the pressure measured at the clinic for the left and right eye."
+        }
+      ],
+      "cta": {
+        "title": "If you keep forgetting your glaucoma drops",
+        "body": "Before changing the prescription, check whether you are really taking them at the same time each day.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    },
+    {
+      "slug": "global-eye-drop-reminder-apps",
+      "title": "Eye drop reminder apps and medication apps compared",
+      "description": "Comparing EyeDropAlarm, Drop Reminder, Medisafe, MyTherapy, Apple Health and EyeDay for eye drop reminders.",
+      "eyebrow": "Eye drop apps worldwide",
+      "h1": "Eye drop reminder apps and medication apps compared",
+      "date": "Jul 27, 2026",
+      "summary": "Search for an eye drop reminder and you get eye-drop-specific apps, general medication reminders and your phone's built-in health app all at once. They are good at different things, so what to pick depends on whether your prescription is simple or complicated.",
+      "note": "This is a general comparison based on public app listings and store descriptions. Features and available countries change over time.",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "EyeDropAlarm"
+        },
+        {
+          "t": "p",
+          "v": "EyeDropAlarm is an iPhone app focused on eye drop reminders. It leans on eye-drop-specific details: bottle colour, which eye a drop goes in, and the gap between drops."
+        },
+        {
+          "t": "h2",
+          "v": "Drop Reminder"
+        },
+        {
+          "t": "p",
+          "v": "Drop Reminder is an iPhone app presented for managing several drop schedules at once — after cataract surgery, for glaucoma, for dry eye. Its selling point is a simple flow with no account."
+        },
+        {
+          "t": "h2",
+          "v": "Medisafe"
+        },
+        {
+          "t": "p",
+          "v": "Medisafe is a widely known general medication reminder. It is strong on pills, supplements, caregiver alerts and adherence reports, but the finer eye-drop details — left versus right eye, a five-minute gap — may be something you have to arrange yourself."
+        },
+        {
+          "t": "h2",
+          "v": "MyTherapy"
+        },
+        {
+          "t": "p",
+          "v": "MyTherapy also combines medication reminders with health records. It is good for tracking medication, measurements and appointments broadly, but its screens are not laid out around eye drops the way a dedicated app like EyeDay is."
+        },
+        {
+          "t": "h2",
+          "v": "Medications in Apple Health"
+        },
+        {
+          "t": "p",
+          "v": "On iPhone you can set up basic medication reminders in the Health app. The advantage is that you install nothing extra; the limits show up around eye-drop interval warnings and a flow built on dosing records."
+        },
+        {
+          "t": "h2",
+          "v": "EyeDay"
+        },
+        {
+          "t": "p",
+          "v": "EyeDay was built for eye drops from the start. You register the drug name, left eye, right eye or both, the daily count, the start time and a custom schedule, each as its own field."
+        },
+        {
+          "t": "p",
+          "v": "When you use several drops in a row, it checks the gap against your recent doses. People on long-term drops for glaucoma can keep eye pressure records alongside, and for a fixed course after cataract or laser surgery you can see today's doses on a timeline."
+        },
+        {
+          "t": "p",
+          "v": "It also supports Korean, Japanese, English and other languages, and runs on both iPhone and Android. It is aimed at people for whom 'did the drop actually go in' matters more than a simple pill reminder."
+        },
+        {
+          "t": "h2",
+          "v": "So which should you choose?"
+        },
+        {
+          "t": "ul",
+          "v": [
+            "If you want pills and supplements handled together, a general medication reminder may be easier.",
+            "If you have one drop and only need a nudge, your phone's built-in reminder may be enough.",
+            "If you have several drops, or you need left/right eye, five-minute gaps and eye pressure records, a dedicated eye drop app fits better."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "If you need eye-drop-specific tracking",
+        "body": "Manage your dosing schedule, completion records and eye pressure together in EyeDay.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    },
+    {
+      "slug": "lasik-lasek-eye-drop-schedule",
+      "title": "Why eye drop reminders matter after LASIK and LASEK",
+      "description": "How to stay on top of antibiotics, anti-inflammatory drops and artificial tears after LASIK or LASEK.",
+      "eyebrow": "LASIK and LASEK drops",
+      "h1": "Why eye drop reminders matter after LASIK and LASEK",
+      "date": "Jul 27, 2026",
+      "summary": "After vision correction surgery, using the prescribed drops consistently until your eyes settle is the part that counts. The first few days in particular can feel like a complicated schedule.",
+      "note": "The drops and the length of the course depend on the surgical method, the state of your cornea and your clinic's protocol. This is general guidance; your clinic's instructions come first.",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "Seeing well and being done are not the same"
+        },
+        {
+          "t": "p",
+          "v": "When vision comes up quickly after LASIK or LASEK, the drops can start to feel less important. But post-op drops are usually not something you use only when your eyes feel off — they are used for a set period at the count you were given."
+        },
+        {
+          "t": "p",
+          "v": "Antibiotics, anti-inflammatory drops, steroid drops and artificial tears may all be doing different jobs. Names and bottles look alike, so it helps to write down what each one is for alongside its name."
+        },
+        {
+          "t": "h2",
+          "v": "With LASEK, the duration is what to watch"
+        },
+        {
+          "t": "p",
+          "v": "Recovery from LASEK can make the course of drops feel comparatively long. The first days are hard to record yourself because of the bandage lens, pain and light sensitivity — and later, once things are comfortable, it becomes easy to forget."
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Photograph the handout you got on the day of surgery",
+            "Check each drug's start and end date separately",
+            "Register artificial tears apart from the prescription drops"
+          ]
+        },
+        {
+          "t": "h2",
+          "v": "Building a post-op routine in EyeDay"
+        },
+        {
+          "t": "p",
+          "v": "EyeDay lets you set your own schedule for drops that repeat several times a day, and see completion on a timeline. That works well when a family member is checking along with you in the first days, and afterwards you can keep only the drops you still need."
+        }
+      ],
+      "cta": {
+        "title": "If you need a post-op routine",
+        "body": "Enter the schedule exactly as you were given it, and check it off each day.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    },
+    {
+      "slug": "multiple-eye-drops-schedule",
+      "title": "How to schedule two or three eye drops",
+      "description": "How to separate drug name, left and right eye, daily count and interval when you are using several drops at once.",
+      "eyebrow": "Multiple drop schedules",
+      "h1": "How to build a schedule when you have two or three drops",
+      "date": "Jul 27, 2026",
+      "summary": "With one drop, a single alarm can be enough. Once there are two or more, times, order, left and right eye and duration all mix together and mistakes creep in.",
+      "note": "The order and spacing can differ by prescription. If your clinic gave you a specific order, follow that.",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "Start by separating the details per drug"
+        },
+        {
+          "t": "p",
+          "v": "The most common mistake with several drops is remembering them by time alone — 'the morning one'. In practice each drug has its own count and duration, and some go in only one eye. Build the schedule around the drug name instead."
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Write down the drug name together with the bottle colour",
+            "Confirm left eye, right eye or both",
+            "Register the daily count and start time separately",
+            "Mark the end date, or the day the count changes"
+          ]
+        },
+        {
+          "t": "h2",
+          "v": "Separate the fixed-time drops from the custom ones"
+        },
+        {
+          "t": "p",
+          "v": "A clear one like 'once a day before bed' is easiest as a fixed-time reminder. A drop that needs arithmetic — four times a day, three hours apart — is safer on a custom schedule. Forcing everything into the same shape tends to make it more confusing, not less."
+        },
+        {
+          "t": "h2",
+          "v": "Why ticking things off matters"
+        },
+        {
+          "t": "p",
+          "v": "With several drops, 'I saw the reminder' and 'I put it in' can diverge. People dismiss the notification meaning to do it shortly and then forget. That is why each dose needs a record of its own."
+        }
+      ],
+      "cta": {
+        "title": "Move that complicated chart into the app",
+        "body": "In EyeDay you can register each drug's count, times and interval separately.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    },
+    {
+      "slug": "parents-eye-drop-care",
+      "title": "What to check when the family helps with a parent's eye drops",
+      "description": "Dosing records, left and right eye, and pre-appointment checks for families helping a parent with glaucoma or post-op drops.",
+      "eyebrow": "Helping a parent",
+      "h1": "What to check when the family helps with a parent's eye drops",
+      "date": "Jul 27, 2026",
+      "summary": "When a parent is on long-term glaucoma drops, or came home from cataract surgery with several bottles, having the family check in is often enough on its own to cut down on mistakes.",
+      "note": "Even when the family is helping, any change, pause or substitution should be discussed with the treating ophthalmologist.",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "'Did you take it?' matters less than 'which one, and when?'"
+        },
+        {
+          "t": "p",
+          "v": "Asking only whether the drops went in may not be enough. With several bottles, what matters is which drug, which eye, and at what time. When the left and right eye have different prescriptions, the family gets confused right along with the patient."
+        },
+        {
+          "t": "p",
+          "v": "Even when a parent manages on their own, reading small print on a bag or a bottle label every time is hard. It helps to show the drug name in large type and keep each bottle in a fixed colour or a fixed spot."
+        },
+        {
+          "t": "h2",
+          "v": "Worth checking as a family"
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Whether all of today's scheduled drops went in",
+            "Whether a one-eye drop accidentally went into both",
+            "Whether a post-op drop that should have finished is still being used",
+            "Whether there are eye pressure records to show at the next visit"
+          ]
+        },
+        {
+          "t": "h2",
+          "v": "Why the record helps"
+        },
+        {
+          "t": "p",
+          "v": "EyeDay shows completion day by day and holds eye pressure records alongside. Before an appointment you no longer have to rely on memory for 'has it been going in since last time'. Set it up on your parent's phone and learn it together as a family, and the whole thing gets easier."
+        }
+      ],
+      "cta": {
+        "title": "If you are managing drops for family",
+        "body": "Start with the drug name, which eye, and a completion record.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    },
+    {
+      "slug": "pred-forte-after-cataract-surgery",
+      "title": "Using steroid eye drops after cataract surgery",
+      "description": "Why the prescribed duration and frequency of steroid eye drops after cataract surgery should not be changed on your own.",
+      "eyebrow": "Steroid eye drops",
+      "h1": "What to watch when using steroid eye drops after cataract surgery",
+      "date": "Jul 27, 2026",
+      "summary": "Steroid drops are often prescribed after cataract surgery. What matters is less the name of the drug than following the count and duration your clinic gave you.",
+      "note": "Steroid eye drops sometimes need monitoring, including of eye pressure. Do not start or stop them on your own; follow your ophthalmologist's instructions.",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "Don't stop just because it feels better"
+        },
+        {
+          "t": "p",
+          "v": "A few days after surgery, once your eye is comfortable, it is tempting to cut back or stop. But a post-op prescription is not set by symptoms alone. Controlling inflammation, preventing infection and monitoring recovery are all reasons you are asked to keep going for a set period."
+        },
+        {
+          "t": "p",
+          "v": "The reverse is also unwise: using leftover steroid drops on your own because something feels off. Whether the medication needs adjusting, or something else is going on, is what an appointment is for."
+        },
+        {
+          "t": "h2",
+          "v": "Mark the days the count steps down"
+        },
+        {
+          "t": "p",
+          "v": "Post-op drops often start frequent and then step down every few days or weeks. Miss one of those change dates and you may use too much, or taper too early."
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Photograph the prescription handout",
+            "Mark the step-down dates in a calendar or an app",
+            "Don't share one bottle with family"
+          ]
+        },
+        {
+          "t": "h2",
+          "v": "Managing the course in EyeDay"
+        },
+        {
+          "t": "p",
+          "v": "When you add a drug in EyeDay, entering the daily count and start time separately makes the repeating post-op schedule easy to follow. On the day the count changes, edit the existing schedule or register a new one to keep it unambiguous."
+        }
+      ],
+      "cta": {
+        "title": "If the step-down dates are confusing",
+        "body": "Record the duration and count separately for each drug.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    },
+    {
+      "slug": "timolol-latanoprost-reminder",
+      "title": "Remembering timolol and latanoprost drops",
+      "description": "Reminders and records that help you keep up with glaucoma drops such as timolol and latanoprost.",
+      "eyebrow": "Glaucoma drug names",
+      "h1": "How not to forget timolol and latanoprost drops",
+      "date": "Jul 27, 2026",
+      "summary": "Glaucoma drops come with a generic name, a brand name and a bottle shape that all differ, which makes them feel complicated from the patient's side. What matters is using the drug you were prescribed, the way you were told, consistently.",
+      "note": "This is not a recommendation to use any particular drug. Whether timolol, latanoprost or anything else suits you is a decision for your doctor.",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "A change of name makes it more confusing"
+        },
+        {
+          "t": "p",
+          "v": "During a visit you may be switched to a different product in the same class, or the brand name may look different depending on the clinic and the pharmacy. That is when patients start wondering 'is this the same as the old one?' or 'do I take both?'. Always check with the clinic or pharmacy, and never use two of them together on your own."
+        },
+        {
+          "t": "p",
+          "v": "Register the product name in the app exactly as written, and put the generic name or your clinic's explanation in a note so it is easy to check later."
+        },
+        {
+          "t": "h2",
+          "v": "Once-a-day drops are easy to miss too"
+        },
+        {
+          "t": "p",
+          "v": "A once-daily drop looks simple, but missing it means losing the whole day. The bedtime one is easy to forget when you are tired; the morning one slips while you are getting ready. So rather than 'it's only once a day, it's fine', the useful thought is 'it's only once a day, so I'll make sure to check it off'."
+        },
+        {
+          "t": "h2",
+          "v": "The record helps at your appointment too"
+        },
+        {
+          "t": "p",
+          "v": "When eye pressure is not coming down as hoped, it can matter whether the issue is the drug itself or the timing having drifted. The judgement is your care team's, but walking in with a dosing record makes the conversation far more specific."
+        }
+      ],
+      "cta": {
+        "title": "If you keep forgetting your glaucoma drops",
+        "body": "Register the drug under its own name and tick it off every day.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    },
+    {
+      "slug": "uveitis-eye-drop-schedule",
+      "title": "葡萄膜炎眼藥水時間表如何避免混亂",
+      "description": "葡萄膜炎眼藥水時間表如何避免混亂 - EyeDay.",
+      "eyebrow": "眼藥水指南",
+      "h1": "葡萄膜炎眼藥水時間表如何避免混亂",
+      "date": "Jul 29, 2026",
+      "summary": "葡萄膜炎眼藥水時間表如何避免混亂. EyeDay helps keep reminders and completed-dose records in one place while you follow your clinic instructions.",
+      "note": "術後眼藥水種類與頻率會因診所而異。本文為一般資訊；請一律遵照為你治療的診所指示。",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "Start with the exact plan from your clinic"
+        },
+        {
+          "t": "p",
+          "v": "Uveitis eye drop schedules can change during follow-up. Some people are told to use steroid drops such as Pred Forte often at first, then reduce them step by step. The important part is not to guess the taper from memory."
+        },
+        {
+          "t": "p",
+          "v": "Write down the drug name, the eye, the daily count, and the date when any reduction starts. If your doctor is also watching eye pressure or glaucoma risk, keep those notes next to the dosing record."
+        },
+        {
+          "t": "h2",
+          "v": "Separate the things that are easy to confuse"
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Drug name, including brand names such as Pred Forte",
+            "Which eye each drop goes in",
+            "Start date, end date, and any taper date"
+          ]
+        },
+        {
+          "t": "p",
+          "v": "If the plan changes after a visit, update the reminder the same day. That keeps yesterday’s schedule from silently becoming today’s mistake."
+        },
+        {
+          "t": "h2",
+          "v": "Using EyeDay for uveitis drops"
+        },
+        {
+          "t": "p",
+          "v": "EyeDay lets you keep each drop as its own schedule and log every completed dose. It is a reminder and record tool, not a treatment guide, so the prescription from your ophthalmologist should always come first."
+        }
+      ],
+      "cta": {
+        "title": "葡萄膜炎眼藥水時間表如何避免混亂",
+        "body": "EyeDay keeps eye drop reminders and dosing records together.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    },
+    {
+      "slug": "icl-surgery-eye-drops",
+      "title": "ICL 術後眼藥水如何規律追蹤",
+      "description": "ICL 術後眼藥水如何規律追蹤 - EyeDay.",
+      "eyebrow": "眼藥水指南",
+      "h1": "ICL 術後眼藥水如何規律追蹤",
+      "date": "Jul 29, 2026",
+      "summary": "ICL 術後眼藥水如何規律追蹤. EyeDay helps keep reminders and completed-dose records in one place while you follow your clinic instructions.",
+      "note": "術後眼藥水種類與頻率會因診所而異。本文為一般資訊；請一律遵照為你治療的診所指示。",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "Vision can feel good before the drop course is done"
+        },
+        {
+          "t": "p",
+          "v": "After ICL surgery, you may be given antibiotic drops, anti-inflammatory drops, steroid drops, or artificial tears for a fixed period. The exact plan depends on your clinic, but it is common for several bottles to overlap."
+        },
+        {
+          "t": "p",
+          "v": "Because ICL recovery can feel straightforward once vision clears, it is easy to forget that the drop schedule still matters. Treat each bottle as a separate mini-prescription with its own start and end."
+        },
+        {
+          "t": "h2",
+          "v": "Build the schedule bottle by bottle"
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Confirm which eye or both eyes",
+            "Record daily frequency and duration",
+            "Keep spacing instructions visible when using several drops"
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Do not reuse drops from a previous surgery or extend a course because a bottle still has liquid left. Follow the current post-op sheet."
+        },
+        {
+          "t": "h2",
+          "v": "Using EyeDay after ICL"
+        },
+        {
+          "t": "p",
+          "v": "In EyeDay you can register each post-op drop separately, set reminders, and check off doses on the day’s timeline before your next follow-up."
+        }
+      ],
+      "cta": {
+        "title": "ICL 術後眼藥水如何規律追蹤",
+        "body": "EyeDay keeps eye drop reminders and dosing records together.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    },
+    {
+      "slug": "prk-eye-drop-schedule",
+      "title": "PRK 術後眼藥水時間表不要漏掉",
+      "description": "PRK 術後眼藥水時間表不要漏掉 - EyeDay.",
+      "eyebrow": "眼藥水指南",
+      "h1": "PRK 術後眼藥水時間表不要漏掉",
+      "date": "Jul 29, 2026",
+      "summary": "PRK 術後眼藥水時間表不要漏掉. EyeDay helps keep reminders and completed-dose records in one place while you follow your clinic instructions.",
+      "note": "術後眼藥水種類與頻率會因診所而異。本文為一般資訊；請一律遵照為你治療的診所指示。",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "PRK schedules can last beyond the uncomfortable days"
+        },
+        {
+          "t": "p",
+          "v": "After PRK, the early days get most of the attention, but eye drops may continue after the worst discomfort improves. Antibiotic drops, steroid drops, and artificial tears may each have a different duration."
+        },
+        {
+          "t": "p",
+          "v": "PRK instructions are not automatically the same as LASIK instructions. If a taper is written for a steroid drop such as Pred Forte, mark the exact day the count changes."
+        },
+        {
+          "t": "h2",
+          "v": "Track the taper, not just the first week"
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Start and end dates for every bottle",
+            "Dose changes by week or by follow-up visit",
+            "Extra artificial tears used during the day"
+          ]
+        },
+        {
+          "t": "p",
+          "v": "If your eye feels worse, your vision changes, or you are unsure whether to continue, ask your clinic instead of changing the schedule yourself."
+        },
+        {
+          "t": "h2",
+          "v": "Using EyeDay after PRK"
+        },
+        {
+          "t": "p",
+          "v": "EyeDay helps turn the clinic sheet into reminders and a daily dosing record, so you can see what was actually used rather than relying on memory."
+        }
+      ],
+      "cta": {
+        "title": "PRK 術後眼藥水時間表不要漏掉",
+        "body": "EyeDay keeps eye drop reminders and dosing records together.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    },
+    {
+      "slug": "tobradex-antibiotic-eye-drops",
+      "title": "Tobradex 眼藥水使用時如何追蹤時間表",
+      "description": "Tobradex 眼藥水使用時如何追蹤時間表 - EyeDay.",
+      "eyebrow": "眼藥水指南",
+      "h1": "Tobradex 眼藥水使用時如何追蹤時間表",
+      "date": "Jul 29, 2026",
+      "summary": "Tobradex 眼藥水使用時如何追蹤時間表. EyeDay helps keep reminders and completed-dose records in one place while you follow your clinic instructions.",
+      "note": "術後眼藥水種類與頻率會因診所而異。本文為一般資訊；請一律遵照為你治療的診所指示。",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "Antibiotic drops usually have a defined course"
+        },
+        {
+          "t": "p",
+          "v": "Drops such as Tobradex, or other antibiotic eye drops, are often prescribed for a specific situation and a specific length of time. The label on the bottle is not enough when you also have other drops."
+        },
+        {
+          "t": "p",
+          "v": "Tobradex includes antibiotic and steroid components, so the frequency and duration should come from your clinician. Do not restart old drops, share a bottle, or extend the course on your own."
+        },
+        {
+          "t": "h2",
+          "v": "Write down the course before you start"
+        },
+        {
+          "t": "ul",
+          "v": [
+            "The exact drug name on the prescription",
+            "How many times per day and for how many days",
+            "Whether it should be spaced from other drops"
+          ]
+        },
+        {
+          "t": "p",
+          "v": "If redness, pain, discharge, or vision changes get worse, contact your clinic instead of only adjusting reminders."
+        },
+        {
+          "t": "h2",
+          "v": "Using EyeDay for antibiotic drops"
+        },
+        {
+          "t": "p",
+          "v": "EyeDay can keep Tobradex or another antibiotic drop on its own schedule, with completed-dose records that are easy to check before the next dose."
+        }
+      ],
+      "cta": {
+        "title": "Tobradex 眼藥水使用時如何追蹤時間表",
+        "body": "EyeDay keeps eye drop reminders and dosing records together.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    }
+  ]
+}

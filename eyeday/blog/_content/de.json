@@ -1,8 +1,12 @@
 {
   "ui": {
     "languageName": "Deutsch",
-    "home": "Start", "blog": "Blog", "back": "← Zurück zum Blog",
-    "privacy": "Datenschutz", "terms": "Nutzungsbedingungen", "contact": "Kontakt",
+    "home": "Start",
+    "blog": "Blog",
+    "back": "← Zurück zum Blog",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "contact": "Kontakt",
     "eyebrow": "AUGENTROPFEN-GUIDE",
     "indexTitle": "EyeDay Blog - Erinnerungen und Protokoll für Augentropfen",
     "indexDescription": "Praxisnahe Anleitungen zu Augentropfen-Erinnerungen und Dosisprotokollen bei Glaukom, nach Kataraktoperation, LASIK und LASEK.",
@@ -21,18 +25,42 @@
       "summary": "Mit der Operation ist es nicht getan. Die verordneten Tropfen in den Wochen danach korrekt anzuwenden gehört zur Heilung dazu.",
       "note": "Art und Häufigkeit der Augentropfen nach einer Operation unterscheiden sich von Klinik zu Klinik. Dies ist eine allgemeine Orientierung; folgen Sie immer den Anweisungen Ihrer behandelnden Klinik.",
       "blocks": [
-        {"t": "h2", "v": "Oft sind es mehrere verschiedene Tropfen"},
-        {"t": "p", "v": "Nach einer Kataraktoperation bekommen Sie unter Umständen Antibiotika, entzündungshemmende Tropfen, Steroidtropfen und künstliche Tränen zusammen. Jedes Mittel hat seine eigene Tagesanzahl und seine eigene Dauer, sodass selbst ein Zettel nach ein paar Tagen unübersichtlich wird."},
-        {"t": "p", "v": "In der ersten Woche sind es meist die meisten Gaben, danach wird oft reduziert. Wenn das ansteht, prüfen Sie drei Dinge getrennt: ab wann reduziert wird, in welches Auge welcher Tropfen kommt und wie lange Sie zwischen den Tropfen warten."},
-        {"t": "h2", "v": "Teilen Sie die Verwaltung in drei Punkte"},
-        {"t": "ul", "v": [
-          "Name des Mittels: verlassen Sie sich nicht auf Form oder Farbe der Flasche",
-          "Dauer: Startdatum, Enddatum und jeder Tag, an dem sich die Anzahl ändert",
-          "Abstand: Zeit zwischen den Tropfen, wenn Sie mehrere nacheinander anwenden"
-        ]},
-        {"t": "p", "v": "Direkt nach der Operation kann die Sicht trüb oder das Auge unangenehm sein, und häufig hilft jemand aus der Familie mit. Genau dann ist ein Protokoll darüber, was tatsächlich getropft wurde, mehr wert als ein bloßer Wecker."},
-        {"t": "h2", "v": "Mit EyeDay arbeiten"},
-        {"t": "p", "v": "In EyeDay legen Sie für jedes Mittel Tagesanzahl und Startzeit fest und können einen eigenen Zeitplan bauen. Wenn Sie wie nach einer Kataraktoperation mehrere Tropfen über einen festen Zeitraum brauchen, macht es das Nachschauen vor dem nächsten Termin leicht, wenn Sie das Enddatum jedes Mittels getrennt führen und jede Gabe protokollieren."}
+        {
+          "t": "h2",
+          "v": "Oft sind es mehrere verschiedene Tropfen"
+        },
+        {
+          "t": "p",
+          "v": "Nach einer Kataraktoperation bekommen Sie unter Umständen Antibiotika, entzündungshemmende Tropfen, Steroidtropfen und künstliche Tränen zusammen. Jedes Mittel hat seine eigene Tagesanzahl und seine eigene Dauer, sodass selbst ein Zettel nach ein paar Tagen unübersichtlich wird."
+        },
+        {
+          "t": "p",
+          "v": "In der ersten Woche sind es meist die meisten Gaben, danach wird oft reduziert. Wenn das ansteht, prüfen Sie drei Dinge getrennt: ab wann reduziert wird, in welches Auge welcher Tropfen kommt und wie lange Sie zwischen den Tropfen warten."
+        },
+        {
+          "t": "h2",
+          "v": "Teilen Sie die Verwaltung in drei Punkte"
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Name des Mittels: verlassen Sie sich nicht auf Form oder Farbe der Flasche",
+            "Dauer: Startdatum, Enddatum und jeder Tag, an dem sich die Anzahl ändert",
+            "Abstand: Zeit zwischen den Tropfen, wenn Sie mehrere nacheinander anwenden"
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Direkt nach der Operation kann die Sicht trüb oder das Auge unangenehm sein, und häufig hilft jemand aus der Familie mit. Genau dann ist ein Protokoll darüber, was tatsächlich getropft wurde, mehr wert als ein bloßer Wecker."
+        },
+        {
+          "t": "h2",
+          "v": "Mit EyeDay arbeiten"
+        },
+        {
+          "t": "p",
+          "v": "In EyeDay legen Sie für jedes Mittel Tagesanzahl und Startzeit fest und können einen eigenen Zeitplan bauen. Wenn Sie wie nach einer Kataraktoperation mehrere Tropfen über einen festen Zeitraum brauchen, macht es das Nachschauen vor dem nächsten Termin leicht, wenn Sie das Enddatum jedes Mittels getrennt führen und jede Gabe protokollieren."
+        }
       ],
       "cta": {
         "title": "Wenn der Tropfplan nach der OP verwirrt",
@@ -51,18 +79,42 @@
       "summary": "Künstliche Tränen wirken wie die harmlose Variante. Wenn trockene Augen aber immer wiederkommen, verrät schon das bloße Festhalten von Zeitpunkt und Häufigkeit einiges über die eigenen Muster.",
       "note": "Auch bei künstlichen Tränen kann die Anwendung je nach Produkt und Konservierungsmittel abweichen. Halten Beschwerden an oder verschlimmern sie sich, lassen Sie das augenärztlich abklären.",
       "blocks": [
-        {"t": "h2", "v": "Greifen Sie erst zu, wenn es schon brennt?"},
-        {"t": "p", "v": "Wer trockene Augen hat, sucht die künstlichen Tränen meist dann, wenn es kratzt oder sticht. Bei Beschwerden zu tropfen hilft natürlich — wer aber den ganzen Tag auf einen Bildschirm schaut, sollte auch vorbeugend etwas tun."},
-        {"t": "p", "v": "Bei der Arbeit ist eine Gabe besonders schnell vergessen, wenn man konzentriert ist. Wenn die Augen erst am Nachmittag schwer und verschwommen werden, hilft eine Erinnerung, die früher am Tag liegt."},
-        {"t": "h2", "v": "Ein Protokoll zeigt die Muster"},
-        {"t": "ul", "v": [
-          "Ob die Trockenheit nachmittags stärker ist als vormittags",
-          "Ob Sie an Tagen mit Kontaktlinsen mehr tropfen",
-          "Ob die Beschwerden nach zu wenig Schlaf oder bei Heizungsluft zunehmen"
-        ]},
-        {"t": "p", "v": "Das hilft Ihnen, Gewohnheiten selbst anzupassen, und Sie haben beim Termin etwas Konkretes zu erzählen statt eines vagen Eindrucks."},
-        {"t": "h2", "v": "Künstliche Tränen in EyeDay anlegen"},
-        {"t": "p", "v": "EyeDay ist nicht nur für verschreibungspflichtige Tropfen — Sie können auch etwas anlegen, zu dem Sie immer wieder greifen, etwa künstliche Tränen. Protokollieren Sie sie bei Bedarf als zusätzliche Gabe oder setzen Sie feste Erinnerungen, um das Muster zu sehen."}
+        {
+          "t": "h2",
+          "v": "Greifen Sie erst zu, wenn es schon brennt?"
+        },
+        {
+          "t": "p",
+          "v": "Wer trockene Augen hat, sucht die künstlichen Tränen meist dann, wenn es kratzt oder sticht. Bei Beschwerden zu tropfen hilft natürlich — wer aber den ganzen Tag auf einen Bildschirm schaut, sollte auch vorbeugend etwas tun."
+        },
+        {
+          "t": "p",
+          "v": "Bei der Arbeit ist eine Gabe besonders schnell vergessen, wenn man konzentriert ist. Wenn die Augen erst am Nachmittag schwer und verschwommen werden, hilft eine Erinnerung, die früher am Tag liegt."
+        },
+        {
+          "t": "h2",
+          "v": "Ein Protokoll zeigt die Muster"
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Ob die Trockenheit nachmittags stärker ist als vormittags",
+            "Ob Sie an Tagen mit Kontaktlinsen mehr tropfen",
+            "Ob die Beschwerden nach zu wenig Schlaf oder bei Heizungsluft zunehmen"
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Das hilft Ihnen, Gewohnheiten selbst anzupassen, und Sie haben beim Termin etwas Konkretes zu erzählen statt eines vagen Eindrucks."
+        },
+        {
+          "t": "h2",
+          "v": "Künstliche Tränen in EyeDay anlegen"
+        },
+        {
+          "t": "p",
+          "v": "EyeDay ist nicht nur für verschreibungspflichtige Tropfen — Sie können auch etwas anlegen, zu dem Sie immer wieder greifen, etwa künstliche Tränen. Protokollieren Sie sie bei Bedarf als zusätzliche Gabe oder setzen Sie feste Erinnerungen, um das Muster zu sehen."
+        }
       ],
       "cta": {
         "title": "Wenn die Trockenheit wiederkommt",
@@ -81,18 +133,42 @@
       "summary": "Wenn Sie zwei oder drei Tropfen verordnet bekommen, will man am liebsten alles auf einmal erledigen. Verschiedene Tropfen sollen aber in der Regel zeitlich versetzt angewendet werden.",
       "note": "Der empfohlene Abstand hängt vom Wirkstoff und den Anweisungen Ihrer Klinik ab. Wenn Sie mehrere Tropfen zusammen verwenden, klären Sie Reihenfolge und Abstand mit Ihrem Behandlungsteam.",
       "blocks": [
-        {"t": "h2", "v": "Das Auge fasst nur eine begrenzte Menge"},
-        {"t": "p", "v": "Von einem Tropfen bleibt ein Teil auf der Augenoberfläche, ein Teil fließt über den Tränenkanal ab. Kommt der nächste Tropfen sofort hinterher, kann er den ersten fortspülen, bevor dieser lange genug einwirken konnte. Deshalb ist ein Abstand sinnvoll, wenn Sie mehrere Tropfen nacheinander anwenden."},
-        {"t": "p", "v": "In vielen Merkblättern steht so etwas wie „etwa fünf Minuten“. Entscheidend ist weniger die genaue Zahl als die Gewohnheit, nicht alles auf einmal einzutropfen."},
-        {"t": "h2", "v": "Fünf Minuten sind länger, als sie klingen"},
-        {"t": "p", "v": "Vor der Arbeit oder direkt vor dem Schlafengehen sind fünf Minuten nicht kurz. Man tropft das erste Mittel, fängt etwas anderes an und vergisst das zweite — oder man wird ungeduldig und tropft sofort nach."},
-        {"t": "ul", "v": [
-          "Timer starten, sobald der erste Tropfen drin ist",
-          "Jedem Mittel eine feste Farbe oder einen festen Platz geben",
-          "Den ersten abhaken, damit der zweite nicht ausfällt"
-        ]},
-        {"t": "h2", "v": "Die Abstandswarnung in EyeDay"},
-        {"t": "p", "v": "Wenn Sie mehrere Tropfen protokollieren, prüft EyeDay den Abstand anhand Ihrer letzten Gaben. Für alle, die mehrere Mittel gleichzeitig brauchen — bei Glaukom oder in den Wochen nach einer Operation — ist genau dieser Hinweis „Sie haben gerade erst getropft“ der nützliche Teil."}
+        {
+          "t": "h2",
+          "v": "Das Auge fasst nur eine begrenzte Menge"
+        },
+        {
+          "t": "p",
+          "v": "Von einem Tropfen bleibt ein Teil auf der Augenoberfläche, ein Teil fließt über den Tränenkanal ab. Kommt der nächste Tropfen sofort hinterher, kann er den ersten fortspülen, bevor dieser lange genug einwirken konnte. Deshalb ist ein Abstand sinnvoll, wenn Sie mehrere Tropfen nacheinander anwenden."
+        },
+        {
+          "t": "p",
+          "v": "In vielen Merkblättern steht so etwas wie „etwa fünf Minuten“. Entscheidend ist weniger die genaue Zahl als die Gewohnheit, nicht alles auf einmal einzutropfen."
+        },
+        {
+          "t": "h2",
+          "v": "Fünf Minuten sind länger, als sie klingen"
+        },
+        {
+          "t": "p",
+          "v": "Vor der Arbeit oder direkt vor dem Schlafengehen sind fünf Minuten nicht kurz. Man tropft das erste Mittel, fängt etwas anderes an und vergisst das zweite — oder man wird ungeduldig und tropft sofort nach."
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Timer starten, sobald der erste Tropfen drin ist",
+            "Jedem Mittel eine feste Farbe oder einen festen Platz geben",
+            "Den ersten abhaken, damit der zweite nicht ausfällt"
+          ]
+        },
+        {
+          "t": "h2",
+          "v": "Die Abstandswarnung in EyeDay"
+        },
+        {
+          "t": "p",
+          "v": "Wenn Sie mehrere Tropfen protokollieren, prüft EyeDay den Abstand anhand Ihrer letzten Gaben. Für alle, die mehrere Mittel gleichzeitig brauchen — bei Glaukom oder in den Wochen nach einer Operation — ist genau dieser Hinweis „Sie haben gerade erst getropft“ der nützliche Teil."
+        }
       ],
       "cta": {
         "title": "Wenn der Abstand ständig verrutscht",
@@ -111,14 +187,38 @@
       "summary": "Eine einfache Wecker-App bringt Sie zur richtigen Zeit ans Ziel. Sobald es aber mehrere Tropfen sind oder die Behandlung über Monate läuft, lohnt der Blick darauf, ob eine App wirklich für Augentropfen gebaut wurde.",
       "note": "Eine App ersetzt kein Rezept. Sehen Sie sie als Hilfsmittel, um die vorhandene Verordnung besser einzuhalten.",
       "blocks": [
-        {"t": "h2", "v": "Erstens: ein eigener Zeitplan je Mittel"},
-        {"t": "p", "v": "Tropfen unterscheiden sich in Tagesanzahl, betroffenem Auge, Startzeitpunkt und Dauer. All das in den Titel eines einzigen Weckers zu schreiben sieht anfangs machbar aus und fällt beim nächsten Fläschchen auseinander."},
-        {"t": "h2", "v": "Zweitens: ein Protokoll der Erledigung"},
-        {"t": "p", "v": "„Die Erinnerung kam“ und „ich habe getropft“ sind zweierlei. Ein Protokoll nach Tagen zählt besonders, wenn jemand aus der Familie mithilft oder Sie vor einem Termin zurückschauen wollen."},
-        {"t": "h2", "v": "Drittens: eine Prüfung des Abstands"},
-        {"t": "p", "v": "Wer zwei oder mehr Tropfen nimmt, hört oft, dass etwa fünf Minuten dazwischenliegen sollen. Wenn die App das für Sie prüft, sinkt die Fehlerquote gerade an hektischen Morgen."},
-        {"t": "h2", "v": "Viertens: Platz für Ihre Augenwerte"},
-        {"t": "p", "v": "Bei Glaukom helfen Augendruckwerte, nach einer Operation Notizen zu Beschwerden. Liegen Dosisprotokoll und Augenwerte an getrennten Orten, findet man später keines von beidem."}
+        {
+          "t": "h2",
+          "v": "Erstens: ein eigener Zeitplan je Mittel"
+        },
+        {
+          "t": "p",
+          "v": "Tropfen unterscheiden sich in Tagesanzahl, betroffenem Auge, Startzeitpunkt und Dauer. All das in den Titel eines einzigen Weckers zu schreiben sieht anfangs machbar aus und fällt beim nächsten Fläschchen auseinander."
+        },
+        {
+          "t": "h2",
+          "v": "Zweitens: ein Protokoll der Erledigung"
+        },
+        {
+          "t": "p",
+          "v": "„Die Erinnerung kam“ und „ich habe getropft“ sind zweierlei. Ein Protokoll nach Tagen zählt besonders, wenn jemand aus der Familie mithilft oder Sie vor einem Termin zurückschauen wollen."
+        },
+        {
+          "t": "h2",
+          "v": "Drittens: eine Prüfung des Abstands"
+        },
+        {
+          "t": "p",
+          "v": "Wer zwei oder mehr Tropfen nimmt, hört oft, dass etwa fünf Minuten dazwischenliegen sollen. Wenn die App das für Sie prüft, sinkt die Fehlerquote gerade an hektischen Morgen."
+        },
+        {
+          "t": "h2",
+          "v": "Viertens: Platz für Ihre Augenwerte"
+        },
+        {
+          "t": "p",
+          "v": "Bei Glaukom helfen Augendruckwerte, nach einer Operation Notizen zu Beschwerden. Liegen Dosisprotokoll und Augenwerte an getrennten Orten, findet man später keines von beidem."
+        }
       ],
       "cta": {
         "title": "EyeDay ist für Augentropfen gemacht",
@@ -137,18 +237,42 @@
       "summary": "Ein Glaukom braucht stetige Behandlung, auch wenn man kaum etwas spürt. Gerade bei Tropfen zählt die Gewohnheit, sie zu den verordneten Zeiten anzuwenden statt dann, wenn sie einem einfallen.",
       "note": "Dies sind allgemeine Informationen zum Umgang mit Augentropfen. Welches Mittel, wie oft und ob abgesetzt wird, entscheidet Ihre Augenärztin oder Ihr Augenarzt.",
       "blocks": [
-        {"t": "h2", "v": "Beständigkeit ist der ganze Punkt"},
-        {"t": "p", "v": "Tropfen werden in der Glaukombehandlung ständig eingesetzt, um den Augeninnendruck im Rahmen zu halten. Das Schwierige ist, dass ein frühes Glaukom oft kaum Beschwerden macht — ein oder zwei ausgelassene Tage fühlen sich aus Sicht der Patientinnen und Patienten nach nichts an. Tropfen richten sich aber nach dem verordneten Plan, nicht danach, wie sich die Augen gerade anfühlen."},
-        {"t": "p", "v": "„Ich habe gestern vergessen — kann ich heute zweimal?“ kommt in der Sprechstunde ständig. Die meisten Tropfen werden nicht durch Verdoppeln nachgeholt. Es hängt davon ab, wann es Ihnen eingefallen ist, wann die nächste Gabe ansteht und um welches Mittel es geht — halten Sie sich an die Auskunft Ihrer Klinik."},
-        {"t": "h2", "v": "Wenn die Zeiten rutschen, rutscht auch das Protokoll"},
-        {"t": "p", "v": "Glaukom-Tropfen wirken schlicht — einmal oder zweimal täglich — sind im Alltag aber leicht zu verpassen. Der Weg zur Arbeit, ein Abend außer Haus, die Müdigkeit vor dem Schlafengehen: derselbe Zeitpunkt verschiebt sich immer wieder. Dann hilft es, Erinnerung und Protokoll als zwei getrennte Aufgaben zu sehen."},
-        {"t": "ul", "v": [
-          "Die Erinnerung sagt Ihnen, dass es Zeit ist",
-          "Das Protokoll bestätigt, dass Sie es getan haben",
-          "Die Augendruckwerte zeigen den Verlauf vor dem Termin"
-        ]},
-        {"t": "h2", "v": "Wann EyeDay passt"},
-        {"t": "p", "v": "EyeDay ist so gebaut, dass Menschen mit langfristiger Tropftherapie wie beim Glaukom Wirkstoffnamen, betroffenes Auge, Tagesanzahl und Startzeit getrennt anlegen können. Die heutigen Gaben sehen Sie auf einer Zeitleiste, und den in der Klinik gemessenen Druck können Sie für das linke und rechte Auge festhalten."}
+        {
+          "t": "h2",
+          "v": "Beständigkeit ist der ganze Punkt"
+        },
+        {
+          "t": "p",
+          "v": "Tropfen werden in der Glaukombehandlung ständig eingesetzt, um den Augeninnendruck im Rahmen zu halten. Das Schwierige ist, dass ein frühes Glaukom oft kaum Beschwerden macht — ein oder zwei ausgelassene Tage fühlen sich aus Sicht der Patientinnen und Patienten nach nichts an. Tropfen richten sich aber nach dem verordneten Plan, nicht danach, wie sich die Augen gerade anfühlen."
+        },
+        {
+          "t": "p",
+          "v": "„Ich habe gestern vergessen — kann ich heute zweimal?“ kommt in der Sprechstunde ständig. Die meisten Tropfen werden nicht durch Verdoppeln nachgeholt. Es hängt davon ab, wann es Ihnen eingefallen ist, wann die nächste Gabe ansteht und um welches Mittel es geht — halten Sie sich an die Auskunft Ihrer Klinik."
+        },
+        {
+          "t": "h2",
+          "v": "Wenn die Zeiten rutschen, rutscht auch das Protokoll"
+        },
+        {
+          "t": "p",
+          "v": "Glaukom-Tropfen wirken schlicht — einmal oder zweimal täglich — sind im Alltag aber leicht zu verpassen. Der Weg zur Arbeit, ein Abend außer Haus, die Müdigkeit vor dem Schlafengehen: derselbe Zeitpunkt verschiebt sich immer wieder. Dann hilft es, Erinnerung und Protokoll als zwei getrennte Aufgaben zu sehen."
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Die Erinnerung sagt Ihnen, dass es Zeit ist",
+            "Das Protokoll bestätigt, dass Sie es getan haben",
+            "Die Augendruckwerte zeigen den Verlauf vor dem Termin"
+          ]
+        },
+        {
+          "t": "h2",
+          "v": "Wann EyeDay passt"
+        },
+        {
+          "t": "p",
+          "v": "EyeDay ist so gebaut, dass Menschen mit langfristiger Tropftherapie wie beim Glaukom Wirkstoffnamen, betroffenes Auge, Tagesanzahl und Startzeit getrennt anlegen können. Die heutigen Gaben sehen Sie auf einer Zeitleiste, und den in der Klinik gemessenen Druck können Sie für das linke und rechte Auge festhalten."
+        }
       ],
       "cta": {
         "title": "Wenn Sie Ihre Glaukom-Tropfen oft vergessen",
@@ -167,26 +291,74 @@
       "summary": "Wer nach einer Erinnerung für Augentropfen sucht, findet spezialisierte Apps, allgemeine Medikamenten-Erinnerungen und die Gesundheits-App des Telefons nebeneinander. Sie können Unterschiedliches gut, deshalb hängt die Wahl davon ab, ob Ihre Verordnung einfach oder verschachtelt ist.",
       "note": "Dies ist ein allgemeiner Vergleich auf Basis öffentlicher App-Beschreibungen und Store-Angaben. Funktionen und verfügbare Länder ändern sich mit der Zeit.",
       "blocks": [
-        {"t": "h2", "v": "EyeDropAlarm"},
-        {"t": "p", "v": "EyeDropAlarm ist eine iPhone-App mit Fokus auf Augentropfen-Erinnerungen. Sie stellt die tropfenspezifischen Punkte in den Vordergrund: Flaschenfarbe, betroffenes Auge und der Abstand zwischen den Tropfen."},
-        {"t": "h2", "v": "Drop Reminder"},
-        {"t": "p", "v": "Drop Reminder ist eine iPhone-App, die für die Verwaltung mehrerer Tropfpläne gleichzeitig vorgestellt wird — nach Kataraktoperation, bei Glaukom, bei trockenen Augen. Ihr Argument ist ein einfacher Ablauf ohne Konto."},
-        {"t": "h2", "v": "Medisafe"},
-        {"t": "p", "v": "Medisafe ist eine weithin bekannte allgemeine Medikamenten-Erinnerung. Bei Tabletten, Nahrungsergänzung, Angehörigen-Hinweisen und Einnahmeberichten ist sie stark, aber die feineren Punkte bei Augentropfen — linkes oder rechtes Auge, ein Fünf-Minuten-Abstand — müssen Sie eventuell selbst einrichten."},
-        {"t": "h2", "v": "MyTherapy"},
-        {"t": "p", "v": "MyTherapy verbindet ebenfalls Medikamenten-Erinnerungen mit Gesundheitsdaten. Für Einnahme, Messwerte und Termine im Überblick ist das gut, aber die Bildschirme sind nicht so um Augentropfen herum gebaut wie bei einer spezialisierten App wie EyeDay."},
-        {"t": "h2", "v": "Medikamente in Apple Health"},
-        {"t": "p", "v": "Auf dem iPhone lassen sich in der Health-App einfache Medikamenten-Erinnerungen anlegen. Der Vorteil ist, dass Sie nichts zusätzlich installieren; die Grenzen zeigen sich bei Abstandswarnungen und einem Ablauf rund um Dosisprotokolle."},
-        {"t": "h2", "v": "EyeDay"},
-        {"t": "p", "v": "EyeDay wurde von Anfang an für Augentropfen gebaut. Wirkstoffname, linkes Auge, rechtes Auge oder beide, Tagesanzahl, Startzeit und ein eigener Zeitplan sind jeweils eigene Felder."},
-        {"t": "p", "v": "Wenn Sie mehrere Tropfen nacheinander anwenden, prüft die App den Abstand anhand Ihrer letzten Gaben. Bei langfristiger Behandlung wie beim Glaukom halten Sie die Augendruckwerte daneben fest, und für einen festen Zeitraum nach einer Katarakt- oder Laseroperation sehen Sie die heutigen Gaben auf einer Zeitleiste."},
-        {"t": "p", "v": "Außerdem unterstützt sie Deutsch, Englisch, Japanisch und weitere Sprachen und läuft auf iPhone wie Android. Sie richtet sich an alle, für die „ist der Tropfen wirklich hineingekommen“ wichtiger ist als eine schlichte Tablettenerinnerung."},
-        {"t": "h2", "v": "Was sollten Sie also wählen?"},
-        {"t": "ul", "v": [
-          "Wenn Tabletten und Nahrungsergänzung mitlaufen sollen, ist eine allgemeine Medikamenten-App womöglich bequemer.",
-          "Wenn es ein Tropfen ist und Sie nur einen Anstoß brauchen, reicht vielleicht die Erinnerung Ihres Telefons.",
-          "Wenn es mehrere Tropfen sind oder Sie linkes und rechtes Auge, Fünf-Minuten-Abstände und Augendruckwerte brauchen, passt eine spezialisierte App besser."
-        ]}
+        {
+          "t": "h2",
+          "v": "EyeDropAlarm"
+        },
+        {
+          "t": "p",
+          "v": "EyeDropAlarm ist eine iPhone-App mit Fokus auf Augentropfen-Erinnerungen. Sie stellt die tropfenspezifischen Punkte in den Vordergrund: Flaschenfarbe, betroffenes Auge und der Abstand zwischen den Tropfen."
+        },
+        {
+          "t": "h2",
+          "v": "Drop Reminder"
+        },
+        {
+          "t": "p",
+          "v": "Drop Reminder ist eine iPhone-App, die für die Verwaltung mehrerer Tropfpläne gleichzeitig vorgestellt wird — nach Kataraktoperation, bei Glaukom, bei trockenen Augen. Ihr Argument ist ein einfacher Ablauf ohne Konto."
+        },
+        {
+          "t": "h2",
+          "v": "Medisafe"
+        },
+        {
+          "t": "p",
+          "v": "Medisafe ist eine weithin bekannte allgemeine Medikamenten-Erinnerung. Bei Tabletten, Nahrungsergänzung, Angehörigen-Hinweisen und Einnahmeberichten ist sie stark, aber die feineren Punkte bei Augentropfen — linkes oder rechtes Auge, ein Fünf-Minuten-Abstand — müssen Sie eventuell selbst einrichten."
+        },
+        {
+          "t": "h2",
+          "v": "MyTherapy"
+        },
+        {
+          "t": "p",
+          "v": "MyTherapy verbindet ebenfalls Medikamenten-Erinnerungen mit Gesundheitsdaten. Für Einnahme, Messwerte und Termine im Überblick ist das gut, aber die Bildschirme sind nicht so um Augentropfen herum gebaut wie bei einer spezialisierten App wie EyeDay."
+        },
+        {
+          "t": "h2",
+          "v": "Medikamente in Apple Health"
+        },
+        {
+          "t": "p",
+          "v": "Auf dem iPhone lassen sich in der Health-App einfache Medikamenten-Erinnerungen anlegen. Der Vorteil ist, dass Sie nichts zusätzlich installieren; die Grenzen zeigen sich bei Abstandswarnungen und einem Ablauf rund um Dosisprotokolle."
+        },
+        {
+          "t": "h2",
+          "v": "EyeDay"
+        },
+        {
+          "t": "p",
+          "v": "EyeDay wurde von Anfang an für Augentropfen gebaut. Wirkstoffname, linkes Auge, rechtes Auge oder beide, Tagesanzahl, Startzeit und ein eigener Zeitplan sind jeweils eigene Felder."
+        },
+        {
+          "t": "p",
+          "v": "Wenn Sie mehrere Tropfen nacheinander anwenden, prüft die App den Abstand anhand Ihrer letzten Gaben. Bei langfristiger Behandlung wie beim Glaukom halten Sie die Augendruckwerte daneben fest, und für einen festen Zeitraum nach einer Katarakt- oder Laseroperation sehen Sie die heutigen Gaben auf einer Zeitleiste."
+        },
+        {
+          "t": "p",
+          "v": "Außerdem unterstützt sie Deutsch, Englisch, Japanisch und weitere Sprachen und läuft auf iPhone wie Android. Sie richtet sich an alle, für die „ist der Tropfen wirklich hineingekommen“ wichtiger ist als eine schlichte Tablettenerinnerung."
+        },
+        {
+          "t": "h2",
+          "v": "Was sollten Sie also wählen?"
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Wenn Tabletten und Nahrungsergänzung mitlaufen sollen, ist eine allgemeine Medikamenten-App womöglich bequemer.",
+            "Wenn es ein Tropfen ist und Sie nur einen Anstoß brauchen, reicht vielleicht die Erinnerung Ihres Telefons.",
+            "Wenn es mehrere Tropfen sind oder Sie linkes und rechtes Auge, Fünf-Minuten-Abstände und Augendruckwerte brauchen, passt eine spezialisierte App besser."
+          ]
+        }
       ],
       "cta": {
         "title": "Wenn Sie Augentropfen gezielt verwalten wollen",
@@ -205,18 +377,42 @@
       "summary": "Nach einer Augenlaserbehandlung kommt es darauf an, die verordneten Tropfen konsequent anzuwenden, bis sich die Augen beruhigt haben. Gerade die ersten Tage können nach einem verschachtelten Plan aussehen.",
       "note": "Welche Tropfen und wie lange, hängt vom Verfahren, vom Zustand der Hornhaut und vom Protokoll Ihrer Klinik ab. Dies ist eine allgemeine Orientierung; die Anweisungen Ihrer Klinik gehen vor.",
       "blocks": [
-        {"t": "h2", "v": "Gut sehen und fertig sein ist nicht dasselbe"},
-        {"t": "p", "v": "Wenn die Sehschärfe nach LASIK oder LASEK schnell kommt, wirken die Tropfen weniger wichtig. Tropfen nach einer Operation nimmt man aber meist nicht nur dann, wenn sich etwas komisch anfühlt — sie werden für einen festgelegten Zeitraum in der genannten Häufigkeit angewendet."},
-        {"t": "p", "v": "Antibiotika, entzündungshemmende Tropfen, Steroidtropfen und künstliche Tränen können ganz verschiedene Aufgaben haben. Namen und Fläschchen ähneln sich, deshalb hilft es, neben den Namen zu notieren, wofür jedes Mittel gedacht ist."},
-        {"t": "h2", "v": "Bei LASEK ist die Dauer der springende Punkt"},
-        {"t": "p", "v": "Die Heilung nach LASEK lässt die Tropfphase vergleichsweise lang erscheinen. Die ersten Tage sind wegen Verbandlinse, Schmerz und Lichtempfindlichkeit schwer selbst zu protokollieren — und später, wenn es angenehm wird, vergisst man es leicht."},
-        {"t": "ul", "v": [
-          "Fotografieren Sie das Merkblatt vom Operationstag",
-          "Prüfen Sie Start- und Enddatum jedes Mittels getrennt",
-          "Legen Sie künstliche Tränen getrennt von den Rezepttropfen an"
-        ]},
-        {"t": "h2", "v": "Eine Routine nach der OP in EyeDay"},
-        {"t": "p", "v": "In EyeDay legen Sie für mehrmals täglich wiederkehrende Tropfen einen eigenen Zeitplan an und sehen die Erledigung auf einer Zeitleiste. Das passt gut, wenn in den ersten Tagen jemand mitschaut, und danach behalten Sie nur die Tropfen, die Sie noch brauchen."}
+        {
+          "t": "h2",
+          "v": "Gut sehen und fertig sein ist nicht dasselbe"
+        },
+        {
+          "t": "p",
+          "v": "Wenn die Sehschärfe nach LASIK oder LASEK schnell kommt, wirken die Tropfen weniger wichtig. Tropfen nach einer Operation nimmt man aber meist nicht nur dann, wenn sich etwas komisch anfühlt — sie werden für einen festgelegten Zeitraum in der genannten Häufigkeit angewendet."
+        },
+        {
+          "t": "p",
+          "v": "Antibiotika, entzündungshemmende Tropfen, Steroidtropfen und künstliche Tränen können ganz verschiedene Aufgaben haben. Namen und Fläschchen ähneln sich, deshalb hilft es, neben den Namen zu notieren, wofür jedes Mittel gedacht ist."
+        },
+        {
+          "t": "h2",
+          "v": "Bei LASEK ist die Dauer der springende Punkt"
+        },
+        {
+          "t": "p",
+          "v": "Die Heilung nach LASEK lässt die Tropfphase vergleichsweise lang erscheinen. Die ersten Tage sind wegen Verbandlinse, Schmerz und Lichtempfindlichkeit schwer selbst zu protokollieren — und später, wenn es angenehm wird, vergisst man es leicht."
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Fotografieren Sie das Merkblatt vom Operationstag",
+            "Prüfen Sie Start- und Enddatum jedes Mittels getrennt",
+            "Legen Sie künstliche Tränen getrennt von den Rezepttropfen an"
+          ]
+        },
+        {
+          "t": "h2",
+          "v": "Eine Routine nach der OP in EyeDay"
+        },
+        {
+          "t": "p",
+          "v": "In EyeDay legen Sie für mehrmals täglich wiederkehrende Tropfen einen eigenen Zeitplan an und sehen die Erledigung auf einer Zeitleiste. Das passt gut, wenn in den ersten Tagen jemand mitschaut, und danach behalten Sie nur die Tropfen, die Sie noch brauchen."
+        }
       ],
       "cta": {
         "title": "Wenn Sie eine Routine nach der OP brauchen",
@@ -235,18 +431,39 @@
       "summary": "Bei einem Tropfen kann ein einzelner Wecker reichen. Ab zwei mischen sich Zeiten, Reihenfolge, linkes und rechtes Auge und Dauer, und Fehler schleichen sich ein.",
       "note": "Reihenfolge und Abstand können sich je nach Verordnung unterscheiden. Wenn Ihre Klinik eine bestimmte Reihenfolge genannt hat, halten Sie sich daran.",
       "blocks": [
-        {"t": "h2", "v": "Trennen Sie zuerst die Angaben je Mittel"},
-        {"t": "p", "v": "Der häufigste Fehler bei mehreren Tropfen ist, sie nur nach der Uhrzeit zu merken — „der morgens“. Tatsächlich hat jedes Mittel seine eigene Anzahl und Dauer, und manche kommen nur in ein Auge. Bauen Sie den Plan stattdessen um den Namen des Mittels herum."},
-        {"t": "ul", "v": [
-          "Notieren Sie den Namen zusammen mit der Flaschenfarbe",
-          "Klären Sie: linkes Auge, rechtes Auge oder beide",
-          "Tragen Sie Tagesanzahl und Startzeit getrennt ein",
-          "Markieren Sie das Enddatum oder den Tag, an dem sich die Anzahl ändert"
-        ]},
-        {"t": "h2", "v": "Trennen Sie feste Zeiten von eigenen Plänen"},
-        {"t": "p", "v": "Etwas Klares wie „einmal täglich vor dem Schlafengehen“ ist als feste Erinnerung am einfachsten. Ein Mittel, bei dem gerechnet werden muss — viermal täglich im Abstand von drei Stunden — liegt auf einem eigenen Zeitplan sicherer. Alles in dieselbe Form zu pressen macht es meist verwirrender, nicht klarer."},
-        {"t": "h2", "v": "Warum das Abhaken zählt"},
-        {"t": "p", "v": "Bei mehreren Tropfen können „ich habe die Erinnerung gesehen“ und „ich habe getropft“ auseinandergehen. Man wischt die Meldung weg, will es gleich erledigen und vergisst es. Deshalb braucht jede Gabe ihr eigenes Protokoll."}
+        {
+          "t": "h2",
+          "v": "Trennen Sie zuerst die Angaben je Mittel"
+        },
+        {
+          "t": "p",
+          "v": "Der häufigste Fehler bei mehreren Tropfen ist, sie nur nach der Uhrzeit zu merken — „der morgens“. Tatsächlich hat jedes Mittel seine eigene Anzahl und Dauer, und manche kommen nur in ein Auge. Bauen Sie den Plan stattdessen um den Namen des Mittels herum."
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Notieren Sie den Namen zusammen mit der Flaschenfarbe",
+            "Klären Sie: linkes Auge, rechtes Auge oder beide",
+            "Tragen Sie Tagesanzahl und Startzeit getrennt ein",
+            "Markieren Sie das Enddatum oder den Tag, an dem sich die Anzahl ändert"
+          ]
+        },
+        {
+          "t": "h2",
+          "v": "Trennen Sie feste Zeiten von eigenen Plänen"
+        },
+        {
+          "t": "p",
+          "v": "Etwas Klares wie „einmal täglich vor dem Schlafengehen“ ist als feste Erinnerung am einfachsten. Ein Mittel, bei dem gerechnet werden muss — viermal täglich im Abstand von drei Stunden — liegt auf einem eigenen Zeitplan sicherer. Alles in dieselbe Form zu pressen macht es meist verwirrender, nicht klarer."
+        },
+        {
+          "t": "h2",
+          "v": "Warum das Abhaken zählt"
+        },
+        {
+          "t": "p",
+          "v": "Bei mehreren Tropfen können „ich habe die Erinnerung gesehen“ und „ich habe getropft“ auseinandergehen. Man wischt die Meldung weg, will es gleich erledigen und vergisst es. Deshalb braucht jede Gabe ihr eigenes Protokoll."
+        }
       ],
       "cta": {
         "title": "Holen Sie den unübersichtlichen Plan in die App",
@@ -265,18 +482,39 @@
       "summary": "Wenn ein Elternteil langfristig Glaukom-Tropfen nimmt oder nach einer Kataraktoperation mit mehreren Fläschchen heimkommt, reicht oft schon das Nachfragen der Familie, um Fehler zu verringern.",
       "note": "Auch wenn die Familie mithilft, sollten Änderung, Pause oder Austausch eines Mittels mit der behandelnden Augenärztin oder dem Augenarzt besprochen werden.",
       "blocks": [
-        {"t": "h2", "v": "„Hast du getropft?“ zählt weniger als „welches, und wann?“"},
-        {"t": "p", "v": "Nur zu fragen, ob getropft wurde, reicht womöglich nicht. Bei mehreren Fläschchen kommt es darauf an, welches Mittel, welches Auge und zu welcher Uhrzeit. Wenn linkes und rechtes Auge unterschiedlich verordnet sind, verwirrt das die Familie genauso wie die Betroffenen."},
-        {"t": "p", "v": "Auch wenn Eltern es selbst regeln, ist Kleingedrucktes auf Tüte oder Etikett jedes Mal schwer zu lesen. Es hilft, den Namen groß anzuschreiben und jedes Fläschchen an einem festen Platz oder in einer festen Farbe zu halten."},
-        {"t": "h2", "v": "Was die Familie prüfen sollte"},
-        {"t": "ul", "v": [
-          "Ob alle heute geplanten Tropfen gegeben wurden",
-          "Ob ein Mittel für ein Auge versehentlich in beide kam",
-          "Ob ein Mittel nach der OP weiterläuft, das hätte enden sollen",
-          "Ob es Augendruckwerte für den nächsten Termin gibt"
-        ]},
-        {"t": "h2", "v": "Warum das Protokoll hilft"},
-        {"t": "p", "v": "EyeDay zeigt die Erledigung Tag für Tag und hält daneben die Augendruckwerte fest. Vor einem Termin müssen Sie sich nicht mehr auf das Gedächtnis verlassen, ob seit dem letzten Mal getropft wurde. Richten Sie es auf dem Telefon Ihrer Eltern ein und lernen Sie es gemeinsam — dann wird das Ganze deutlich leichter."}
+        {
+          "t": "h2",
+          "v": "„Hast du getropft?“ zählt weniger als „welches, und wann?“"
+        },
+        {
+          "t": "p",
+          "v": "Nur zu fragen, ob getropft wurde, reicht womöglich nicht. Bei mehreren Fläschchen kommt es darauf an, welches Mittel, welches Auge und zu welcher Uhrzeit. Wenn linkes und rechtes Auge unterschiedlich verordnet sind, verwirrt das die Familie genauso wie die Betroffenen."
+        },
+        {
+          "t": "p",
+          "v": "Auch wenn Eltern es selbst regeln, ist Kleingedrucktes auf Tüte oder Etikett jedes Mal schwer zu lesen. Es hilft, den Namen groß anzuschreiben und jedes Fläschchen an einem festen Platz oder in einer festen Farbe zu halten."
+        },
+        {
+          "t": "h2",
+          "v": "Was die Familie prüfen sollte"
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Ob alle heute geplanten Tropfen gegeben wurden",
+            "Ob ein Mittel für ein Auge versehentlich in beide kam",
+            "Ob ein Mittel nach der OP weiterläuft, das hätte enden sollen",
+            "Ob es Augendruckwerte für den nächsten Termin gibt"
+          ]
+        },
+        {
+          "t": "h2",
+          "v": "Warum das Protokoll hilft"
+        },
+        {
+          "t": "p",
+          "v": "EyeDay zeigt die Erledigung Tag für Tag und hält daneben die Augendruckwerte fest. Vor einem Termin müssen Sie sich nicht mehr auf das Gedächtnis verlassen, ob seit dem letzten Mal getropft wurde. Richten Sie es auf dem Telefon Ihrer Eltern ein und lernen Sie es gemeinsam — dann wird das Ganze deutlich leichter."
+        }
       ],
       "cta": {
         "title": "Wenn Sie Tropfen für Angehörige verwalten",
@@ -295,18 +533,42 @@
       "summary": "Nach einer Kataraktoperation werden häufig Steroidtropfen verordnet. Entscheidend ist weniger der Name des Mittels als die Anzahl und die Dauer, die Ihre Klinik genannt hat.",
       "note": "Steroidtropfen erfordern mitunter eine Kontrolle, auch des Augeninnendrucks. Beginnen oder beenden Sie sie nicht eigenmächtig, sondern folgen Sie den Anweisungen Ihrer Augenärztin oder Ihres Augenarztes.",
       "blocks": [
-        {"t": "h2", "v": "Nicht absetzen, nur weil es besser wird"},
-        {"t": "p", "v": "Wenn das Auge einige Tage nach der Operation angenehm ist, will man reduzieren oder aufhören. Eine Verordnung nach der OP richtet sich aber nicht allein nach Beschwerden. Entzündung steuern, Infektionen vorbeugen und die Heilung beobachten sind Gründe, warum Sie eine festgelegte Zeit weitermachen sollen."},
-        {"t": "p", "v": "Umgekehrt ist es ebenso wenig ratsam, übrig gebliebene Steroidtropfen auf eigene Faust weiterzuverwenden, weil sich etwas komisch anfühlt. Ob das Mittel angepasst werden muss oder etwas anderes dahintersteckt, klärt ein Termin."},
-        {"t": "h2", "v": "Markieren Sie die Tage, an denen reduziert wird"},
-        {"t": "p", "v": "Tropfen nach einer OP beginnen oft häufig und werden dann alle paar Tage oder Wochen reduziert. Verpassen Sie einen dieser Stichtage, tropfen Sie womöglich zu viel oder reduzieren zu früh."},
-        {"t": "ul", "v": [
-          "Fotografieren Sie das Rezept-Merkblatt",
-          "Markieren Sie die Reduktionstage in Kalender oder App",
-          "Teilen Sie ein Fläschchen nicht mit der Familie"
-        ]},
-        {"t": "h2", "v": "Den Zeitraum in EyeDay führen"},
-        {"t": "p", "v": "Wenn Sie in EyeDay ein Mittel anlegen und Tagesanzahl und Startzeit getrennt eintragen, ist der wiederkehrende Plan nach der OP leicht zu verfolgen. An dem Tag, an dem sich die Anzahl ändert, passen Sie den bestehenden Plan an oder legen einen neuen an — das bleibt eindeutig."}
+        {
+          "t": "h2",
+          "v": "Nicht absetzen, nur weil es besser wird"
+        },
+        {
+          "t": "p",
+          "v": "Wenn das Auge einige Tage nach der Operation angenehm ist, will man reduzieren oder aufhören. Eine Verordnung nach der OP richtet sich aber nicht allein nach Beschwerden. Entzündung steuern, Infektionen vorbeugen und die Heilung beobachten sind Gründe, warum Sie eine festgelegte Zeit weitermachen sollen."
+        },
+        {
+          "t": "p",
+          "v": "Umgekehrt ist es ebenso wenig ratsam, übrig gebliebene Steroidtropfen auf eigene Faust weiterzuverwenden, weil sich etwas komisch anfühlt. Ob das Mittel angepasst werden muss oder etwas anderes dahintersteckt, klärt ein Termin."
+        },
+        {
+          "t": "h2",
+          "v": "Markieren Sie die Tage, an denen reduziert wird"
+        },
+        {
+          "t": "p",
+          "v": "Tropfen nach einer OP beginnen oft häufig und werden dann alle paar Tage oder Wochen reduziert. Verpassen Sie einen dieser Stichtage, tropfen Sie womöglich zu viel oder reduzieren zu früh."
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Fotografieren Sie das Rezept-Merkblatt",
+            "Markieren Sie die Reduktionstage in Kalender oder App",
+            "Teilen Sie ein Fläschchen nicht mit der Familie"
+          ]
+        },
+        {
+          "t": "h2",
+          "v": "Den Zeitraum in EyeDay führen"
+        },
+        {
+          "t": "p",
+          "v": "Wenn Sie in EyeDay ein Mittel anlegen und Tagesanzahl und Startzeit getrennt eintragen, ist der wiederkehrende Plan nach der OP leicht zu verfolgen. An dem Tag, an dem sich die Anzahl ändert, passen Sie den bestehenden Plan an oder legen einen neuen an — das bleibt eindeutig."
+        }
       ],
       "cta": {
         "title": "Wenn die Reduktionstage verwirren",
@@ -325,19 +587,256 @@
       "summary": "Bei Glaukom-Tropfen unterscheiden sich Wirkstoffname, Handelsname und Flaschenform, was die Sache aus Patientensicht kompliziert wirken lässt. Wichtig ist, das verordnete Mittel so anzuwenden, wie besprochen, und zwar durchgehend.",
       "note": "Dies ist keine Empfehlung für ein bestimmtes Mittel. Ob Timolol, Latanoprost oder etwas anderes passt, entscheidet Ihre Ärztin oder Ihr Arzt.",
       "blocks": [
-        {"t": "h2", "v": "Ein anderer Name macht es noch verwirrender"},
-        {"t": "p", "v": "Beim Termin kann auf ein anderes Produkt derselben Gruppe umgestellt werden, oder der Handelsname sieht je nach Klinik und Apotheke anders aus. Dann fragen sich Patientinnen und Patienten: „Ist das dasselbe wie vorher?“ oder „Nehme ich jetzt beide?“ Klären Sie das immer mit Klinik oder Apotheke und verwenden Sie niemals eigenmächtig zwei davon gemeinsam."},
-        {"t": "p", "v": "Legen Sie das Produkt in der App genau unter dem aufgedruckten Namen an und schreiben Sie den Wirkstoffnamen oder die Erklärung Ihrer Klinik in eine Notiz — dann finden Sie es später wieder."},
-        {"t": "h2", "v": "Auch einmal täglich wird leicht verpasst"},
-        {"t": "p", "v": "Ein Tropfen einmal täglich sieht schlicht aus, aber ihn zu verpassen kostet den ganzen Tag. Den vor dem Schlafengehen vergisst man müde, den morgens verschiebt das Fertigmachen. Statt „ist ja nur einmal am Tag, passt schon“ hilft der Gedanke: „gerade weil es nur einmal ist, hake ich es sicher ab“."},
-        {"t": "h2", "v": "Das Protokoll hilft auch beim Termin"},
-        {"t": "p", "v": "Wenn der Augeninnendruck nicht wie erhofft sinkt, kann es darauf ankommen, ob das Mittel selbst das Problem ist oder die Zeiten verrutscht sind. Die Beurteilung übernimmt Ihr Behandlungsteam, aber mit einem Dosisprotokoll wird das Gespräch deutlich konkreter."}
+        {
+          "t": "h2",
+          "v": "Ein anderer Name macht es noch verwirrender"
+        },
+        {
+          "t": "p",
+          "v": "Beim Termin kann auf ein anderes Produkt derselben Gruppe umgestellt werden, oder der Handelsname sieht je nach Klinik und Apotheke anders aus. Dann fragen sich Patientinnen und Patienten: „Ist das dasselbe wie vorher?“ oder „Nehme ich jetzt beide?“ Klären Sie das immer mit Klinik oder Apotheke und verwenden Sie niemals eigenmächtig zwei davon gemeinsam."
+        },
+        {
+          "t": "p",
+          "v": "Legen Sie das Produkt in der App genau unter dem aufgedruckten Namen an und schreiben Sie den Wirkstoffnamen oder die Erklärung Ihrer Klinik in eine Notiz — dann finden Sie es später wieder."
+        },
+        {
+          "t": "h2",
+          "v": "Auch einmal täglich wird leicht verpasst"
+        },
+        {
+          "t": "p",
+          "v": "Ein Tropfen einmal täglich sieht schlicht aus, aber ihn zu verpassen kostet den ganzen Tag. Den vor dem Schlafengehen vergisst man müde, den morgens verschiebt das Fertigmachen. Statt „ist ja nur einmal am Tag, passt schon“ hilft der Gedanke: „gerade weil es nur einmal ist, hake ich es sicher ab“."
+        },
+        {
+          "t": "h2",
+          "v": "Das Protokoll hilft auch beim Termin"
+        },
+        {
+          "t": "p",
+          "v": "Wenn der Augeninnendruck nicht wie erhofft sinkt, kann es darauf ankommen, ob das Mittel selbst das Problem ist oder die Zeiten verrutscht sind. Die Beurteilung übernimmt Ihr Behandlungsteam, aber mit einem Dosisprotokoll wird das Gespräch deutlich konkreter."
+        }
       ],
       "cta": {
         "title": "Wenn Sie Ihre Glaukom-Tropfen oft vergessen",
         "body": "Legen Sie das Mittel unter seinem eigenen Namen an und haken Sie es täglich ab.",
         "appStore": "Auf dem iPhone im App Store",
         "playStore": "Auf Samsung, Google Pixel, Xiaomi und anderen Android-Geräten bei Google Play"
+      }
+    },
+    {
+      "slug": "uveitis-eye-drop-schedule",
+      "title": "Uveitis eye drops: how to keep the schedule clear",
+      "description": "How to track uveitis eye drops such as Pred Forte without guessing the taper, timing or duration.",
+      "eyebrow": "Uveitis eye drops",
+      "h1": "How to keep a uveitis eye drop schedule clear",
+      "date": "Jul 29, 2026",
+      "summary": "Uveitis can involve frequent eye drops and schedule changes. A clear record helps you follow the prescription you were given, not the version you half remember.",
+      "note": "Uveitis needs medical follow-up. Do not start, stop or taper steroid drops such as Pred Forte without your ophthalmologist’s instructions.",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "Start with the exact plan from your clinic"
+        },
+        {
+          "t": "p",
+          "v": "Uveitis eye drop schedules can change during follow-up. Some people are told to use steroid drops such as Pred Forte often at first, then reduce them step by step. The important part is not to guess the taper from memory."
+        },
+        {
+          "t": "p",
+          "v": "Write down the drug name, the eye, the daily count, and the date when any reduction starts. If your doctor is also watching eye pressure or glaucoma risk, keep those notes next to the dosing record."
+        },
+        {
+          "t": "h2",
+          "v": "Separate the things that are easy to confuse"
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Drug name, including brand names such as Pred Forte",
+            "Which eye each drop goes in",
+            "Start date, end date, and any taper date"
+          ]
+        },
+        {
+          "t": "p",
+          "v": "If the plan changes after a visit, update the reminder the same day. That keeps yesterday’s schedule from silently becoming today’s mistake."
+        },
+        {
+          "t": "h2",
+          "v": "Using EyeDay for uveitis drops"
+        },
+        {
+          "t": "p",
+          "v": "EyeDay lets you keep each drop as its own schedule and log every completed dose. It is a reminder and record tool, not a treatment guide, so the prescription from your ophthalmologist should always come first."
+        }
+      ],
+      "cta": {
+        "title": "If your uveitis drop schedule keeps changing",
+        "body": "Keep each drop, eye, time and taper date in one place.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    },
+    {
+      "slug": "icl-surgery-eye-drops",
+      "title": "Eye drops after ICL surgery: keeping the post-op schedule straight",
+      "description": "How to organize antibiotic drops, anti-inflammatory drops and artificial tears after ICL surgery.",
+      "eyebrow": "ICL surgery eye drops",
+      "h1": "How to keep track of eye drops after ICL surgery",
+      "date": "Jul 29, 2026",
+      "summary": "After ICL surgery, several drops may overlap for a short period. Keeping each bottle’s timing and duration separate helps avoid simple mistakes.",
+      "note": "Post-op ICL instructions vary by clinic and by patient. This is general information; follow the schedule from your surgeon or clinic.",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "Vision can feel good before the drop course is done"
+        },
+        {
+          "t": "p",
+          "v": "After ICL surgery, you may be given antibiotic drops, anti-inflammatory drops, steroid drops, or artificial tears for a fixed period. The exact plan depends on your clinic, but it is common for several bottles to overlap."
+        },
+        {
+          "t": "p",
+          "v": "Because ICL recovery can feel straightforward once vision clears, it is easy to forget that the drop schedule still matters. Treat each bottle as a separate mini-prescription with its own start and end."
+        },
+        {
+          "t": "h2",
+          "v": "Build the schedule bottle by bottle"
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Confirm which eye or both eyes",
+            "Record daily frequency and duration",
+            "Keep spacing instructions visible when using several drops"
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Do not reuse drops from a previous surgery or extend a course because a bottle still has liquid left. Follow the current post-op sheet."
+        },
+        {
+          "t": "h2",
+          "v": "Using EyeDay after ICL"
+        },
+        {
+          "t": "p",
+          "v": "In EyeDay you can register each post-op drop separately, set reminders, and check off doses on the day’s timeline before your next follow-up."
+        }
+      ],
+      "cta": {
+        "title": "If the ICL post-op sheet has several bottles",
+        "body": "Set each drop up separately and check off doses day by day.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    },
+    {
+      "slug": "prk-eye-drop-schedule",
+      "title": "PRK eye drop schedule: reminders, tapers and daily records",
+      "description": "How to track antibiotic drops, steroid drops and artificial tears after PRK without changing the plan yourself.",
+      "eyebrow": "PRK eye drop schedule",
+      "h1": "How to follow your eye drop schedule after PRK",
+      "date": "Jul 29, 2026",
+      "summary": "PRK drops may continue after the first uncomfortable days. Tracking start dates, end dates and taper days helps you stay aligned with the clinic’s instructions.",
+      "note": "Medication after PRK varies. Do not change the frequency or duration of any drop without checking with your clinic.",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "PRK schedules can last beyond the uncomfortable days"
+        },
+        {
+          "t": "p",
+          "v": "After PRK, the early days get most of the attention, but eye drops may continue after the worst discomfort improves. Antibiotic drops, steroid drops, and artificial tears may each have a different duration."
+        },
+        {
+          "t": "p",
+          "v": "PRK instructions are not automatically the same as LASIK instructions. If a taper is written for a steroid drop such as Pred Forte, mark the exact day the count changes."
+        },
+        {
+          "t": "h2",
+          "v": "Track the taper, not just the first week"
+        },
+        {
+          "t": "ul",
+          "v": [
+            "Start and end dates for every bottle",
+            "Dose changes by week or by follow-up visit",
+            "Extra artificial tears used during the day"
+          ]
+        },
+        {
+          "t": "p",
+          "v": "If your eye feels worse, your vision changes, or you are unsure whether to continue, ask your clinic instead of changing the schedule yourself."
+        },
+        {
+          "t": "h2",
+          "v": "Using EyeDay after PRK"
+        },
+        {
+          "t": "p",
+          "v": "EyeDay helps turn the clinic sheet into reminders and a daily dosing record, so you can see what was actually used rather than relying on memory."
+        }
+      ],
+      "cta": {
+        "title": "If your PRK drop schedule changes by week",
+        "body": "Turn the clinic sheet into reminders and completed-dose records.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
+      }
+    },
+    {
+      "slug": "tobradex-antibiotic-eye-drops",
+      "title": "Tobradex and antibiotic eye drops: how to track the course",
+      "description": "How to record Tobradex or other antibiotic eye drops by name, frequency, spacing and duration.",
+      "eyebrow": "Tobradex and antibiotic drops",
+      "h1": "How to remember Tobradex and antibiotic eye drops",
+      "date": "Jul 29, 2026",
+      "summary": "Antibiotic eye drops often have a defined course. A clear schedule helps you avoid missed doses, extra doses and confusion with other bottles.",
+      "note": "Tobradex contains antibiotic and steroid components. Use it only as prescribed, and do not extend, restart or share a bottle without medical advice.",
+      "blocks": [
+        {
+          "t": "h2",
+          "v": "Antibiotic drops usually have a defined course"
+        },
+        {
+          "t": "p",
+          "v": "Drops such as Tobradex, or other antibiotic eye drops, are often prescribed for a specific situation and a specific length of time. The label on the bottle is not enough when you also have other drops."
+        },
+        {
+          "t": "p",
+          "v": "Tobradex includes antibiotic and steroid components, so the frequency and duration should come from your clinician. Do not restart old drops, share a bottle, or extend the course on your own."
+        },
+        {
+          "t": "h2",
+          "v": "Write down the course before you start"
+        },
+        {
+          "t": "ul",
+          "v": [
+            "The exact drug name on the prescription",
+            "How many times per day and for how many days",
+            "Whether it should be spaced from other drops"
+          ]
+        },
+        {
+          "t": "p",
+          "v": "If redness, pain, discharge, or vision changes get worse, contact your clinic instead of only adjusting reminders."
+        },
+        {
+          "t": "h2",
+          "v": "Using EyeDay for antibiotic drops"
+        },
+        {
+          "t": "p",
+          "v": "EyeDay can keep Tobradex or another antibiotic drop on its own schedule, with completed-dose records that are easy to check before the next dose."
+        }
+      ],
+      "cta": {
+        "title": "If you need to track an antibiotic eye drop",
+        "body": "Record the name, duration and daily times before the next dose.",
+        "appStore": "On iPhone, from the App Store",
+        "playStore": "On Samsung, Google Pixel, Xiaomi and other Android phones, from Google Play"
       }
     }
   ]
